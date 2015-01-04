@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+						http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="happytime">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>by.happytime.domain.Category</class>
+		<class>by.happytime.domain.Order</class>
+		<class>by.happytime.domain.OrderUnit</class>
+		<class>by.happytime.domain.Product</class>
+		<class>by.happytime.domain.Role</class>
+		<class>by.happytime.domain.Subcategory</class>
+		<class>by.happytime.domain.User</class>
+		<properties>
+			<property name="hibernate.dialect" value="${db.dialect}" />
+			<property name="hibernate.hbm2ddl.auto" value="validate" />
+		</properties>
+	</persistence-unit>
+
+</persistence>
