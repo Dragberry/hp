@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>by.happytime</groupId>
 		<artifactId>happytime-parent</artifactId>
-		<version>${project.version}</version>
+		<version>1.0.0</version>
 	</parent>
 
 	<artifactId>happytime-web</artifactId>
@@ -53,5 +53,17 @@
 			<version>2.1</version>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<webXml>src\main\webapp\WEB-INF\web.xml</webXml>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
