@@ -2,12 +2,16 @@ package by.happyrime.test;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
+import java.util.Arrays;
+import java.util.Date;
 import java.util.TimeZone;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import by.happytime.domain.Order;
 import by.happytime.domain.OrderStatus;
+import by.happytime.domain.OrderUnit;
+import by.happytime.domain.User;
 import by.happytime.repository.CategoryRepo;
 import by.happytime.repository.OrderRepo;
 import by.happytime.repository.OrderUnitRepo;
@@ -29,12 +33,13 @@ public class Main {
         RoleRepo roleRepo = context.getBean(RoleRepo.class);
         OrderRepo orderRepo = context.getBean(OrderRepo.class);
         OrderUnitRepo orderUnitRepo = context.getBean(OrderUnitRepo.class);
-        
+        /*
         Order balloonOrder = orderRepo.findOne(2L);
         balloonOrder.getOrderUnits().get(0).setQuantity((int) (Math.random() * 1000));
         balloonOrder.setStatus(OrderStatus.SENT);
         orderRepo.save(balloonOrder);
-        /*
+        */
+        
         Order order = new Order();
 
         order.setFirstName("Максим");
@@ -58,7 +63,7 @@ public class Main {
         
         order.setOrderUnits(Arrays.asList(orderUnit1, orderUnit2));
         orderRepo.save(order);
-        */
+        
         /*
         User user = new User();
         user.setLogin("Makseemka");
