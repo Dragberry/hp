@@ -9,6 +9,7 @@ import javax.faces.bean.RequestScoped;
 
 import by.happytime.domain.Product;
 import by.happytime.repository.ProductRepo;
+import by.happytime.shop.ShopSession;
 
 @ManagedBean(name = "productListController")
 @RequestScoped
@@ -18,6 +19,15 @@ public class ProductListController implements Serializable {
 	
 	@ManagedProperty("#{productRepo}")
 	private ProductRepo productRepo;
+	@ManagedProperty("#{shopSession}")
+	private ShopSession shopSession;
+	
+	public void addItem(Long id) {
+	    Product product = productRepo.findOne(id);
+	    if (product != null) {
+	        shopSession.getSelectedProductList().add(product);
+	    }
+	}
 	
 	public List<Product> getProducts() {
 		return productRepo.findAll();
@@ -30,5 +40,13 @@ public class ProductListController implements Serializable {
 	public void setProductRepo(ProductRepo productRepo) {
 		this.productRepo = productRepo;
 	}
+
+    public ShopSession getShopSession() {
+        return shopSession;
+    }
+
+    public void setShopSession(ShopSession shopSession) {
+        this.shopSession = shopSession;
+    }
 	
 }

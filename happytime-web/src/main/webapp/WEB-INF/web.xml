@@ -31,4 +31,7 @@
 	<listener>
 		<listener-class>com.sun.faces.config.ConfigureListener</listener-class>
 	</listener>
+	<session-config>
+		<session-timeout>1</session-timeout>
+	</session-config>
 </web-app>
