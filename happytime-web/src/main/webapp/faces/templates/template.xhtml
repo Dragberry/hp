@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+<h:head>
+	<meta charset="utf-8" />
+	<title>
+		<ui:insert name="title">
+        	HappyTime.by
+      	</ui:insert>
+	</title>
+</h:head>
+
+<h:body>
+	<!--  
+	<h:outputScript library="javascript" name="util.js" target="head" />
+	<h:outputStylesheet library="css" name="styles.css" target="body" />
+	-->
+	
+	<!-- Header starts here -->	
+	<div>
+		<ui:insert name="header">
+        	Header
+		</ui:insert>
+	</div>
+
+	<!-- Main content starts here -->
+	<div class="menuAndContent">
+		<div class="menuLeft">
+			<ui:insert name="menuLeft" />
+		</div>
+
+		<div class="content">
+			<ui:insert name="content" />
+		</div>
+
+		<div class="menuRight">
+			<ui:insert name="menuRight">
+				<ui:insert name="menuRight" />
+			</ui:insert>
+		</div>
+	</div>
+	
+	<!-- Footer starts here -->
+	<div class="pageFooter">
+		<ui:insert name="footer">
+        	Footer
+		</ui:insert>
+	</div>
+</h:body>
+</html>
