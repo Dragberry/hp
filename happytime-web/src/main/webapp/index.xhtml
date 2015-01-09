@@ -14,26 +14,9 @@
 </ui:define>
 
 <ui:define name="content">
-	<h:form>
-       <h:outputText value="Welcome to the HappyTime.by"/>
-       <p:dataTable id="productsTable"
-	       	value="#{productListController.products}"
-	       	var="product">
-       	<p:column headerText="Title" sortBy="#{product.title}">
-			<h:outputText value="#{product.title}" />
-		</p:column>
-		<p:column headerText="Category">
-			<h:outputText value="#{product.title}" />
-		</p:column>
-		<p:column headerText="Order">
-			<p:commandButton value="Add item"
-				action="#{productListController.addItem(product.id)}"
-				ajax="true"
-				partialSubmit="true"
-				process="@this" />
-		</p:column>
-       </p:dataTable>
-	</h:form>
+	<h:link outcome="balloons/balloonList" value="Balloon list" />
+	<br />
+	<h:link outcome="balloons/balloonDetail" value="Balloon detail"/>
 </ui:define>
 
 <ui:define name="footer">
