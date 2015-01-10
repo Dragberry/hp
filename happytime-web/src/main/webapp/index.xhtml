@@ -1,4 +1,4 @@
-<ui:composition template="/faces/templates/template.xhtml"
+<ui:composition template="/WEB-INF/templates/template.xhtml"
 	 xmlns="http://www.w3.org/1999/xhtml"
     xmlns:ui="http://java.sun.com/jsf/facelets"
     xmlns:h="http://java.sun.com/jsf/html"
@@ -6,15 +6,19 @@
     xmlns:p="http://primefaces.org/ui">
     
 <ui:define name="title">
-    HappyTime.by
+    #{translation.translate('HTapplicationTitleAlter')} - #{translation.translate('HTapplicationTitle')}
 </ui:define>
     
 <ui:define name="header">
-    <h1><h:outputText value="HappyTime.by - index header" /></h1>
+    <h1><h:outputText value="#{translation.translate('HTapplicationTitleAlter')} - #{translation.translate('HTapplicationTitle')}" /></h1>
 </ui:define>
 
 <ui:define name="content">
-	<h:link outcome="balloons/balloonList" value="Balloon list" />
+	<h:form>
+		<h:commandLink action="faces/balloons/balloonList" value="commandLink"/>
+	</h:form>
+	
+	<h:link outcome="faces/balloons/balloonList" value="Balloon list" />
 	<br />
 	<h:link outcome="balloons/balloonDetail" value="Balloon detail"/>
 </ui:define>
