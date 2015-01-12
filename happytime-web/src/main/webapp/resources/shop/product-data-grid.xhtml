@@ -6,7 +6,7 @@
 	xmlns:composite="http://java.sun.com/jsf/composite">
 
 <composite:interface>
-	<composite:attribute name="productController" required="true"/>
+	<composite:attribute name="сontroller" required="true"/>
 </composite:interface>
 
 <composite:implementation>
@@ -19,6 +19,7 @@
         rows="12" 
         paginator="true" 
         paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+        currentPageReportTemplate="{currentPage} #{translation.translate('HTpageOf')} {totalPages}"
         rowsPerPageTemplate="6,12,16">
  
         <p:panel header="#{product.title}" style="text-align:center">

@@ -27,8 +27,8 @@
 		<p:menubar>
 			<p:menuitem value="#{translation.translate('HTmainPage')}" outcome="/index" />
 			<p:submenu label="#{translation.translate('HTballoons')}" >
-				<p:menuitem value="#{translation.translate('HTlightBalloons')}" outcome="/faces/balloons/round-balloons" />
-				<p:menuitem value="#{translation.translate('HTroundBalloons')}" outcome="/faces/balloons/light-balloons" />
+				<p:menuitem value="#{translation.translate('HTroundBalloons')}" outcome="/faces/balloons/round-balloons" />
+				<p:menuitem value="#{translation.translate('HTlightBalloons')}" outcome="/faces/balloons/light-balloons" />
 				<p:menuitem value="#{translation.translate('HTmodellingBalloons')}" outcome="/faces/balloons/modelling-balloons" />
 				<p:menuitem value="#{translation.translate('HTbouquetBalloons')}" outcome="/faces/balloons/bouquet-balloons" />
 				<p:menuitem value="#{translation.translate('HTlettersBalloons')}" outcome="/faces/balloons/letters-balloons" />
@@ -45,21 +45,21 @@
 			<p:submenu label="#{translation.translate('HToriginalGifts')}" rendered="false">
 			</p:submenu>
 			<p:submenu label="#{translation.translate('HTholidaysOrganization')}">
-				<p:menuitem value="#{translation.translate('HTsantaClaus')}" outcome="/faces/balloons/balloonList" />
-				<p:menuitem value="#{translation.translate('HToriginalCongratulation')}" outcome="/faces/balloons/balloonList" />
-				<p:menuitem value="#{translation.translate('HTanimatorAndToastmasterAndSoundman')}" outcome="/faces/balloons/balloonList" />
+				<p:menuitem value="#{translation.translate('HTsantaClaus')}" outcome="/faces/actions/santaClaus" />
+				<p:menuitem value="#{translation.translate('HToriginalCongratulation')}" outcome="/faces/actions/originalCongratulation" />
+				<p:menuitem value="#{translation.translate('HTanimatorAndToastmasterAndSoundman')}" outcome="/faces/actions/animatorAndToastMaster" />
 			</p:submenu>
 			
 			<p:menuitem value="#{translation.translate('HTorderAndDelivery')}"
-				outcome="/index"
+				outcome="/faces/orderAndDelivery"
 				containerStyleClass="ui-menubar-options"/>
 			<p:menuitem value="#{translation.translate('HTaboutUs')}"
-				outcome="/index"
+				outcome="/faces/aboutUs"
 				containerStyleClass="ui-menubar-options"/>
 			<p:submenu label="#{translation.translate('HTpromotions')}" styleClass="ui-menubar-options">
-				<p:menuitem value="#{translation.translate('HTactions')}" outcome="/faces/balloons/balloonList" />
-				<p:menuitem value="#{translation.translate('HTdiscountCards')}" outcome="/faces/balloons/balloonList" />
-				<p:menuitem value="#{translation.translate('HTgiftCertificates')}" outcome="/faces/balloons/balloonList" />
+				<p:menuitem value="#{translation.translate('HTactions')}" outcome="/faces/promotions/actions" />
+				<p:menuitem value="#{translation.translate('HTdiscountCards')}" outcome="/faces/promotions/discountCards" />
+				<p:menuitem value="#{translation.translate('HTgiftCertificates')}" outcome="/faces/promotions/giftCertificates" />
 			</p:submenu>
 		</p:menubar>
 	</div>
