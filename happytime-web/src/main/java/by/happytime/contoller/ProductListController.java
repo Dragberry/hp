@@ -1,4 +1,4 @@
-package by.happytime.contollers;
+package by.happytime.contoller;
 
 import java.io.Serializable;
 import java.util.List;
@@ -6,6 +6,8 @@ import java.util.List;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
+
+import org.primefaces.model.menu.DefaultMenuItem;
 
 import by.happytime.domain.Product;
 import by.happytime.repository.ProductRepo;

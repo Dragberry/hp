@@ -1,32 +1,27 @@
 <ui:composition template="/WEB-INF/templates/template.xhtml"
-	 xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:ui="http://java.sun.com/jsf/facelets"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:p="http://primefaces.org/ui">
-    
-<ui:define name="title">
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+	<ui:define name="title">
     #{translation.translate('HTapplicationTitleAlter')} - #{translation.translate('HTapplicationTitle')}
 </ui:define>
-    
-<ui:define name="header">
-    <h1><h:outputText value="#{translation.translate('HTapplicationTitleAlter')} - #{translation.translate('HTapplicationTitle')}" /></h1>
-</ui:define>
 
-<ui:define name="content">
-	<h:form>
-		<h:commandLink action="faces/balloons/balloonList" value="commandLink"/>
-	</h:form>
+	<ui:define name="header">
+		<h1>
+			<h:outputText
+				value="#{translation.translate('HTapplicationTitleAlter')} - #{translation.translate('HTapplicationTitle')}" />
+		</h1>
+	</ui:define>
+
+	<ui:define name="content">
 	
-	<h:link outcome="faces/balloons/balloonList" value="Balloon list" />
-	<br />
-	<h:link outcome="faces/balloons/balloonDetail" value="Balloon detail"/>
-	<br />
-	<h:link outcome="index" value="Home"/>
-</ui:define>
+	</ui:define>
 
-<ui:define name="footer">
-    <h:outputText value="Index footer" />
-</ui:define>
+	<ui:define name="footer">
+		<h:outputText value="Index footer" />
+	</ui:define>
 
 </ui:composition>

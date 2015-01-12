@@ -6,30 +6,25 @@ import java.util.ResourceBundle;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
 
 @ManagedBean(name = "translation")
 @SessionScoped
 public class Translation implements Serializable {
 
     private static final long serialVersionUID = 8412177741271256452L;
-
-    @ManagedProperty("#{messages}")
-    private ResourceBundle resourceBundle;
+    
+    private static ResourceBundle getResourceBundle() {
+        FacesContext context = FacesContext.getCurrentInstance();
+        return ResourceBundle.getBundle("messages", context.getViewRoot().getLocale());
+    }
 
     public String translate(String key) {
-        return resourceBundle.getString(key);
+        return getResourceBundle().getString(key);
     }
 
     public String translate(String key, Object... params) {
-        return String.format(resourceBundle.getString(key), params);
-    }
-
-    public ResourceBundle getResourceBundle() {
-        return resourceBundle;
-    }
-
-    public void setResourceBundle(ResourceBundle resourceBundle) {
-        this.resourceBundle = resourceBundle;
+        return String.format(getResourceBundle().getString(key), params);
     }
 
 }

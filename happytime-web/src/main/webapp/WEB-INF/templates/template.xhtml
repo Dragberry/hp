@@ -6,13 +6,11 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:p="http://primefaces.org/ui">
-	
+
 <h:head>
-	<title>
-		<ui:insert name="title">
+	<title><ui:insert name="title">
         	"#{messages.HTapplicationTitleAlter}" - "#{messages.HTapplicationTitle}"
-      	</ui:insert>
-	</title>
+      	</ui:insert></title>
 </h:head>
 
 <h:body>
@@ -20,12 +18,50 @@
 	<h:outputScript library="javascript" name="util.js" target="head" />
 	<h:outputStylesheet library="css" name="styles.css" target="body" />
 	-->
-	
-	<!-- Header starts here -->	
+
+	<!-- Header starts here -->
 	<div>
 		<ui:insert name="header">
         	Header
 		</ui:insert>
+		<p:menubar>
+			<p:menuitem value="#{translation.translate('HTmainPage')}" outcome="/index" />
+			<p:submenu label="#{translation.translate('HTballoons')}" >
+				<p:menuitem value="#{translation.translate('HTlightBalloons')}" outcome="/faces/balloons/round-balloons" />
+				<p:menuitem value="#{translation.translate('HTroundBalloons')}" outcome="/faces/balloons/light-balloons" />
+				<p:menuitem value="#{translation.translate('HTmodellingBalloons')}" outcome="/faces/balloons/modelling-balloons" />
+				<p:menuitem value="#{translation.translate('HTbouquetBalloons')}" outcome="/faces/balloons/bouquet-balloons" />
+				<p:menuitem value="#{translation.translate('HTlettersBalloons')}" outcome="/faces/balloons/letters-balloons" />
+				<p:menuitem value="#{translation.translate('HTweddingBalloons')}" outcome="/faces/balloons/wedding-balloons" />
+				<p:menuitem value="#{translation.translate('HTinscriptionBalloons')}" outcome="/faces/balloons/inscription-balloons" />
+				<p:menuitem value="#{translation.translate('HTheliumBalloons')}" outcome="/faces/balloons/helium-balloons" />
+			</p:submenu>
+			<p:submenu label="#{translation.translate('HTaccessories')}" rendered="false" >
+				<p:menuitem value="#{translation.translate('HTaccessoriesForWedding')}" outcome="/faces/balloons/balloonList" />
+				<p:menuitem value="#{translation.translate('HTaccessoriesForBirthday')}" outcome="/faces/balloons/balloonList" />
+				<p:menuitem value="#{translation.translate('HTaccessoriesForNewYear')}" outcome="/faces/balloons/balloonList" />
+				<p:menuitem value="#{translation.translate('HTallAccessories')}" outcome="/faces/balloons/balloonList" />
+			</p:submenu>
+			<p:submenu label="#{translation.translate('HToriginalGifts')}" rendered="false">
+			</p:submenu>
+			<p:submenu label="#{translation.translate('HTholidaysOrganization')}">
+				<p:menuitem value="#{translation.translate('HTsantaClaus')}" outcome="/faces/balloons/balloonList" />
+				<p:menuitem value="#{translation.translate('HToriginalCongratulation')}" outcome="/faces/balloons/balloonList" />
+				<p:menuitem value="#{translation.translate('HTanimatorAndToastmasterAndSoundman')}" outcome="/faces/balloons/balloonList" />
+			</p:submenu>
+			
+			<p:menuitem value="#{translation.translate('HTorderAndDelivery')}"
+				outcome="/index"
+				containerStyleClass="ui-menubar-options"/>
+			<p:menuitem value="#{translation.translate('HTaboutUs')}"
+				outcome="/index"
+				containerStyleClass="ui-menubar-options"/>
+			<p:submenu label="#{translation.translate('HTpromotions')}" styleClass="ui-menubar-options">
+				<p:menuitem value="#{translation.translate('HTactions')}" outcome="/faces/balloons/balloonList" />
+				<p:menuitem value="#{translation.translate('HTdiscountCards')}" outcome="/faces/balloons/balloonList" />
+				<p:menuitem value="#{translation.translate('HTgiftCertificates')}" outcome="/faces/balloons/balloonList" />
+			</p:submenu>
+		</p:menubar>
 	</div>
 
 	<!-- Main content starts here -->
@@ -35,7 +71,9 @@
 		</div>
 
 		<div class="content">
-			<ui:insert name="content" />
+			<h:form id="mainFrom">
+				<ui:insert name="content" />
+			</h:form>
 		</div>
 
 		<div class="menuRight">
@@ -44,7 +82,7 @@
 			</ui:insert>
 		</div>
 	</div>
-	
+
 	<!-- Footer starts here -->
 	<div class="pageFooter">
 		<ui:insert name="footer">

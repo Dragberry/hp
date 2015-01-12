@@ -1,0 +1,24 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:shop="http://java.sun.com/jsf/composite/shop">
+    
+    <ui:define name="title">
+	    Round Balloons - HappyTime.by
+	</ui:define>
+	    
+	<ui:define name="header">
+	    <h1><h:outputText value="Round Balloons" /></h1>
+	</ui:define>
+	
+	<ui:define name="content">
+		<shop:product-data-grid/>
+	</ui:define>
+	
+	<ui:define name="footer">
+	    <h:outputText value="Index footer" />
+	</ui:define>
+</ui:composition>
