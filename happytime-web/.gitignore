@@ -2,3 +2,5 @@
 /.settings/
 .project
 .classpath
+/src/main/webapp/resources/theme/.sass-cache/
+Gemfile.lock

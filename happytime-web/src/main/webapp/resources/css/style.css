@@ -13,6 +13,12 @@ html, body {
 	margin-bottom: -100px;
 }
 
+.page-header {
+    background-color: grey;
+    padding: 0;
+    heigth:240px;
+  }
+
 .page-buffer {
 	height: 100px;
 }
