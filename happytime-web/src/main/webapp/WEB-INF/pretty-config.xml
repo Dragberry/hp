@@ -23,7 +23,7 @@
 		<view-id value="/faces/actions/animatorAndToastMaster.xhtml" />
 	</url-mapping>
 	
-	<!-- Left menu -->
+	<!-- Right menu -->
 	<url-mapping id="aboutUs">
 		<pattern value="/about-us" />
 		<view-id value="/faces/aboutUs.xhtml" />
@@ -49,6 +49,10 @@
 	
 	<url-mapping id="balloons">
 		<pattern value="/balloons" />
+		<view-id value="/faces/balloons/balloons.xhtml" />
+	</url-mapping>
+	<url-mapping id="balloons">
+		<pattern value="/round-balloons" />
 		<view-id value="/faces/balloons/round-balloons.xhtml" />
 	</url-mapping>
 

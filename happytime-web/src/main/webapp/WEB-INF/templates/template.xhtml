@@ -19,67 +19,87 @@
 <h:body>
 	<div class="page-wrapper">
         <div class="row">
-        <div class="large-15 columns page-header">
-		<!-- Header starts here -->
-		<div class="">
-			<ui:insert name="header">
-	        	Header
-			</ui:insert>
-			<p:menubar>
-				<p:menuitem value="#{translation.translate('HTmainPage')}" outcome="/index" />
-				<p:submenu label="#{translation.translate('HTballoons')}" >
-					<p:menuitem value="#{translation.translate('HTroundBalloons')}" outcome="/faces/balloons/round-balloons" />
-					<p:menuitem value="#{translation.translate('HTlightBalloons')}" outcome="/faces/balloons/light-balloons" />
-					<p:menuitem value="#{translation.translate('HTmodellingBalloons')}" outcome="/faces/balloons/modelling-balloons" />
-					<p:menuitem value="#{translation.translate('HTbouquetBalloons')}" outcome="/faces/balloons/bouquet-balloons" />
-					<p:menuitem value="#{translation.translate('HTlettersBalloons')}" outcome="/faces/balloons/letters-balloons" />
-					<p:menuitem value="#{translation.translate('HTweddingBalloons')}" outcome="/faces/balloons/wedding-balloons" />
-					<p:menuitem value="#{translation.translate('HTinscriptionBalloons')}" outcome="/faces/balloons/inscription-balloons" />
-					<p:menuitem value="#{translation.translate('HTheliumBalloons')}" outcome="/faces/balloons/helium-balloons" />
-				</p:submenu>
-				<p:submenu label="#{translation.translate('HTaccessories')}" rendered="false" >
-					<p:menuitem value="#{translation.translate('HTaccessoriesForWedding')}" outcome="/faces/balloons/balloonList" />
-					<p:menuitem value="#{translation.translate('HTaccessoriesForBirthday')}" outcome="/faces/balloons/balloonList" />
-					<p:menuitem value="#{translation.translate('HTaccessoriesForNewYear')}" outcome="/faces/balloons/balloonList" />
-					<p:menuitem value="#{translation.translate('HTallAccessories')}" outcome="/faces/balloons/balloonList" />
-				</p:submenu>
-				<p:submenu label="#{translation.translate('HToriginalGifts')}" rendered="false">
-				</p:submenu>
-				<p:submenu label="#{translation.translate('HTholidaysOrganization')}">
-					<p:menuitem value="#{translation.translate('HTsantaClaus')}" outcome="/faces/actions/santaClaus" />
-					<p:menuitem value="#{translation.translate('HToriginalCongratulation')}" outcome="/faces/actions/originalCongratulation" />
-					<p:menuitem value="#{translation.translate('HTanimatorAndToastmasterAndSoundman')}" outcome="/faces/actions/animatorAndToastMaster" />
-				</p:submenu>
-				
-				<p:menuitem value="#{translation.translate('HTorderAndDelivery')}"
-					outcome="/faces/orderAndDelivery"
-					containerStyleClass="ui-menubar-options"/>
-				<p:menuitem value="#{translation.translate('HTaboutUs')}"
-					outcome="/faces/aboutUs"
-					containerStyleClass="ui-menubar-options"/>
-				<p:submenu label="#{translation.translate('HTpromotions')}" styleClass="ui-menubar-options">
-					<p:menuitem value="#{translation.translate('HTactions')}" outcome="/faces/promotions/actions" />
-					<p:menuitem value="#{translation.translate('HTdiscountCards')}" outcome="/faces/promotions/discountCards" />
-					<p:menuitem value="#{translation.translate('HTgiftCertificates')}" outcome="/faces/promotions/giftCertificates" />
-				</p:submenu>
-			</p:menubar>
-		</div>
+	        <div class="row page-header">
+			<!-- Header starts here -->
+			<div class="large-15 columns">
+				<ui:insert name="header">
+		        	Header
+				</ui:insert>
+				<p:menubar>
+					<p:menuitem value="#{translation.translate('HTmainPage')}" outcome="/index" />
+					<p:submenu label="#{translation.translate('HTshop')}" >
+						<p:menuitem value="#{translation.translate('HTballoons')}" outcome="/faces/balloons/balloons" />
+						<p:menuitem value="#{translation.translate('HTaccessories')}" outcome="/faces/balloons/round-balloons" />
+						<p:menuitem value="#{translation.translate('HToriginalGifts')}" outcome="/faces/balloons/round-balloons" />
+					</p:submenu>
+					
+					
+					<p:submenu label="#{translation.translate('HTballoons')}" >
+						<p:menuitem value="#{translation.translate('HTroundBalloons')}" outcome="/faces/balloons/round-balloons" />
+						<p:menuitem value="#{translation.translate('HTlightBalloons')}" outcome="/faces/balloons/light-balloons" />
+						<p:menuitem value="#{translation.translate('HTmodellingBalloons')}" outcome="/faces/balloons/modelling-balloons" />
+						<p:menuitem value="#{translation.translate('HTbouquetBalloons')}" outcome="/faces/balloons/bouquet-balloons" />
+						<p:menuitem value="#{translation.translate('HTlettersBalloons')}" outcome="/faces/balloons/letters-balloons" />
+						<p:menuitem value="#{translation.translate('HTweddingBalloons')}" outcome="/faces/balloons/wedding-balloons" />
+						<p:menuitem value="#{translation.translate('HTinscriptionBalloons')}" outcome="/faces/balloons/inscription-balloons" />
+						<p:menuitem value="#{translation.translate('HTheliumBalloons')}" outcome="/faces/balloons/helium-balloons" />
+					</p:submenu>
+					<p:submenu label="#{translation.translate('HTaccessories')}" rendered="false" >
+						<p:menuitem value="#{translation.translate('HTaccessoriesForWedding')}" outcome="/faces/balloons/balloonList" />
+						<p:menuitem value="#{translation.translate('HTaccessoriesForBirthday')}" outcome="/faces/balloons/balloonList" />
+						<p:menuitem value="#{translation.translate('HTaccessoriesForNewYear')}" outcome="/faces/balloons/balloonList" />
+						<p:menuitem value="#{translation.translate('HTallAccessories')}" outcome="/faces/balloons/balloonList" />
+					</p:submenu>
+					<p:submenu label="#{translation.translate('HToriginalGifts')}" rendered="false">
+					</p:submenu>
+					<p:submenu label="#{translation.translate('HTholidaysOrganization')}">
+						<p:menuitem value="#{translation.translate('HTsantaClaus')}" outcome="/faces/actions/santaClaus" />
+						<p:menuitem value="#{translation.translate('HToriginalCongratulation')}" outcome="/faces/actions/originalCongratulation" />
+						<p:menuitem value="#{translation.translate('HTanimatorAndToastmasterAndSoundman')}" outcome="/faces/actions/animatorAndToastMaster" />
+					</p:submenu>
+					
+					<p:menuitem value="#{translation.translate('HTorderAndDelivery')}"
+						outcome="/faces/orderAndDelivery"
+						containerStyleClass="ui-menubar-options"/>
+					<p:menuitem value="#{translation.translate('HTaboutUs')}"
+						outcome="/faces/aboutUs"
+						containerStyleClass="ui-menubar-options"/>
+					<p:submenu label="#{translation.translate('HTpromotions')}" styleClass="ui-menubar-options">
+						<p:menuitem value="#{translation.translate('HTactions')}" outcome="/faces/promotions/actions" />
+						<p:menuitem value="#{translation.translate('HTdiscountCards')}" outcome="/faces/promotions/discountCards" />
+						<p:menuitem value="#{translation.translate('HTgiftCertificates')}" outcome="/faces/promotions/giftCertificates" />
+					</p:submenu>
+				</p:menubar>
+			</div>
 		</div>
 	
 		<!-- Main content starts here -->
-		<div class="large-15 columns menuAndContent">
-			<div class="menuLeft">
+		<div class="row menuAndContent" style="margin-top: 1em">
+			<div class="large-3 columns menu-left">
+				<p:menu>
+			        <p:submenu label="Ajax">
+				        <p:menuitem value="#{translation.translate('HTroundBalloons')}" outcome="/faces/balloons/round-balloons" />
+						<p:menuitem value="#{translation.translate('HTlightBalloons')}" outcome="/faces/balloons/light-balloons" />
+						<p:menuitem value="#{translation.translate('HTmodellingBalloons')}" outcome="/faces/balloons/modelling-balloons" />
+						<p:menuitem value="#{translation.translate('HTbouquetBalloons')}" outcome="/faces/balloons/bouquet-balloons" />
+						<p:menuitem value="#{translation.translate('HTlettersBalloons')}" outcome="/faces/balloons/letters-balloons" />
+						<p:menuitem value="#{translation.translate('HTweddingBalloons')}" outcome="/faces/balloons/wedding-balloons" />
+						<p:menuitem value="#{translation.translate('HTinscriptionBalloons')}" outcome="/faces/balloons/inscription-balloons" />
+						<p:menuitem value="#{translation.translate('HTheliumBalloons')}" outcome="/faces/balloons/helium-balloons" />
+			        </p:submenu>
+			    </p:menu>
 				<ui:insert name="menuLeft" />
 			</div>
 	
-			<div class="content">
+			<div class="large-9 columns content">
 				<h:form id="mainFrom">
 					<ui:insert name="content" />
 				</h:form>
 			</div>
 	
-			<div class="menuRight">
-				<ui:insert name="menuRight">
+			<div class="large-3 columns menuRight">
+				Right menu
+				<ui:insert name="menu-rigth">
 					<ui:insert name="menuRight" />
 				</ui:insert>
 			</div>
@@ -90,11 +110,45 @@
 	
 	<!-- Footer starts here -->
     <div class="row page-footer">
-    <div class="large-15 columns">
-		<ui:insert name="footer">
-        	Footer
-		</ui:insert>
-	</div>
+	    <div class="large-15 columns">
+	    	<hr />
+			<ui:insert name="footer">
+	        	<div class="show-for-medium-up medium-5  large-5 columns">
+			        <div class="text-center large-12">
+			            <p>
+			                Студия праздников ""HappyTime.by"
+			                <br />
+			                Все права защищены
+			            </p>
+			        </div>
+			    </div>
+			    <div class="show-for-medium-up medium-5 large-5 columns ">
+			        <div class="text-center large-12 right">
+			            <p>
+			                8 (044) 711-710-4
+			                <br />
+			                8 (033) 664-29-83
+			            </p>
+			        </div>
+			        <div class="large-12 text-center right">
+			            <p>
+			                Режим работы:
+			                <br />
+			                Ужедневно с 9.00 до 22.00
+			            </p>
+			        </div>
+			    </div>
+			    <div class="small-12 medium-5 large-5 columns">
+			        <div class="text-center">
+			            <p>
+			                Спасибо, что выбрали нас!
+			                <br />
+			                Счастья Вам!
+			            </p>
+			        </div>
+			    </div>
+			</ui:insert>
+		</div>
 	</div>
 </h:body>
 </html>

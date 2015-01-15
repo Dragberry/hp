@@ -475,7 +475,5 @@ $cursor-text-value: text !default;
     // Make sure textarea takes on height automatically
     textarea { height: auto; min-height: 50px; }
 
-    // Make select elements 100% width by default
-    select { width: 100%; }
   }
 }

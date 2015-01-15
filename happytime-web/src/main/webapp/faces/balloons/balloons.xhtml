@@ -1,0 +1,33 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+	 xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui">
+    <ui:define name="title">
+	    Balloons - HappyTime.by
+	</ui:define>
+	    
+	<ui:define name="header">
+	    <h1><h:outputText value="HappyTime.by - Balloons" /></h1>
+	</ui:define>
+	
+	<ui:define name="content">
+		<div class="small-12 medium-12 large-12 columns">
+            <h4>
+                Студия праздников "HappyTime"
+            </h4>
+            <h5>
+                предлагает Вам огромный выбор воздушных шаров.
+            </h5>
+            <p>
+                Устройте праздник для любимой, удивите любимого, порадуйте своих детей, подарите улыбку родным,
+                доставьте удовольствие себе с шарами от студии праздников ' . MSGapplicationTitleQuotes . '.
+                А состав студии поможет Вам в этом.
+            </p>
+        </div>
+        <div class="small-12 medium-12 large-12 columns">
+            <img class="home-image" src="/images/balloons/balloons_common.png"/>
+        </div>
+	</ui:define>
+</ui:composition>

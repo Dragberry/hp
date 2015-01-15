@@ -66,7 +66,7 @@
 // $base-font-size: 100%;
 
 // The $base-font-size is 100% while $base-line-height is 150%
-// $base-line-height: 150%;
+ $base-line-height: 100%;
 
 // We use this to control whether or not CSS classes come through in the gem files.
 $include-html-classes: true;
@@ -79,8 +79,8 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
- $row-width: rem-calc(1650);
- $total-columns: 16;
+ $row-width: rem-calc(1280);
+ $total-columns: 15;
 
 // $last-child-float: $opposite-direction;
 
