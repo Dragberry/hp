@@ -10,8 +10,9 @@
 	    Discount Cards - HappyTime.by
 	</ui:define>
 	    
-	<ui:define name="header">
-	    <h1><h:outputText value="Discount Cards" /></h1>
+	<ui:define name="headerParams">
+		<ui:param name="mainHeaderTitle" value="Discount Cards - #{translation.translate('HTapplicationTitle')}"/>
+		<ui:param name="activeLink" value="menuPromotions"/>
 	</ui:define>
 	
 	<ui:define name="content">

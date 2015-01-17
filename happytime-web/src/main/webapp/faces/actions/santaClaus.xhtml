@@ -10,8 +10,9 @@
 	    Santa Claus - HappyTime.by
 	</ui:define>
 	    
-	<ui:define name="header">
-	    <h1><h:outputText value="Santa Claus" /></h1>
+	<ui:define name="headerParams">
+		<ui:param name="mainHeaderTitle" value="Santa Claus - #{translation.translate('HTapplicationTitle')}"/>
+		<ui:param name="activeLink" value="menuHolidaysOrganization"/>
 	</ui:define>
 	
 	<ui:define name="content">

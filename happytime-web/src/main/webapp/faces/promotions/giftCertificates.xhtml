@@ -10,8 +10,9 @@
 	    Gift Certificates - HappyTime.by
 	</ui:define>
 	    
-	<ui:define name="header">
-	    <h1><h:outputText value="Gift Certificates" /></h1>
+	<ui:define name="headerParams">
+		<ui:param name="mainHeaderTitle" value="Gift Certificates - #{translation.translate('HTapplicationTitle')}"/>
+		<ui:param name="activeLink" value="menuPromotions"/>
 	</ui:define>
 	
 	<ui:define name="content">

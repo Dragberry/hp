@@ -47,13 +47,18 @@
 		<view-id value="/faces/promotions/giftCertificates.xhtml" />
 	</url-mapping>
 	
+	<!-- Shop -->
 	<url-mapping id="balloons">
 		<pattern value="/balloons" />
-		<view-id value="/faces/balloons/balloons.xhtml" />
+		<view-id value="/faces/shop/balloons.xhtml" />
 	</url-mapping>
-	<url-mapping id="balloons">
-		<pattern value="/round-balloons" />
-		<view-id value="/faces/balloons/round-balloons.xhtml" />
+	<url-mapping id="accessories">
+		<pattern value="/accessories" />
+		<view-id value="/faces/shop/accessories.xhtml" />
+	</url-mapping>
+	<url-mapping id="originalGifts">
+		<pattern value="/original-gifts" />
+		<view-id value="/faces/shop/originalGifts.xhtml" />
 	</url-mapping>
 
 </pretty-config>

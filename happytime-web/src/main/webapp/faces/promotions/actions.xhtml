@@ -10,8 +10,9 @@
 	    Actions - HappyTime.by
 	</ui:define>
 	    
-	<ui:define name="header">
-	    <h1><h:outputText value="Actions" /></h1>
+	<ui:define name="headerParams">
+		<ui:param name="mainHeaderTitle" value="Actions - #{translation.translate('HTapplicationTitle')}"/>
+		<ui:param name="activeLink" value="menuPromotions"/>
 	</ui:define>
 	
 	<ui:define name="content">

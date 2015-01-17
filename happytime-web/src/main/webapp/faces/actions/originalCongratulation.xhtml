@@ -10,8 +10,9 @@
 	    Original Congratulation - HappyTime.by
 	</ui:define>
 	    
-	<ui:define name="header">
-	    <h1><h:outputText value="Original Congratulation" /></h1>
+	<ui:define name="headerParams">
+		<ui:param name="mainHeaderTitle" value="Original Congratulations - #{translation.translate('HTapplicationTitle')}"/>
+		<ui:param name="activeLink" value="menuHolidaysOrganization"/>
 	</ui:define>
 	
 	<ui:define name="content">

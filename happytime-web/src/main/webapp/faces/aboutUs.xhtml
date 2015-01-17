@@ -10,8 +10,9 @@
 	    About Us - HappyTime.by
 	</ui:define>
 	    
-	<ui:define name="header">
-	    <h1><h:outputText value="About Us" /></h1>
+	<ui:define name="headerParams">
+		<ui:param name="mainHeaderTitle" value="About Us - #{translation.translate('HTapplicationTitle')}"/>
+		<ui:param name="activeLink" value="menuAboutUs"/>
 	</ui:define>
 	
 	<ui:define name="content">

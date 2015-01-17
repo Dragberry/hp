@@ -1,0 +1,32 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+	
+	#{navigation.setCurrentPage(activeLink)}
+
+	<div class="large-15 columns">
+		<h1>
+			<h:outputText value="#{mainHeaderTitle}" />
+		</h1>
+		<p:menubar>
+			<c:forEach var="unit" items="#{menuBean.model}">
+				<c:choose>
+					<c:when test="#{empty unit.nestedMenu}">
+						<p:menuitem id="#{unit.id}" value="#{unit.title}" outcome="#{unit.link}" containerStyleClass="#{unit.position} #{navigation.isActivePage(unit.id)}" />
+					</c:when>
+					<c:otherwise>
+						<p:submenu id="#{unit.id}" label="#{unit.title}" styleClass="#{unit.position} #{navigation.isActivePage(unit.id)}">
+							<c:forEach var="nestedUnit" items="#{unit.nestedMenu}">
+								<p:menuitem id="#{nestedUnit.id}" value="#{nestedUnit.title}" outcome="#{nestedUnit.link}" />
+							</c:forEach>
+						</p:submenu>
+					</c:otherwise>
+				</c:choose>
+			</c:forEach>			
+		</p:menubar>
+	</div>
+
+</ui:composition>
