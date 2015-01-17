@@ -31,5 +31,12 @@
 			<artifactId>javax.inject</artifactId>
 			<version>1</version>
 		</dependency>
+		
+		<!-- Apache Commons -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.0</version>
+		</dependency>
 	</dependencies>
 </project>

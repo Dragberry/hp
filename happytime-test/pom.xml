@@ -16,7 +16,7 @@
 
 	<dependencies>
 		<dependency>
-			<artifactId>happytime-dal</artifactId>
+			<artifactId>happytime-core</artifactId>
 			<groupId>by.happytime</groupId>
 			<version>${project.version}</version>
 		</dependency>
