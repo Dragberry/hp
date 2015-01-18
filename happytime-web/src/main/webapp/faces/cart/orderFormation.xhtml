@@ -1,0 +1,28 @@
+<ui:composition
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:shop="http://java.sun.com/jsf/composite/shop">
+	
+	<p:dataTable id="cartTable"
+		value="#{cart.orderUnitList}"
+		var="unit">
+		
+		<p:column headerText="Title">
+			<h:outputText value="#{unit.product.title}"/>
+			<p:graphicImage value="/resources/images/#{unit.product.imgLink}" width="100"/>
+		</p:column>
+		<p:column headerText="Count">
+			<h:outputText value="#{unit.quantity}"/>
+		</p:column>
+		<p:column headerText="Cost">
+			<h:outputText value="#{unit.product.cost}"/>
+		</p:column>
+		<p:column headerText="Full Cost">
+			<h:outputText value="#{unit.fullCost}"/>
+		</p:column>
+	</p:dataTable>
+	
+</ui:composition>

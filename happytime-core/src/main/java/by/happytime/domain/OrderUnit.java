@@ -1,5 +1,7 @@
 package by.happytime.domain;
 
+import java.math.BigDecimal;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -20,6 +22,13 @@ public class OrderUnit extends AbstractEntity {
     private Product product;
     @Column(name = "quantity")
     private Integer quantity;
+    
+    public BigDecimal getFullCost() {
+        if (product != null) {
+            return product.getCost().multiply(new BigDecimal(quantity));
+        }
+        return BigDecimal.ZERO;
+    }
 
     public Order getOrder() {
         return order;

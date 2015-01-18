@@ -24,6 +24,10 @@
 	</url-mapping>
 	
 	<!-- Right menu -->
+	<url-mapping id="cart">
+		<pattern value="/cart" />
+		<view-id value="/faces/cart/cart.xhtml" />
+	</url-mapping>
 	<url-mapping id="aboutUs">
 		<pattern value="/about-us" />
 		<view-id value="/faces/aboutUs.xhtml" />

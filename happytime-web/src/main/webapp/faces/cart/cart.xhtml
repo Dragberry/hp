@@ -1,0 +1,51 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+	 xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:shop="http://java.sun.com/jsf/composite/shop">
+    <ui:define name="title">
+	    Cart - HappyTime.by
+	</ui:define>
+	    
+	<ui:define name="headerParams">
+		<ui:param name="mainHeaderTitle" value="Cart - #{translation.translate('HTapplicationTitle')}"/>
+		<ui:param name="activeLink" value="menuCart"/>
+	</ui:define>
+	
+	<ui:define name="content">
+		<p:outputPanel id="cartMainPanel">
+			<h:outputText value="#{translation.translate(cart.currentStage.key)}"/>
+			<ui:include src="#{cart.currentStage.path}"/>
+		</p:outputPanel>
+		
+		<p:outputPanel id="cartNavigationPanel">
+			<p:commandButton id="cartNavigationPrevious"
+				value="Previous"
+				ajax="true"
+				process="@this"
+				actionListener="#{cart.previous}"
+				update="cartMainPanel, cartNavigationPanel"
+				rendered="#{cart.currentStage.hasPrevious()}" />
+			<p:commandButton id="cartNavigationNext"
+				value="Next"
+				ajax="true"
+				process="@this"
+				actionListener="#{cart.next}"
+				update="cartMainPanel, cartNavigationPanel"
+				rendered="#{cart.currentStage.hasNext()}"
+				disabled="#{empty cart.orderUnitList}"
+				oncomplete="cartReset()" />
+			<p:button id="cartNavigationSuccess"
+				value="Back To Main"
+				ajax="false"
+				outcome="/index"
+				rendered="#{cart.currentStage.successStage}" />
+		</p:outputPanel>
+		
+		<p:remoteCommand name="cartReset" actionListener="#{cart.reset}"/>
+		
+	</ui:define>
+		
+</ui:composition>

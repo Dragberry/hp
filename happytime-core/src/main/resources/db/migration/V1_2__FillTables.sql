@@ -30,6 +30,7 @@ INSERT INTO subcategory (category_id, title, description, created_date, last_mod
 INSERT INTO subcategory (category_id, title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (2, 'Аксессуары для Дня Рождения и юбилея', '', NOW(), NOW(), 1, 1);
 INSERT INTO subcategory (category_id, title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (2, 'Аксессуары на 8 марта', '', NOW(), NOW(), 1, 1);
 
+/*
 INSERT INTO product (title, cost, quantity, description, img_link, created_date, last_modified_date, created_by, last_modified_by) VALUES ("Шар круглый матовый 20 см", 1000, 50,  "Шар круглый матовый 20 см", "/images/balloons/red_round_balloon.png", NOW(), NOW(), 1, 1);
 INSERT INTO product_category (product_id, category_id) VALUES (1, 1);
 INSERT INTO product_subcategory (product_id, subcategory_id) VALUES (1, 1);
@@ -66,3 +67,4 @@ INSERT INTO product_subcategory (product_id, subcategory_id) VALUES (11, 1);
 INSERT INTO product (title, cost, quantity, description, img_link, created_date, last_modified_date, created_by, last_modified_by) VALUES ("Шар с металлическим цветом 15 см", 1000, 50,  "", "/images/balloons/yellow_round_balloon.png", NOW(), NOW(), 1, 1);
 INSERT INTO product_category (product_id, category_id) VALUES (12, 1);
 INSERT INTO product_subcategory (product_id, subcategory_id) VALUES (12, 1);
+*/

@@ -26,6 +26,8 @@ public class Product extends AbstractEntity {
     private Integer quantity;
     @Column(name = "description")
     private String description;
+    @Column(name = "full_description")
+    private String fullDescription;
     @Column(name = "img_link")
     private String imgLink;
     @ManyToMany(fetch = FetchType.EAGER)
@@ -40,7 +42,15 @@ public class Product extends AbstractEntity {
             joinColumns = {@JoinColumn(name = "product_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "subcategory_id", referencedColumnName = "id")})
     private List<Subcategory> subcategories = new ArrayList<Subcategory>();
-
+    @Column(name = "country")
+    private String country;
+    @Column(name = "manufacturer")
+    private String manufacturer;
+    @Column(name = "colors")
+    private String colors;
+    @Column(name = "keywords")
+    private String keywords;
+    
     public String getTitle() {
         return title;
     }
@@ -95,6 +105,46 @@ public class Product extends AbstractEntity {
 
     public void setSubcategories(List<Subcategory> subcategories) {
         this.subcategories = subcategories;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
+    public String getColors() {
+        return colors;
+    }
+
+    public void setColors(String colors) {
+        this.colors = colors;
+    }
+
+    public String getKeywords() {
+        return keywords;
+    }
+
+    public void setKeywords(String keywords) {
+        this.keywords = keywords;
+    }
+
+    public String getFullDescription() {
+        return fullDescription;
+    }
+
+    public void setFullDescription(String fullDescription) {
+        this.fullDescription = fullDescription;
     }
 
 }

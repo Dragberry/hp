@@ -8,6 +8,7 @@ import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
 
 import by.happytime.domain.Product;
+import by.happytime.model.Cart;
 import by.happytime.repository.ProductRepo;
 
 @ManagedBean(name = "productController")
@@ -18,6 +19,13 @@ public class ProductController implements Serializable {
     
     @ManagedProperty("#{productRepo}")
 	private ProductRepo productRepo;
+    @ManagedProperty("#{cart}")
+    private Cart cart;
+    
+    public void addToCart(Product product) {
+        cart.addOrderUnit(product);
+    }
+    
 
     public List<Product> getProductList() {
     	return productRepo.findAll();
@@ -30,5 +38,13 @@ public class ProductController implements Serializable {
 	public void setProductRepo(ProductRepo productRepo) {
 		this.productRepo = productRepo;
 	}
+
+    public Cart getCart() {
+        return cart;
+    }
+
+    public void setCart(Cart cart) {
+        this.cart = cart;
+    }
     
 }

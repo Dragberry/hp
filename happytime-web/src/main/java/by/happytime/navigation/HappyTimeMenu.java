@@ -75,6 +75,13 @@ public class HappyTimeMenu implements Serializable {
         menuAnimatorAndToastmasterAndSoundman.setTitle(translation.translate("HTanimatorAndToastmasterAndSoundman"));
         menuHolidaysOrganization.add(menuAnimatorAndToastmasterAndSoundman);
         
+        MenuUnit menuCart = new MenuUnit();
+        menuCart.setId("menuCart");
+        menuCart.setLink("/faces/cart/cart");
+        menuCart.setTitle(translation.translate("HTcart"));
+        menuCart.setPosition(MenuUnit.LEFT_POSITION_CLASS);
+        model.add(menuCart);
+        
         MenuUnit menuOrderAndDelivery = new MenuUnit();
         menuOrderAndDelivery.setId("menuOrderAndDelivery");
         menuOrderAndDelivery.setLink("/faces/orderAndDelivery");

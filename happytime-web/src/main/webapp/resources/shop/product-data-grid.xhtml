@@ -22,9 +22,14 @@
         rowsPerPageTemplate="6,12,16">
  
         <p:panel header="#{product.title}" style="text-align:center">
-	        <h:outputText value="#{product.title}" />
-	        <h:commandButton id="addToCartButton"
-	        	value="#{translation.translate('HTaddToCart')}" />
+        	<p:graphicImage value="/resources/images/#{product.imgLink}"
+        		title="#{product.keywords}"/>
+	        <h:outputText value="#{product.description}" />
+	        <p:commandButton id="addToCartButton"
+	        	value="#{translation.translate('HTaddToCart')}"
+	        	ajax="true"
+	        	process="@this"
+	        	actionListener="#{cc.attrs.productController.addToCart(product)}" />
         </p:panel>
  
     </p:dataGrid>
