@@ -56,8 +56,16 @@
 		<pattern value="/balloons" />
 		<view-id value="/faces/shop/balloons.xhtml" />
 	</url-mapping>
+	<url-mapping id="balloonsParams">
+		<pattern value="/balloons/#{subcategory}" />
+		<view-id value="/faces/shop/balloons.xhtml" />
+	</url-mapping>
 	<url-mapping id="accessories">
 		<pattern value="/accessories" />
+		<view-id value="/faces/shop/accessories.xhtml" />
+	</url-mapping>
+	<url-mapping id="accessoriesParams">
+		<pattern value="/accessories/#{subcategory}" />
 		<view-id value="/faces/shop/accessories.xhtml" />
 	</url-mapping>
 	<url-mapping id="originalGifts">

@@ -19,6 +19,8 @@ public class Subcategory extends AbstractEntity {
 
     @Column(name = "title")
     private String title;
+    @Column(name = "code")
+    private String code;
     @Column(name = "description")
     private String description;
     @ManyToOne
@@ -50,5 +52,21 @@ public class Subcategory extends AbstractEntity {
     public void setCategory(Category category) {
         this.category = category;
     }
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public List<Product> getProducts() {
+		return products;
+	}
+
+	public void setProducts(List<Product> products) {
+		this.products = products;
+	}
     
 }

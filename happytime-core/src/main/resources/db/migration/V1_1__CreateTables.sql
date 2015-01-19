@@ -42,6 +42,7 @@ CREATE TABLE user_role (
 CREATE TABLE category (
 	id BIGINT AUTO_INCREMENT NOT NULL,
     title VARCHAR(50),
+    code VARCHAR(32),
     description VARCHAR(255),
     created_date TIMESTAMP, 
     last_modified_date TIMESTAMP,
@@ -56,6 +57,7 @@ CREATE TABLE subcategory (
 	id BIGINT AUTO_INCREMENT  NOT NULL,
     category_id BIGINT,
     title VARCHAR(50),
+    code VARCHAR(32),
     description VARCHAR(255),
     created_date TIMESTAMP, 
     last_modified_date TIMESTAMP,

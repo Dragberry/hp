@@ -14,21 +14,25 @@ INSERT INTO user_role (user_id, role_id) VALUES (
 INSERT INTO user_role (user_id, role_id) VALUES (
 	(SELECT id FROM user WHERE login = 'guest'), (SELECT id FROM role WHERE `value` = 'guest'));
     
-INSERT INTO category (title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES ('Воздушные шары', 'Воздушные шары', NOW(), NOW(), 1, 1);
-INSERT INTO category (title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES ('Аксессуары', 'Аксессуары', NOW(), NOW(), 1, 1);
+INSERT INTO category (title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES ('Воздушные шары', 'balloons', 'Воздушные шары', NOW(), NOW(), 1, 1);
+INSERT INTO category (title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES ('Аксессуары', 'accessories',  'Аксессуары', NOW(), NOW(), 1, 1);
 
-INSERT INTO subcategory (category_id, title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Круглые шары', '', NOW(), NOW(), 1, 1);
-INSERT INTO subcategory (category_id, title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Светящиеся шары', '', NOW(), NOW(), 1, 1);
-INSERT INTO subcategory (category_id, title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Шары для моделирования', '', NOW(), NOW(), 1, 1);
-INSERT INTO subcategory (category_id, title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Букеты и слова из шаров', '', NOW(), NOW(), 1, 1);
-INSERT INTO subcategory (category_id, title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Шары с надписью', '', NOW(), NOW(), 1, 1);
-INSERT INTO subcategory (category_id, title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Свадебные шары', '', NOW(), NOW(), 1, 1);
-INSERT INTO subcategory (category_id, title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Шары с гелием', '', NOW(), NOW(), 1, 1);
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Круглые шары', 'round-balloons', '', NOW(), NOW(), 1, 1);
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Светящиеся шары', 'light-balloons', '', NOW(), NOW(), 1, 1);
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Шары для моделирования', 'modelling-balloons', '', NOW(), NOW(), 1, 1);
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Букеты из шаров', 'bouquet-balloons', '', NOW(), NOW(), 1, 1);
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Шары с надписью', 'inscription-balloons', '', NOW(), NOW(), 1, 1);
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Свадебные шары', 'wedding-balloons', '', NOW(), NOW(), 1, 1);
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Шары с гелием', 'helium-balloons', '', NOW(), NOW(), 1, 1);
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Буквы и слова из шаров', 'letters-balloons', '', NOW(), NOW(), 1, 1);
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Фольгированные шары', 'foil-balloons', '', NOW(), NOW(), 1, 1);
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (1, 'Фигурные шары', 'figured-balloons', '', NOW(), NOW(), 1, 1);
 
-INSERT INTO subcategory (category_id, title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (2, 'Аксессуары новогодние', '', NOW(), NOW(), 1, 1);
-INSERT INTO subcategory (category_id, title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (2, 'Аксессуары свадебные', '', NOW(), NOW(), 1, 1);
-INSERT INTO subcategory (category_id, title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (2, 'Аксессуары для Дня Рождения и юбилея', '', NOW(), NOW(), 1, 1);
-INSERT INTO subcategory (category_id, title, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (2, 'Аксессуары на 8 марта', '', NOW(), NOW(), 1, 1);
+
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (2, 'Аксессуары новогодние', 'new-year-accessories', '', NOW(), NOW(), 1, 1);
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (2, 'Аксессуары свадебные', 'wedding-accessories', '', NOW(), NOW(), 1, 1);
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (2, 'Аксессуары для Дня Рождения и юбилея', 'birthday-accessories', '', NOW(), NOW(), 1, 1);
+INSERT INTO subcategory (category_id, title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES (2, 'Аксессуары на 8 марта', 'eight-march-accessories', '', NOW(), NOW(), 1, 1);
 
 /*
 INSERT INTO product (title, cost, quantity, description, img_link, created_date, last_modified_date, created_by, last_modified_by) VALUES ("Шар круглый матовый 20 см", 1000, 50,  "Шар круглый матовый 20 см", "/images/balloons/red_round_balloon.png", NOW(), NOW(), 1, 1);

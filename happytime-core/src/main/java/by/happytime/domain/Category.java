@@ -19,6 +19,8 @@ public class Category extends AbstractEntity {
     
     @Column(name = "title")
     private String title;
+    @Column(name = "code")
+    private String code;
     @Column(name = "description")
     private String description;
     @OneToMany(fetch = FetchType.EAGER)
@@ -58,5 +60,12 @@ public class Category extends AbstractEntity {
     public void setProducts(List<Product> products) {
         this.products = products;
     }
-    
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
 }

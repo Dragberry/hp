@@ -2,12 +2,18 @@ package by.happytime.navigation;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
 
+import by.happytime.domain.Category;
+import by.happytime.domain.Subcategory;
+import by.happytime.repository.CategoryRepo;
+import by.happytime.repository.SubcategoryRepo;
 import by.happytime.util.Translation;
 
 @ManagedBean(name = "menuBean")
@@ -16,10 +22,33 @@ public class HappyTimeMenu implements Serializable {
 
     private static final long serialVersionUID = -6394021934348528104L;
     
+    private static final Map<Long, List<MenuUnit>> CATEGORY_MENU = new HashMap<Long, List<MenuUnit>>();
+    static {
+    	CATEGORY_MENU.put(1L, null);
+    	CATEGORY_MENU.put(2L, null);
+    }
+    
     @ManagedProperty("#{translation}")
     private Translation translation;
+    @ManagedProperty("#{categoryRepo}")
+    private CategoryRepo categoryRepo;
+    @ManagedProperty("#{subcategoryRepo}")
+    private SubcategoryRepo subcategoryRepo;
     
     private List<MenuUnit> model = null;
+    
+    public void initializeSubMenu(Long categoryId) {
+    	CATEGORY_MENU.put(categoryId, new ArrayList<MenuUnit>());
+    	Category category = categoryRepo.findOne(categoryId);
+    	List<Subcategory> subcategories = subcategoryRepo.findByCategory(category);
+    	for (Subcategory subcategory : subcategories) {
+    		MenuUnit unit = new MenuUnit();
+    		unit.setTitle(subcategory.getTitle());
+    		unit.setId(subcategory.getCode());
+    		unit.setLink("/faces/shop/" + category.getCode() + "?subcategory=" + subcategory.getCode());
+    		CATEGORY_MENU.get(categoryId).add(unit);
+    	}
+    }
     
     public void initialize() {
         model = new ArrayList<MenuUnit>();
@@ -128,6 +157,20 @@ public class HappyTimeMenu implements Serializable {
         }
         return model;
     }
+    
+    public List<MenuUnit> getBalloonsMenu() {
+		if (CATEGORY_MENU.get(1L) == null) {
+			initializeSubMenu(1L);
+		}
+		return CATEGORY_MENU.get(1L);
+	}
+    
+    public List<MenuUnit> getAccessoriesMenu() {
+		if (CATEGORY_MENU.get(2L) == null) {
+			initializeSubMenu(2L);
+		}
+		return CATEGORY_MENU.get(2L);
+	}
 
     public Translation getTranslation() {
         return translation;
@@ -136,5 +179,21 @@ public class HappyTimeMenu implements Serializable {
     public void setTranslation(Translation translation) {
         this.translation = translation;
     }
+
+	public SubcategoryRepo getSubcategoryRepo() {
+		return subcategoryRepo;
+	}
+
+	public void setSubcategoryRepo(SubcategoryRepo subcategoryRepo) {
+		this.subcategoryRepo = subcategoryRepo;
+	}
+
+	public CategoryRepo getCategoryRepo() {
+		return categoryRepo;
+	}
+
+	public void setCategoryRepo(CategoryRepo categoryRepo) {
+		this.categoryRepo = categoryRepo;
+	}
 
 }
