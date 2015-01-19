@@ -5,10 +5,12 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:c="http://java.sun.com/jsp/jstl/core">
 	
+	#{navigation.setCurrentSubPage(activeSubLink)}
+	
 	<p:menu>
         <p:submenu label="#{translation.translate('HTmenu')}">
         	<c:forEach var="unit" items="#{menuModel}">
-        		<p:menuitem id="#{unit.id}" value="#{unit.title}" outcome="#{unit.link}" />
+        		<p:menuitem id="#{unit.id}" value="#{unit.title}" outcome="#{unit.link}" styleClass="#{navigation.isActiveSubPage(unit.id)}" />
         	</c:forEach>
         </p:submenu>
     </p:menu>

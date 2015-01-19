@@ -15,7 +15,7 @@ public class Navigation implements Serializable {
     
     private static final Map<String, String> CURRENT_SUBPAGE = new HashMap<String, String>();
     {
-    	CURRENT_SUBPAGE.put("menubBalloons", "");
+    	CURRENT_SUBPAGE.put("menuBalloons", "");
     	CURRENT_SUBPAGE.put("menuAccessories", "");
     	CURRENT_SUBPAGE.put("menuOriginalGifts", "");
     }
@@ -27,6 +27,17 @@ public class Navigation implements Serializable {
             return pageId.equals(currentPage) ? "menu-active" : "";
         }
         return "";
+    }
+    
+    public String isActiveSubPage(String pageId) {
+        if (pageId != null && CURRENT_SUBPAGE.get(currentPage) != null) {
+            return CURRENT_SUBPAGE.get(currentPage).equals(pageId) ? "menu-active" : "";
+        }
+        return "";
+    }
+    
+    public void setCurrentSubPage(String currentSubPage) {
+    	CURRENT_SUBPAGE.put(this.currentPage, currentSubPage);
     }
     
     public void setCurrentPage(String currentPage) {
