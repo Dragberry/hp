@@ -50,6 +50,21 @@ public class HappyTimeMenu implements Serializable {
     	}
     }
     
+    private MenuUnit initializeShopMenu() {
+        MenuUnit shopUnit = new MenuUnit();
+        shopUnit.setId("menuShop");
+        shopUnit.setTitle(translation.translate("HTshop"));
+        List<Category> categoryList = categoryRepo.findAll();
+        for (Category category : categoryList) {
+            MenuUnit unit = new MenuUnit();
+            unit.setTitle(category.getTitle());
+            unit.setId(category.getCode());
+            unit.setLink("/faces/shop/" + category.getCode());
+            shopUnit.add(unit);
+        }
+        return shopUnit;
+    }
+    
     public void initialize() {
         model = new ArrayList<MenuUnit>();
         MenuUnit menuIndex = new MenuUnit();
@@ -58,28 +73,8 @@ public class HappyTimeMenu implements Serializable {
         menuIndex.setTitle(translation.translate("HTmainPage"));
         model.add(menuIndex);
         
-        MenuUnit menuShop = new MenuUnit();
-        menuShop.setId("menuShop");
-        menuShop.setTitle(translation.translate("HTshop"));
+        MenuUnit menuShop = initializeShopMenu();
         model.add(menuShop);
-        
-        MenuUnit menuBalloons = new MenuUnit();
-        menuBalloons.setId("menubBalloons");
-        menuBalloons.setLink("/faces/shop/balloons");
-        menuBalloons.setTitle(translation.translate("HTballoons"));
-        menuShop.add(menuBalloons);
-        
-        MenuUnit menuAccessories = new MenuUnit();
-        menuAccessories.setId("menuAccessories");
-        menuAccessories.setLink("/faces/shop/accessories");
-        menuAccessories.setTitle(translation.translate("HTaccessories"));
-        menuShop.add(menuAccessories);
-        
-        MenuUnit menuOriginalGifts = new MenuUnit();
-        menuOriginalGifts.setId("menuOriginalGifts");
-        menuOriginalGifts.setLink("/faces/shop/originalGifts");
-        menuOriginalGifts.setTitle(translation.translate("HToriginalGifts"));
-        menuShop.add(menuOriginalGifts);
         
         MenuUnit menuHolidaysOrganization = new MenuUnit();
         menuHolidaysOrganization.setId("menuHolidaysOrganization");

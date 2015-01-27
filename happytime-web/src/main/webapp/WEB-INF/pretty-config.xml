@@ -52,6 +52,10 @@
 	</url-mapping>
 	
 	<!-- Shop -->
+	<url-mapping id="productDetails">
+		<pattern value="/product/#{productId}" />
+		<view-id value="/faces/shop/product.xhtml" />
+	</url-mapping>
 	<url-mapping id="balloons">
 		<pattern value="/balloons" />
 		<view-id value="/faces/shop/balloons.xhtml" />

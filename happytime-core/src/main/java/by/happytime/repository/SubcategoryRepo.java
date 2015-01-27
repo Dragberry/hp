@@ -10,6 +10,8 @@ public interface SubcategoryRepo extends BaseRepo<Subcategory> {
     
     Subcategory findByTitle(String title);
     
+    Subcategory findByCode(String code);
+    
     List<Subcategory> findByCategory(Category category);
 
 }

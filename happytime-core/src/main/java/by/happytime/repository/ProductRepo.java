@@ -15,5 +15,9 @@ public interface ProductRepo extends BaseRepo<Product> {
     
     @Query("SELECT p FROM Product p INNER JOIN p.subcategories c WHERE c IN (:subcategories)")
     Page<Product> findBySubcategories(@Param("subcategories") List<Subcategory> subcategories, Pageable page);
+    
+    Long countBySubcategories(List<Subcategory> subcategories);
+    
+    Page<Product> findAll(Pageable page);
 
 }

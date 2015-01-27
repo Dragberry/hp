@@ -2,18 +2,28 @@ package by.happytime.contoller;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
+import javax.faces.context.FacesContext;
 
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.mail.DefaultAuthenticator;
+import org.apache.commons.mail.Email;
+import org.apache.commons.mail.EmailException;
+import org.apache.commons.mail.SimpleEmail;
+import org.primefaces.event.data.PageEvent;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
 import by.happytime.domain.Product;
 import by.happytime.domain.Subcategory;
 import by.happytime.model.Cart;
+import by.happytime.model.ProductDetailsModel;
+import by.happytime.model.ProductModel;
 import by.happytime.repository.ProductRepo;
 import by.happytime.repository.SubcategoryRepo;
 
@@ -29,15 +39,69 @@ public class ProductController implements Serializable {
     private SubcategoryRepo subcategoryRepo;
     @ManagedProperty("#{cart}")
     private Cart cart;
+    @ManagedProperty("#{productModel}")
+    private ProductModel productModel;
+    @ManagedProperty("#{productDetailsModel}")
+    private ProductDetailsModel productDetailsModel;
+    
+    public void doSearch(String subcategory) {
+        if (StringUtils.isNotBlank(subcategory)) {
+            List<Subcategory> subcategoryList = new ArrayList<Subcategory>();
+            Subcategory sc = subcategoryRepo.findByCode(subcategory);
+            subcategoryList.add(sc);
+            productModel.getDataModel().setSubcategoryList(subcategoryList);
+        } else {
+            productModel.getDataModel().setSubcategoryList(null);
+        }
+    }
+    
+    public void initializeProductPage(String productId) {
+        try {
+            Long id = Long.valueOf(productId);
+            Product product = productRepo.findOne(id);
+            if (product == null) {
+                productDetailsModel.setProduct(getStubProduct());
+            } else {
+                productDetailsModel.setProduct(product);
+            }
+        } catch (NumberFormatException e) {
+            productDetailsModel.setProduct(getStubProduct()); 
+        }
+    }
+    
+    public void onPageChange(PageEvent event) {
+        
+    }
+    
+    private Product getStubProduct() {
+        Product product = new Product();
+        product.setTitle("Извините, по данному запросу продукт не найден");
+        product.setImgLink("no_photo.jpg");
+        product.setDescription("Извините, по данному запросу продукт не найден");
+        return product;
+    }
     
     public void addToCart(Product product) {
+        
         cart.addOrderUnit(product);
     }
     
+    public static void main(String[] args) throws EmailException {
+        Email email = new SimpleEmail();
+        email.setHostName("smtp.googlemail.com");
+        email.setSmtpPort(465);
+        email.setAuthenticator(new DefaultAuthenticator("makseemkadragun", "NoMoreSorrow123"));
+        email.setSSLOnConnect(true);
+        email.setFrom("makseemkadragun@gmail.com");
+        email.setSubject("TestMail");
+        email.setMsg("This is a test mail ... :-)");
+        email.addTo("makseemkadragun@gmail.com");
+        email.send();
+    }
 
     public List<Product> getProductList() {
         List<Subcategory> sb = new ArrayList<Subcategory>();
-        sb.add(subcategoryRepo.findOne(2L));
+        sb.add(productModel.getSubcategory());
         Page<Product> productPage = productRepo.findBySubcategories(sb, new PageRequest(0, 6));
     	return productPage.getContent();
     }
@@ -63,9 +127,24 @@ public class ProductController implements Serializable {
         return subcategoryRepo;
     }
 
-
     public void setSubcategoryRepo(SubcategoryRepo subcategoryRepo) {
         this.subcategoryRepo = subcategoryRepo;
+    }
+
+    public ProductModel getProductModel() {
+        return productModel;
+    }
+
+    public void setProductModel(ProductModel productModel) {
+        this.productModel = productModel;
+    }
+
+    public ProductDetailsModel getProductDetailsModel() {
+        return productDetailsModel;
+    }
+
+    public void setProductDetailsModel(ProductDetailsModel productDetailsModel) {
+        this.productDetailsModel = productDetailsModel;
     }
     
 }

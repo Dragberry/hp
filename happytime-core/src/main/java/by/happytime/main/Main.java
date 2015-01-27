@@ -1,5 +1,11 @@
 package by.happytime.main;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.math.BigDecimal;
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
@@ -30,22 +36,35 @@ import by.happytime.security.PasswordHash;
 
 public class Main {
     
-    public static void main(String[] args) throws NoSuchAlgorithmException, InvalidKeySpecException {
-        System.out.println(TimeZone.getDefault().getDisplayName());
+    public static void main(String[] args) throws NoSuchAlgorithmException, InvalidKeySpecException, IOException {
         
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        UserRepo userRepo = context.getBean(UserRepo.class);
-        CategoryRepo categoryRepo = context.getBean(CategoryRepo.class);
-        SubcategoryRepo subcategoryRepo = context.getBean(SubcategoryRepo.class);
-        ProductRepo productRepo = context.getBean(ProductRepo.class);
-        RoleRepo roleRepo = context.getBean(RoleRepo.class);
-        OrderRepo orderRepo = context.getBean(OrderRepo.class);
-        OrderUnitRepo orderUnitRepo = context.getBean(OrderUnitRepo.class);
+        int i = 0;
         
-        Order balloonOrder = orderRepo.findOne(2L);
-        balloonOrder.getOrderUnits().get(0).setQuantity((int) (Math.random() * 1000));
-        balloonOrder.setStatus(OrderStatus.SENT);
-        orderRepo.save(balloonOrder);
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        
+        
+        bufferedReader.readLine();
+        bufferedReader.readLine();
+        
+        
+        
+//        System.out.println(TimeZone.getDefault().getDisplayName());
+//        
+//        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+//        UserRepo userRepo = context.getBean(UserRepo.class);
+//        CategoryRepo categoryRepo = context.getBean(CategoryRepo.class);
+//        SubcategoryRepo subcategoryRepo = context.getBean(SubcategoryRepo.class);
+//        ProductRepo productRepo = context.getBean(ProductRepo.class);
+//        RoleRepo roleRepo = context.getBean(RoleRepo.class);
+//        OrderRepo orderRepo = context.getBean(OrderRepo.class);
+//        OrderUnitRepo orderUnitRepo = context.getBean(OrderUnitRepo.class);
+//        
+//        Order balloonOrder = orderRepo.findOne(2L);
+//        balloonOrder.getOrderUnits().get(0).setQuantity((int) (Math.random() * 1000));
+//        balloonOrder.setStatus(OrderStatus.SENT);
+//        orderRepo.save(balloonOrder);
         /*
         Order order = new Order();
 
@@ -101,7 +120,7 @@ public class Main {
         productRepo.save(product);
         */
         
-        context.close();
+//        context.close();
     }
 
 }

@@ -7,23 +7,31 @@
 
 <composite:interface>
 	<composite:attribute name="сontroller" required="true"/>
+	<composite:attribute name="model" required="true"/>
 </composite:interface>
 
 <composite:implementation>
 	<p:dataGrid id="product-data-grid"
-		value="#{cc.attrs.productController.productList}"
+		value="#{cc.attrs.model.dataModel}"
        	var="product"  
 		columns="3" 
 		layout="grid"
         rows="12" 
+        lazy="true"
         paginator="true" 
         paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
         currentPageReportTemplate="{currentPage} #{translation.translate('HTpageOf')} {totalPages}"
         rowsPerPageTemplate="6,12,16">
+        
+        <p:ajax event="page" listener="#{cc.attrs.controller.onPageChange}" />
  
         <p:panel header="#{product.title}" style="text-align:center">
+        	<h:link value="Details" outcome="/faces/shop/product?productId=#{product.id}" target="_blank"/>
         	<p:graphicImage value="/resources/images/#{product.imgLink}"
-        		title="#{product.keywords}"/>
+        		alt="#{product.keywords}"/>
+       		<br/>
+       		<h:outputText value="#{product.cost}" />
+       		<br />
 	        <h:outputText value="#{product.description}" />
 	        <p:commandButton id="addToCartButton"
 	        	value="#{translation.translate('HTaddToCart')}"

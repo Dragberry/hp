@@ -1,14 +1,7 @@
 package by.happytime.domain;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -23,11 +16,6 @@ public class Category extends AbstractEntity {
     private String code;
     @Column(name = "description")
     private String description;
-    @OneToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "category_id")
-    private List<Subcategory> subgategories = new ArrayList<Subcategory>();
-    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "categories")
-    private List<Product> products = new ArrayList<Product>();
 
     public String getTitle() {
         return title;
@@ -43,22 +31,6 @@ public class Category extends AbstractEntity {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public List<Subcategory> getSubgategories() {
-        return subgategories;
-    }
-
-    public void setSubgategories(List<Subcategory> subgategories) {
-        this.subgategories = subgategories;
-    }
-
-    public List<Product> getProducts() {
-        return products;
-    }
-
-    public void setProducts(List<Product> products) {
-        this.products = products;
     }
 
 	public String getCode() {

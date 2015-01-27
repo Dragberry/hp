@@ -2,7 +2,9 @@ package by.happytime.domain;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -30,12 +32,6 @@ public class Product extends AbstractEntity {
     private String fullDescription;
     @Column(name = "img_link")
     private String imgLink;
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(
-            name = "product_category", 
-            joinColumns = {@JoinColumn(name = "product_id", referencedColumnName = "id")},
-            inverseJoinColumns = {@JoinColumn(name = "category_id", referencedColumnName = "id")})
-    private List<Category> categories = new ArrayList<Category>();
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "product_subcategory", 
@@ -92,11 +88,11 @@ public class Product extends AbstractEntity {
     }
 
     public List<Category> getCategories() {
-        return categories;
-    }
-
-    public void setCategories(List<Category> categories) {
-        this.categories = categories;
+        Set<Category> categories = new HashSet<Category>();
+       for (Subcategory subcategory : subcategories) {
+           categories.add(subcategory.getCategory());
+       }
+        return new ArrayList<Category>(categories);
     }
 
     public List<Subcategory> getSubcategories() {

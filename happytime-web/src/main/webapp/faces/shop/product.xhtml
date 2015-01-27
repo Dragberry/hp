@@ -1,0 +1,54 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+	 xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:shop="http://java.sun.com/jsf/composite/shop">
+    
+    <ui:define name="init">
+    	#{productController.initializeProductPage(param['productId'])}
+    </ui:define>
+    
+    <ui:define name="title">
+	    #{productDetailsModel.product.title} - HappyTime.by
+	</ui:define>
+	    
+	<ui:define name="headerParams">
+		<ui:param name="mainHeaderTitle" value="#{productDetailsModel.product.title} - #{translation.translate('HTapplicationTitle')}"/>
+		<ui:param name="activeLink" value="menuShop"/>
+	</ui:define>
+	
+	<ui:define name="menuLeft">
+		<ui:include src="/WEB-INF/templates/productMenu.xhtml">
+			<ui:param name="activeSubLink" value="#{param['subcategory']}"/>
+			<ui:param name="menuModel" value="#{menuBean.balloonsMenu}"/>
+		</ui:include>
+	</ui:define>
+	
+	<ui:define name="content">
+		<p:panelGrid columns="1">
+			<f:facet name="header">
+				<h:outputText value="#{productDetailsModel.product.title}"/>
+				<br />
+				<p:graphicImage value="/resources/images/#{productDetailsModel.product.imgLink}"
+        			alt="#{productDetailsModel.product.keywords}"/>
+			</f:facet>
+			
+			<h:outputText value="#{productDetailsModel.product.fullDescription}"/>
+			
+			<p:dataList value="#{productDetailsModel.product.categories}"
+				var="category"
+				type="ordered">
+				<h:outputText value="#{category.title}"/>
+			</p:dataList>
+			
+			<p:dataList value="#{productDetailsModel.product.subcategories}"
+				var="subcategory"
+				type="ordered">
+				<h:outputText value="#{subcategory.title}"/>
+			</p:dataList>
+		</p:panelGrid>
+	</ui:define>
+	
+</ui:composition>

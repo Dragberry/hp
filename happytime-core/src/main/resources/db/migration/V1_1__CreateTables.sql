@@ -90,13 +90,6 @@ CREATE TABLE product (
     CONSTRAINT fk_product_modified FOREIGN KEY (last_modified_by) REFERENCES user (id)
 ) ENGINE=INNODB;
 
-CREATE TABLE product_category (
-	product_id BIGINT NOT NULL,
-	category_id BIGINT NOT NULL,
-	CONSTRAINT fk_product_category FOREIGN KEY (product_id) REFERENCES product (id),
-	CONSTRAINT fk_category_product FOREIGN KEY (category_id) REFERENCES category (id)
-) ENGINE=INNODB;
-
 CREATE TABLE product_subcategory (
 	product_id BIGINT NOT NULL,
 	subcategory_id BIGINT NOT NULL,

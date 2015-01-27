@@ -22,7 +22,9 @@
 	</ui:define>
 	
 	<ui:define name="content">
-		<shop:product-data-grid productController="#{productController}"/>
+		#{productController.doSearch(param['subcategory'])}
+		<shop:product-data-grid controller="#{productController}"
+			model="#{productModel}"/>
 	</ui:define>
 	
 </ui:composition>
