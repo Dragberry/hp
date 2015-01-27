@@ -11,6 +11,8 @@
 </composite:interface>
 
 <composite:implementation>
+	<p:growl id="cartMessages" showDetail="true" /> 
+
 	<p:dataGrid id="product-data-grid"
 		value="#{cc.attrs.model.dataModel}"
        	var="product"  
@@ -37,7 +39,8 @@
 	        	value="#{translation.translate('HTaddToCart')}"
 	        	ajax="true"
 	        	process="@this"
-	        	actionListener="#{cc.attrs.productController.addToCart(product)}" />
+	        	actionListener="#{cc.attrs.controller.addToCart(product)}"
+	        	update="@([id$=cartMessages])" />
         </p:panel>
  
     </p:dataGrid>

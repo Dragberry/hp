@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
@@ -82,8 +83,8 @@ public class ProductController implements Serializable {
     }
     
     public void addToCart(Product product) {
-        
         cart.addOrderUnit(product);
+        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Added to cart:", product.getTitle()));
     }
     
     public static void main(String[] args) throws EmailException {
