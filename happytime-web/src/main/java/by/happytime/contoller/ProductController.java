@@ -20,11 +20,13 @@ import org.primefaces.event.data.PageEvent;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
+import by.happytime.domain.Category;
 import by.happytime.domain.Product;
 import by.happytime.domain.Subcategory;
 import by.happytime.model.Cart;
 import by.happytime.model.ProductDetailsModel;
 import by.happytime.model.ProductModel;
+import by.happytime.repository.CategoryRepo;
 import by.happytime.repository.ProductRepo;
 import by.happytime.repository.SubcategoryRepo;
 
@@ -36,6 +38,8 @@ public class ProductController implements Serializable {
     
     @ManagedProperty("#{productRepo}")
 	private ProductRepo productRepo;
+    @ManagedProperty("#{categoryRepo}")
+    private CategoryRepo categoryRepo;
     @ManagedProperty("#{subcategoryRepo}")
     private SubcategoryRepo subcategoryRepo;
     @ManagedProperty("#{cart}")
@@ -45,15 +49,20 @@ public class ProductController implements Serializable {
     @ManagedProperty("#{productDetailsModel}")
     private ProductDetailsModel productDetailsModel;
     
-    public void doSearch(String subcategory) {
-        if (StringUtils.isNotBlank(subcategory)) {
+    public void doSearch(String category, String subcategory) {
+        productModel.getDataModel().setCategoryList(null);
+        productModel.getDataModel().setSubcategoryList(null);
+        if (StringUtils.isNotBlank(category) && StringUtils.isBlank(subcategory)) {
+            List<Category> categoryList = new ArrayList<Category>();
+            Category c = categoryRepo.findByCode(category);
+            categoryList.add(c);
+            productModel.getDataModel().setCategoryList(categoryList);
+        } else if (StringUtils.isNotBlank(subcategory)) {
             List<Subcategory> subcategoryList = new ArrayList<Subcategory>();
             Subcategory sc = subcategoryRepo.findByCode(subcategory);
             subcategoryList.add(sc);
             productModel.getDataModel().setSubcategoryList(subcategoryList);
-        } else {
-            productModel.getDataModel().setSubcategoryList(null);
-        }
+        } 
     }
     
     public void initializeProductPage(String productId) {
@@ -146,6 +155,14 @@ public class ProductController implements Serializable {
 
     public void setProductDetailsModel(ProductDetailsModel productDetailsModel) {
         this.productDetailsModel = productDetailsModel;
+    }
+
+    public CategoryRepo getCategoryRepo() {
+        return categoryRepo;
+    }
+
+    public void setCategoryRepo(CategoryRepo categoryRepo) {
+        this.categoryRepo = categoryRepo;
     }
     
 }

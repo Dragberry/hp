@@ -6,5 +6,7 @@ import by.happytime.domain.Category;
 public interface CategoryRepo extends BaseRepo<Category> {
     
     Category findByTitle(String title);
+    
+    Category findByCode(String code);
 
 }

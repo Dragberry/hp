@@ -22,29 +22,32 @@
 		
 		<p:outputPanel id="cartNavigationPanel">
 			<p:commandButton id="cartNavigationPrevious"
-				value="Previous"
+				value="#{translation.translate('HTprevious')}"
 				ajax="true"
 				process="@this"
-				actionListener="#{cart.previous}"
+				action="#{cart.previous}"
 				update="cartMainPanel, cartNavigationPanel"
 				rendered="#{cart.currentStage.hasPrevious()}" />
 			<p:commandButton id="cartNavigationNext"
-				value="Next"
+				value="#{translation.translate('HTnext')}"
 				ajax="true"
-				process="@this"
-				actionListener="#{cart.next}"
+				partialSubmit="true"
+				process="@this @([id$=OrderInfo])"
+				action="#{cart.next}"
 				update="cartMainPanel, cartNavigationPanel"
 				rendered="#{cart.currentStage.hasNext()}"
 				disabled="#{empty cart.orderUnitList}"
 				oncomplete="cartReset()" />
 			<p:button id="cartNavigationSuccess"
-				value="Back To Main"
+				value="#{translation.translate('HTmainPage')}"
 				ajax="false"
 				outcome="/index"
 				rendered="#{cart.currentStage.successStage}" />
 		</p:outputPanel>
 		
-		<p:remoteCommand name="cartReset" actionListener="#{cart.reset}"/>
+		<p:remoteCommand name="cartReset" 
+			process="@this"
+			actionListener="#{cart.reset}"/>
 		
 	</ui:define>
 		

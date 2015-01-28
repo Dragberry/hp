@@ -53,25 +53,19 @@
 	
 	<!-- Shop -->
 	<url-mapping id="productDetails">
-		<pattern value="/product/#{productId}" />
+		<pattern value="/shop/product/#{productId}" />
 		<view-id value="/faces/shop/product.xhtml" />
 	</url-mapping>
-	<url-mapping id="balloons">
-		<pattern value="/balloons" />
-		<view-id value="/faces/shop/balloons.xhtml" />
+		<url-mapping id="productListSubcategory">
+		<pattern value="/shop/#{category}/#{subcategory}" />
+		<view-id value="/faces/shop/productList.xhtml" />
 	</url-mapping>
-	<url-mapping id="balloonsParams">
-		<pattern value="/balloons/#{subcategory}" />
-		<view-id value="/faces/shop/balloons.xhtml" />
+	<url-mapping id="productList">
+		<pattern value="/shop/#{category}/" />
+		<view-id value="/faces/shop/productList.xhtml" />
 	</url-mapping>
-	<url-mapping id="accessories">
-		<pattern value="/accessories" />
-		<view-id value="/faces/shop/accessories.xhtml" />
-	</url-mapping>
-	<url-mapping id="accessoriesParams">
-		<pattern value="/accessories/#{subcategory}" />
-		<view-id value="/faces/shop/accessories.xhtml" />
-	</url-mapping>
+	
+	
 	<url-mapping id="originalGifts">
 		<pattern value="/original-gifts" />
 		<view-id value="/faces/shop/originalGifts.xhtml" />

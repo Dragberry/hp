@@ -1,6 +1,5 @@
 package by.happytime.model.data;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -9,6 +8,7 @@ import org.primefaces.model.LazyDataModel;
 import org.primefaces.model.SortOrder;
 import org.springframework.data.domain.PageRequest;
 
+import by.happytime.domain.Category;
 import by.happytime.domain.Product;
 import by.happytime.domain.Subcategory;
 import by.happytime.repository.ProductRepo;
@@ -18,6 +18,8 @@ public class ProductLazyDataModel extends LazyDataModel<Product> {
     private static final long serialVersionUID = 2088725956257813305L;
     
     private ProductRepo productRepo = null;
+    
+    private List<Category> categoryList = null;
     
     private List<Subcategory> subcategoryList = null;
     
@@ -30,7 +32,10 @@ public class ProductLazyDataModel extends LazyDataModel<Product> {
         Integer pageNumber = first / pageSize;
         Long total = 0L;
         List<Product> products = null;
-        if (CollectionUtils.isNotEmpty(subcategoryList)) {
+        if (CollectionUtils.isNotEmpty(categoryList)) {
+            products = productRepo.findByCategories(categoryList, new PageRequest(pageNumber, pageSize)).getContent();
+            total = productRepo.countByCategories(categoryList);
+        } else if (CollectionUtils.isNotEmpty(subcategoryList)) {
             products = productRepo.findBySubcategories(subcategoryList, new PageRequest(pageNumber, pageSize)).getContent();
             total = productRepo.countBySubcategories(subcategoryList);
         } else {
@@ -56,6 +61,9 @@ public class ProductLazyDataModel extends LazyDataModel<Product> {
     public void setSubcategoryList(List<Subcategory> subcategoryList) {
         this.subcategoryList = subcategoryList;
     }
-    
+
+    public void setCategoryList(List<Category> categoryList) {
+        this.categoryList = categoryList;
+    }
     
 }
