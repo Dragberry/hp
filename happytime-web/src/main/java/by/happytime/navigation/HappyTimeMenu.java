@@ -37,12 +37,14 @@ public class HappyTimeMenu implements Serializable {
     
     private List<MenuUnit> model = null;
     
+    private MenuUnit catalogMenu = null;
+    
     public void initializeSubMenu(String categoryCode) {
     	CATEGORY_MENU.put(categoryCode, new ArrayList<MenuUnit>());
     	Category category = categoryRepo.findByCode(categoryCode);
     	
     	MenuUnit unitAll = new MenuUnit();
-        unitAll.setTitle("All");
+        unitAll.setTitle(translation.translate("HTall"));
         unitAll.setId("all");
         unitAll.setLink("/faces/shop/productList?category=" + category.getCode());
         CATEGORY_MENU.get(categoryCode).add(unitAll);
@@ -70,6 +72,34 @@ public class HappyTimeMenu implements Serializable {
             shopUnit.add(unit);
         }
         return shopUnit;
+    }
+    
+    public void initializeCatalogMenu() {
+        catalogMenu = new MenuUnit();
+        catalogMenu.setId("menuCatalog");
+        catalogMenu.setTitle(translation.translate("HTshop"));
+        List<Category> categoryList = categoryRepo.findAll();
+        for (Category category : categoryList) {
+            MenuUnit unit = new MenuUnit();
+            unit.setTitle(category.getTitle());
+            unit.setId(category.getCode() + "Catalog");
+            catalogMenu.add(unit);
+            
+            MenuUnit unitAll = new MenuUnit();
+            unitAll.setTitle(translation.translate("HTall"));
+            unitAll.setId(category.getCode() + "-all");
+            unitAll.setLink("/faces/shop/productList?category=" + category.getCode());
+            unit.add(unitAll);
+            
+            List<Subcategory> subcategories = subcategoryRepo.findByCategory(category);
+            for (Subcategory subcategory : subcategories) {
+                MenuUnit subUnit = new MenuUnit();
+                subUnit.setTitle(subcategory.getTitle());
+                subUnit.setId(subcategory.getCode() + "Catalog");
+                subUnit.setLink("/faces/shop/productList?category=" + category.getCode() + "&subcategory=" + subcategory.getCode());
+                unit.add(subUnit);
+            }
+        }
     }
     
     public void initialize() {
@@ -105,13 +135,6 @@ public class HappyTimeMenu implements Serializable {
         menuAnimatorAndToastmasterAndSoundman.setLink("/faces/actions/animatorAndToastMaster");
         menuAnimatorAndToastmasterAndSoundman.setTitle(translation.translate("HTanimatorAndToastmasterAndSoundman"));
         menuHolidaysOrganization.add(menuAnimatorAndToastmasterAndSoundman);
-        
-        MenuUnit menuCart = new MenuUnit();
-        menuCart.setId("menuCart");
-        menuCart.setLink("/faces/cart/cart");
-        menuCart.setTitle(translation.translate("HTcart"));
-        menuCart.setPosition(MenuUnit.LEFT_POSITION_CLASS);
-        model.add(menuCart);
         
         MenuUnit menuOrderAndDelivery = new MenuUnit();
         menuOrderAndDelivery.setId("menuOrderAndDelivery");
@@ -158,6 +181,13 @@ public class HappyTimeMenu implements Serializable {
             initialize();
         }
         return model;
+    }
+    
+    public MenuUnit getCatalogMenu() {
+        if (catalogMenu == null) {
+            initializeCatalogMenu();
+        }
+        return catalogMenu;
     }
     
     public List<MenuUnit> getShopMenu(String categoryCode) {

@@ -31,6 +31,10 @@ public class Cart implements Serializable {
     
     private String additionalInfo;
     
+    public int getProductCount() {
+        return orderUnitList.size();
+    }
+    
     public void next() {
         currentStage = currentStage.next();
     }

@@ -37,7 +37,7 @@
 		<div class="row menuAndContent" style="margin-top: 1em">
 			<div class="large-3 columns menu-left">
 				<ui:insert name="menuLeft">
-					Left menu
+					<ui:include src="/WEB-INF/templates/catalogMenu.xhtml"/>
 				</ui:insert>
 			</div>
 	
@@ -48,9 +48,10 @@
 			</div>
 	
 			<div class="large-3 columns menuRight">
-				Right menu
 				<ui:insert name="menu-rigth">
-					<ui:insert name="menuRight" />
+					<ui:insert name="menuRight">
+						<ui:include src="/WEB-INF/templates/cartPanel.xhtml"/>
+					</ui:insert>
 				</ui:insert>
 			</div>
 		</div>

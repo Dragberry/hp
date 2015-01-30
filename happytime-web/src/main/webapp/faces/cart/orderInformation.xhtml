@@ -11,31 +11,40 @@
     		<p:outputLabel value="#{translation.translate('HTfirstName')}:" for="firstNameOrderInfo"/>
     	</p:outputPanel>
     	<p:outputPanel layout="block" styleClass="large-6 columns">
-    		<p:inputText id="firstNameOrderInfo" value="#{cart.firstName}" />
+    		<p:inputText id="firstNameOrderInfo"
+    			value="#{cart.firstName}" 
+    			required="true"/>
     	</p:outputPanel>
     	<p:outputPanel layout="block" styleClass="large-6 columns">
     		<p:outputLabel value="#{translation.translate('HTlastName')}:" for="lastNameOrderInfo"/>
     	</p:outputPanel>
     	<p:outputPanel layout="block" styleClass="large-6 columns">
-    		<p:inputText id="lastNameOrderInfo" value="#{cart.lastName}" />
+    		<p:inputText id="lastNameOrderInfo" 
+    			value="#{cart.lastName}"
+    			required="true" />
     	</p:outputPanel>
     	<p:outputPanel layout="block" styleClass="large-6 columns">
     		<p:outputLabel value="#{translation.translate('HTstreet')}:" for="streetOrderInfo"/>
     	</p:outputPanel>
     	<p:outputPanel layout="block" styleClass="large-6 columns">
-    		 <p:inputText id="streetOrderInfo" value="#{cart.address.street}" />
+    		 <p:inputText id="streetOrderInfo" 
+    		 	value="#{cart.address.street}"
+    		 	required="true" />
     	</p:outputPanel>
     	<p:outputPanel layout="block" styleClass="large-6 columns">
     		<p:outputLabel value="#{translation.translate('HThouse')}:" for="houseOrderInfo"/>
     	</p:outputPanel>
     	<p:outputPanel layout="block" styleClass="large-6 columns">
-    		 <p:inputText id="houseOrderInfo" value="#{cart.address.house}" />
+    		 <p:inputText id="houseOrderInfo" 
+    		 	value="#{cart.address.house}"
+    		 	required="true" />
     	</p:outputPanel>
     	<p:outputPanel layout="block" styleClass="large-6 columns">
     		<p:outputLabel value="#{translation.translate('HThousing')}:" for="housingOrderInfo"/>
     	</p:outputPanel>
     	<p:outputPanel layout="block" styleClass="large-6 columns">
-    		 <p:inputText id="housingOrderInfo" value="#{cart.address.house}" />
+    		 <p:inputText id="housingOrderInfo" 
+    		 	value="#{cart.address.house}" />
     	</p:outputPanel>
     	<p:outputPanel layout="block" styleClass="large-6 columns">
     		<p:outputLabel value="#{translation.translate('HTflat')}:" for="flatOrderInfo"/>
@@ -47,7 +56,9 @@
     		<p:outputLabel value="#{translation.translate('HTphone')}:" for="phoneOrderInfo"/>
     	</p:outputPanel>
     	<p:outputPanel layout="block" styleClass="large-6 columns">
-    		 <p:inputText id="phoneOrderInfo" value="#{cart.phone}" />
+    		 <p:inputText id="phoneOrderInfo" 
+    		 	value="#{cart.phone}"
+    		 	required="true" />
     	</p:outputPanel>
     	<p:outputPanel layout="block" styleClass="large-6 columns">
     		<p:outputLabel value="#{translation.translate('HTadditionalInfo')}:" for="additionalInfoOrderInfo"/>

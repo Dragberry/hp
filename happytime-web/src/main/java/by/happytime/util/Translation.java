@@ -1,10 +1,10 @@
 package by.happytime.util;
 
 import java.io.Serializable;
+import java.text.MessageFormat;
 import java.util.ResourceBundle;
 
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 
@@ -24,7 +24,7 @@ public class Translation implements Serializable {
     }
 
     public String translate(String key, Object... params) {
-        return String.format(getResourceBundle().getString(key), params);
+        return MessageFormat.format(getResourceBundle().getString(key), params);
     }
 
 }
