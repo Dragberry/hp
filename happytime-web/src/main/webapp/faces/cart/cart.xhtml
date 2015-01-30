@@ -17,9 +17,10 @@
 	<ui:define name="content">
 		<p:outputPanel id="cartMainPanel">
 			<h:outputText value="#{translation.translate(cart.currentStage.key)}"/>
-			<ui:include src="#{cart.currentStage.path}"/>
+			<hr />
+			<ui:include src="/WEB-INF/templates/cart/#{cart.currentStage.path}"/>
 		</p:outputPanel>
-		
+		<hr />
 		<p:outputPanel id="cartNavigationPanel">
 			<p:commandButton id="cartNavigationPrevious"
 				value="#{translation.translate('HTprevious')}"
@@ -36,7 +37,7 @@
 				action="#{cart.next}"
 				update="cartMainPanel, cartNavigationPanel"
 				rendered="#{cart.currentStage.hasNext()}"
-				disabled="#{empty cart.orderUnitList}"
+				disabled="#{cart.emptyCart}"
 				oncomplete="cartReset()" />
 			<p:button id="cartNavigationSuccess"
 				value="#{translation.translate('HTmainPage')}"

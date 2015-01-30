@@ -91,7 +91,7 @@ public class ProductController implements Serializable {
     }
     
     public void addToCart(Product product) {
-        cart.addOrderUnit(product);
+    	cart.addProduct(product);
         FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Added to cart:", product.getTitle()));
     }
     

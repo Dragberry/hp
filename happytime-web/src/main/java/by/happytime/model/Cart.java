@@ -1,14 +1,14 @@
 package by.happytime.model;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
+import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
 import by.happytime.domain.Address;
-import by.happytime.domain.OrderUnit;
 import by.happytime.domain.Product;
 
 @ManagedBean(name = "cart")
@@ -19,7 +19,7 @@ public class Cart implements Serializable {
     
     private OrderStage currentStage = OrderStage.FORMATION;
     
-    private List<OrderUnit> orderUnitList = new ArrayList<OrderUnit>();
+    private Map<Product, Integer> orderedProductList = new HashMap<Product, Integer>();
     
     private Address address = new Address();
     
@@ -31,8 +31,36 @@ public class Cart implements Serializable {
     
     private String additionalInfo;
     
+    public void resetInfo() {
+    	phone = null;
+    	firstName = null;
+    	lastName = null;
+    	additionalInfo = null;
+    	address = new Address();
+    }
+    
+    public void resetCart() {
+    	orderedProductList = new HashMap<Product, Integer>();
+    }
+    
+    public boolean isEmptyCart() {
+    	return getProductCount() <= 0;
+    }
+    
     public int getProductCount() {
-        return orderUnitList.size();
+    	int total = 0;
+    	for (Map.Entry<Product, Integer> entry : orderedProductList.entrySet()) {
+    		total += entry.getValue();
+    	}
+        return total;
+    }
+    
+    public BigDecimal getTotalSum() {
+    	BigDecimal total = BigDecimal.ZERO;
+    	for (Map.Entry<Product, Integer> entry : orderedProductList.entrySet()) {
+    		total = total.add(entry.getKey().getCost().multiply(new BigDecimal(entry.getValue())));
+    	}
+    	return total;
     }
     
     public void next() {
@@ -45,32 +73,28 @@ public class Cart implements Serializable {
     
     public void reset() {
         if (currentStage == OrderStage.SUCCESS) {
-            orderUnitList = new ArrayList<OrderUnit>();
+        	resetCart();
+        	resetInfo();
             currentStage = OrderStage.FORMATION;
         }
     }
     
-    public void addOrderUnit(Product product) {
-        OrderUnit unit = new OrderUnit();
-        unit.setProduct(product);
-        unit.setQuantity(1);
-        orderUnitList.add(unit);
+    public void addProduct(Product product) {
+        if (orderedProductList.containsKey(product)) {
+        	Integer count = orderedProductList.get(product);
+        	count++;
+        	orderedProductList.put(product, count);
+        } else {
+        	orderedProductList.put(product, 1);
+        }
     }
-
+    
     public OrderStage getCurrentStage() {
         return currentStage;
     }
 
     public void setCurrentStage(OrderStage currentStage) {
         this.currentStage = currentStage;
-    }
-
-    public List<OrderUnit> getOrderUnitList() {
-        return orderUnitList;
-    }
-
-    public void setOrderUnitList(List<OrderUnit> orderUnitList) {
-        this.orderUnitList = orderUnitList;
     }
 
     public Address getAddress() {
@@ -112,5 +136,13 @@ public class Cart implements Serializable {
     public void setAdditionalInfo(String additionalInfo) {
         this.additionalInfo = additionalInfo;
     }
+
+	public Map<Product, Integer> getOrderedProductList() {
+		return orderedProductList;
+	}
+
+	public void setOrderedProductList(Map<Product, Integer> orderedProductList) {
+		this.orderedProductList = orderedProductList;
+	}
     
 }

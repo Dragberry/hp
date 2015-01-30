@@ -1,0 +1,38 @@
+<ui:composition
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:shop="http://java.sun.com/jsf/composite/shop">
+	
+	<p:dataTable id="cartTable"
+		value="#{cart.orderedProductList.entrySet().toArray()}"
+		var="unit">
+		
+		<p:column headerText="Title">
+			<h:outputText value="#{unit.key.title}"/>
+			<p:graphicImage value="/resources/images/#{unit.key.imgLink}" width="100"/>
+		</p:column>
+		<p:column headerText="Count">
+			<h:outputText value="#{unit.value}"/>
+		</p:column>
+		<p:column headerText="Cost">
+			<h:outputText value="#{unit.key.cost}"/>
+		</p:column>
+		<p:column headerText="Full Cost">
+			<h:outputText value="#{unit.key.cost * unit.value}"/>
+		</p:column>
+	</p:dataTable>
+	
+	<hr />
+    	
+   	<p:commandButton id="resetCartInfo"
+   		ajax="true"
+   		value="#{translation.translate('HTreset')}"
+   		process="@this"
+   		update="cartTable @([id$=cartNavigationPanel]) @([id$=cartPanel])"
+   		actionListener="#{cart.resetCart}">
+   	</p:commandButton>
+	
+</ui:composition>
