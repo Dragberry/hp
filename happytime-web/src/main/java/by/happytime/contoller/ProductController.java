@@ -28,6 +28,7 @@ import by.happytime.model.ProductModel;
 import by.happytime.repository.CategoryRepo;
 import by.happytime.repository.ProductRepo;
 import by.happytime.repository.SubcategoryRepo;
+import by.happytime.util.Translation;
 
 @ManagedBean(name = "productController")
 @RequestScoped
@@ -47,6 +48,8 @@ public class ProductController implements Serializable {
     private ProductModel productModel;
     @ManagedProperty("#{productDetailsModel}")
     private ProductDetailsModel productDetailsModel;
+    @ManagedProperty("#{translation}")
+	private Translation translation;
     
     public void doSearch(String category, String subcategory) {
         productModel.getDataModel().setCategoryList(null);
@@ -92,7 +95,7 @@ public class ProductController implements Serializable {
     
     public void addToCart(Product product) {
     	cart.addProduct(product);
-        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Added to cart:", product.getTitle()));
+        FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(translation.translate("HTaddedToCart"), product.getTitle()));
     }
     
     public static void main(String[] args) throws EmailException {
@@ -163,5 +166,13 @@ public class ProductController implements Serializable {
     public void setCategoryRepo(CategoryRepo categoryRepo) {
         this.categoryRepo = categoryRepo;
     }
+
+	public Translation getTranslation() {
+		return translation;
+	}
+
+	public void setTranslation(Translation translation) {
+		this.translation = translation;
+	}
     
 }

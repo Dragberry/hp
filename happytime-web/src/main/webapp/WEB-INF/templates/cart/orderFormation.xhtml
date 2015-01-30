@@ -10,17 +10,17 @@
 		value="#{cart.orderedProductList.entrySet().toArray()}"
 		var="unit">
 		
-		<p:column headerText="Title">
+		<p:column headerText="#{translation.translate('HTproductInfo')}">
 			<h:outputText value="#{unit.key.title}"/>
 			<p:graphicImage value="/resources/images/#{unit.key.imgLink}" width="100"/>
 		</p:column>
-		<p:column headerText="Count">
+		<p:column headerText="#{translation.translate('HTquantity')}">
 			<h:outputText value="#{unit.value}"/>
 		</p:column>
-		<p:column headerText="Cost">
+		<p:column headerText="#{translation.translate('HTcost')}">
 			<h:outputText value="#{unit.key.cost}"/>
 		</p:column>
-		<p:column headerText="Full Cost">
+		<p:column headerText="#{translation.translate('HTfullCost')}">
 			<h:outputText value="#{unit.key.cost * unit.value}"/>
 		</p:column>
 	</p:dataTable>
