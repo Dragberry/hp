@@ -8,7 +8,8 @@
 	
 	<p:dataTable id="cartTable"
 		value="#{cart.orderedProductList.entrySet().toArray()}"
-		var="unit">
+		var="unit"
+		emptyMessage="#{translation.translate('HTcartIsEmpty')}">
 		
 		<p:column headerText="#{translation.translate('HTproductInfo')}">
 			<h:outputText value="#{unit.key.title}"/>

@@ -11,10 +11,6 @@ import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.mail.DefaultAuthenticator;
-import org.apache.commons.mail.Email;
-import org.apache.commons.mail.EmailException;
-import org.apache.commons.mail.SimpleEmail;
 import org.primefaces.event.data.PageEvent;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -98,19 +94,6 @@ public class ProductController implements Serializable {
         FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(translation.translate("HTaddedToCart"), product.getTitle()));
     }
     
-    public static void main(String[] args) throws EmailException {
-        Email email = new SimpleEmail();
-        email.setHostName("smtp.googlemail.com");
-        email.setSmtpPort(465);
-        email.setAuthenticator(new DefaultAuthenticator("makseemkadragun", "NoMoreSorrow123"));
-        email.setSSLOnConnect(true);
-        email.setFrom("makseemkadragun@gmail.com");
-        email.setSubject("TestMail");
-        email.setMsg("This is a test mail ... :-)");
-        email.addTo("makseemkadragun@gmail.com");
-        email.send();
-    }
-
     public List<Product> getProductList() {
         List<Subcategory> sb = new ArrayList<Subcategory>();
         sb.add(productModel.getSubcategory());

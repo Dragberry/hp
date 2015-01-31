@@ -10,6 +10,49 @@
 	    <f:facet name="header">
 	    	<h:outputText value="#{translation.translate('HTplsCheckInfo')}"/>
 	    </f:facet>
+	    
+	    <p:panelGrid columns="2">
+	    	<p:outputLabel value="#{translation.translate('HTfirstName')}:" 
+    			for="firstNameOrderInfo"/>
+    		<h:outputText id="firstNameOrderInfo"
+    			value="#{cart.firstName}" />
+    			
+    		<p:outputLabel value="#{translation.translate('HTlastName')}:" 
+    			for="lastNameOrderInfo"/>
+    		<h:outputText id="lastNameOrderInfo" 
+    			value="#{cart.lastName}" />
+    			
+    		<p:outputLabel value="#{translation.translate('HTstreet')}:" 
+    			for="streetOrderInfo"/>
+    		<h:outputText id="streetOrderInfo" 
+    		 	value="#{cart.address.street}" />
+    		 	
+    		<p:outputLabel value="#{translation.translate('HThouse')}:" 
+    			for="houseOrderInfo"/>
+    		<h:outputText id="houseOrderInfo" 
+    		 	value="#{cart.address.house}" />
+    		 	
+    		<p:outputLabel value="#{translation.translate('HThousing')}:" 
+    			for="housingOrderInfo"/>
+    		<h:outputText id="housingOrderInfo"
+    		 	value="#{cart.address.housing}" />
+    	 	
+    	 	<p:outputLabel value="#{translation.translate('HTflat')}:" 
+    	 		for="flatOrderInfo"/>
+    	 	<h:outputText id="flatOrderInfo"
+    	 		value="#{cart.address.flat}" />
+    		
+    		<p:outputLabel value="#{translation.translate('HTphone')}:" 
+    			for="phoneOrderInfo"/>
+    		<h:outputText id="phoneOrderInfo" 
+    		 	value="#{cart.phone}" />
+    		
+    		<p:outputLabel value="#{translation.translate('HTadditionalInfo')}:" 
+    			for="additionalInfoOrderInfo"/>
+    		<h:outputText id="additionalInfoOrderInfo" 
+    			value="#{cart.additionalInfo}" />
+    		
+    	</p:panelGrid>
     
     </p:panel>
 	

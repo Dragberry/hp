@@ -7,7 +7,8 @@
 	
 	<p:panel id="cartPanel" header="#{translation.translate('HTcart')}">
 		<f:facet name="footer">
-			<h:link outcome="/faces/cart/cart" value="#{translation.translate('HTgoToCart')}"/>
+			<p:button outcome="/faces/cart/cart"
+				value="#{translation.translate('HTgoToCart')}"/>
 		</f:facet>
 		<h:outputText value="#{translation.translate('HTcartIsEmpty')}"
 			rendered="#{cart.emptyCart}"/>

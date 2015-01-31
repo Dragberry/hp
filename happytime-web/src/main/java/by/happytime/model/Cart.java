@@ -6,16 +6,33 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
 
+import org.apache.commons.mail.DefaultAuthenticator;
+import org.apache.commons.mail.Email;
+import org.apache.commons.mail.EmailConstants;
+import org.apache.commons.mail.EmailException;
+import org.apache.commons.mail.SimpleEmail;
+
 import by.happytime.domain.Address;
+import by.happytime.domain.Order;
+import by.happytime.domain.OrderStatus;
+import by.happytime.domain.OrderUnit;
 import by.happytime.domain.Product;
+import by.happytime.repository.OrderRepo;
+import by.happytime.repository.OrderUnitRepo;
 
 @ManagedBean(name = "cart")
 @SessionScoped
 public class Cart implements Serializable {
     
     private static final long serialVersionUID = 3123640144910331577L;
+    
+    @ManagedProperty("#{orderRepo}")
+    private OrderRepo orderRepo;
+    @ManagedProperty("#{orderUnitRepo}")
+    private OrderUnitRepo orderUnitRepo;
     
     private OrderStage currentStage = OrderStage.FORMATION;
     
@@ -63,10 +80,56 @@ public class Cart implements Serializable {
     	return total;
     }
     
-    public void next() {
+    public void next() throws EmailException {
+        if (currentStage == OrderStage.OVERVIEW) {
+            proccesOrder();
+        }
         currentStage = currentStage.next();
     }
     
+    private void proccesOrder() throws EmailException {
+        Order order = new Order();
+        order.setFirstName(firstName);
+        order.setLastName(lastName);
+        order.setCountry(null);
+        order.setCity(null);
+        order.setStreet(address.getStreet());
+        order.setHouse(address.getHouse());
+        order.setHousing(address.getHousing());
+        order.setFlat(address.getFlat());
+        order.setEmail(null);
+        order.setPhone(phone);
+        order.setAdditionalInfo(additionalInfo);
+        order.setStatus(OrderStatus.NEW);
+        order = orderRepo.save(order);
+        
+        for (Map.Entry<Product, Integer> entry : orderedProductList.entrySet()) {
+            OrderUnit unit = new OrderUnit();
+            unit.setOrder(order);
+            unit.setProduct(entry.getKey());
+            unit.setQuantity(entry.getValue());
+            orderUnitRepo.save(unit);
+        }
+        order = orderRepo.findOne(order.getId());
+        sendMail(order.toString());
+        
+    }
+    
+    public void sendMail(String mail) throws EmailException {
+        Email email = new SimpleEmail();
+        email.setCharset(EmailConstants.UTF_8);
+        email.setHostName("smtp.googlemail.com");
+        email.setSmtpPort(465);
+        email.setAuthenticator(new DefaultAuthenticator("makseemkadragun", "NoMoreSorrow123"));
+        email.setSSLOnConnect(true);
+        email.setFrom("makseemkadragun@gmail.com");
+        email.setSubject("Test order");
+        email.setMsg(mail);
+        email.addTo("max-hellfire@mail.ru");
+        email.addTo("yuria-25@mail.ru");
+        email.send();
+    }
+
     public void previous() {
         currentStage = currentStage.previous();
     }
@@ -144,5 +207,21 @@ public class Cart implements Serializable {
 	public void setOrderedProductList(Map<Product, Integer> orderedProductList) {
 		this.orderedProductList = orderedProductList;
 	}
+
+    public OrderRepo getOrderRepo() {
+        return orderRepo;
+    }
+
+    public void setOrderRepo(OrderRepo orderRepo) {
+        this.orderRepo = orderRepo;
+    }
+
+    public OrderUnitRepo getOrderUnitRepo() {
+        return orderUnitRepo;
+    }
+
+    public void setOrderUnitRepo(OrderUnitRepo orderUnitRepo) {
+        this.orderUnitRepo = orderUnitRepo;
+    }
     
 }

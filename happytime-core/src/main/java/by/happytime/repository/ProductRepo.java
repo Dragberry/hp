@@ -14,10 +14,10 @@ import by.happytime.domain.Subcategory;
 
 public interface ProductRepo extends BaseRepo<Product> {
     
-    @Query("SELECT p FROM Product p INNER JOIN p.subcategories c WHERE c IN (:subcategories)")
+    @Query("SELECT DISTINCT p FROM Product p INNER JOIN p.subcategories c WHERE c IN (:subcategories)")
     Page<Product> findBySubcategories(@Param("subcategories") List<Subcategory> subcategories, Pageable page);
     
-    @Query("SELECT p FROM Product p INNER JOIN p.subcategories sc INNER JOIN sc.category c WHERE c IN (:categories)")
+    @Query("SELECT DISTINCT p FROM Product p INNER JOIN p.subcategories sc INNER JOIN sc.category c WHERE c IN (:categories)")
     Page<Product> findByCategories(@Param("categories") List<Category> categories, Pageable page);
     
     Long countBySubcategories(List<Subcategory> subcategories);

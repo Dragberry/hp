@@ -22,7 +22,7 @@ public class HappyTimeMenu implements Serializable {
 
     private static final long serialVersionUID = -6394021934348528104L;
     
-    private static final Map<String, List<MenuUnit>> CATEGORY_MENU = new HashMap<String, List<MenuUnit>>();
+    private static final Map<String, MenuUnit> CATEGORY_MENU = new HashMap<String, MenuUnit>();
     static {
     	CATEGORY_MENU.put("balloons", null);
     	CATEGORY_MENU.put("accessories", null);
@@ -40,8 +40,9 @@ public class HappyTimeMenu implements Serializable {
     private MenuUnit catalogMenu = null;
     
     public void initializeSubMenu(String categoryCode) {
-    	CATEGORY_MENU.put(categoryCode, new ArrayList<MenuUnit>());
+    	CATEGORY_MENU.put(categoryCode, new MenuUnit());
     	Category category = categoryRepo.findByCode(categoryCode);
+    	CATEGORY_MENU.get(categoryCode).setTitle(category.getTitle());
     	
     	MenuUnit unitAll = new MenuUnit();
         unitAll.setTitle(translation.translate("HTall"));
@@ -76,13 +77,13 @@ public class HappyTimeMenu implements Serializable {
     
     public void initializeCatalogMenu() {
         catalogMenu = new MenuUnit();
-        catalogMenu.setId("menuCatalog");
+        catalogMenu.setId("menu-catalog");
         catalogMenu.setTitle(translation.translate("HTshop"));
         List<Category> categoryList = categoryRepo.findAll();
         for (Category category : categoryList) {
             MenuUnit unit = new MenuUnit();
             unit.setTitle(category.getTitle());
-            unit.setId(category.getCode() + "Catalog");
+            unit.setId(category.getCode() + "-submenu");
             catalogMenu.add(unit);
             
             MenuUnit unitAll = new MenuUnit();
@@ -95,7 +96,7 @@ public class HappyTimeMenu implements Serializable {
             for (Subcategory subcategory : subcategories) {
                 MenuUnit subUnit = new MenuUnit();
                 subUnit.setTitle(subcategory.getTitle());
-                subUnit.setId(subcategory.getCode() + "Catalog");
+                subUnit.setId(subcategory.getCode());
                 subUnit.setLink("/faces/shop/productList?category=" + category.getCode() + "&subcategory=" + subcategory.getCode());
                 unit.add(subUnit);
             }
@@ -190,7 +191,7 @@ public class HappyTimeMenu implements Serializable {
         return catalogMenu;
     }
     
-    public List<MenuUnit> getShopMenu(String categoryCode) {
+    public MenuUnit getShopMenu(String categoryCode) {
         if (CATEGORY_MENU.get(categoryCode) == null) {
             initializeSubMenu(categoryCode);
         }

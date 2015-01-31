@@ -19,13 +19,6 @@
 		<ui:param name="activeLink" value="menuShop"/>
 	</ui:define>
 	
-	<ui:define name="menuLeft">
-		<ui:include src="/WEB-INF/templates/productMenu.xhtml">
-			<ui:param name="activeSubLink" value="#{param['subcategory']}"/>
-			<ui:param name="menuModel" value="#{menuBean.balloonsMenu}"/>
-		</ui:include>
-	</ui:define>
-	
 	<ui:define name="content">
 		<p:panelGrid columns="1">
 			<f:facet name="header">

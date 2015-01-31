@@ -3751,3 +3751,8 @@ html, body {
 .page-buffer {
   height: 160px;
 }
+
+/* line 1, ../scss/_images.scss */
+.ui-icon-cart {
+  background: url("icons/full-cart-light.jpg");
+}

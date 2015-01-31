@@ -43,6 +43,9 @@ public class ExcelImporter implements Importer {
             product.setManufacturer(getString(sheet.getCell(1,  i)));
             product.setTitle(getString(sheet.getCell(2,  i)));
             List<Category> categories = getCategoryList(sheet.getCell(3,  i));
+            if (categories.isEmpty()) {
+                System.out.print("");
+            }
             product.setSubcategories(getSubcategoryList(sheet.getCell(4,  i), categories.get(0)));
             product.setCost(getBigDecimal(sheet.getCell(5,  i)));
             product.setQuantity(getInteger(sheet.getCell(6,  i)));
@@ -85,10 +88,13 @@ public class ExcelImporter implements Importer {
     
     private List<Category> getCategoryList(Cell cell) {
         List<Category> categoryList = new ArrayList<Category>();
-        String categoryValue = getString(cell);
-        Category category = categoryRepo.findByTitle(categoryValue);
-        if (category != null) {
-            categoryList.add(category);
+        String value = getString(cell);
+        String[] values = value.split("/");
+        for (String categoryValue : values) {
+            Category category = categoryRepo.findByTitle(categoryValue);
+            if (category != null) {
+                categoryList.add(category);
+            }
         }
         return categoryList;
     }

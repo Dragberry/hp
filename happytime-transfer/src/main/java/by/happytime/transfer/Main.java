@@ -12,7 +12,13 @@ public class Main {
         Importer importer = context.getBean(ExcelImporter.class);
         File file = new File("D:\\Шары.xls");
         FileInputStream is = new FileInputStream(file);
-        importer.doImport(is);
+        try {
+            importer.doImport(is);
+        } finally {
+            if (is != null) {
+                is.close();
+            }
+        }
         context.close();
     }
 

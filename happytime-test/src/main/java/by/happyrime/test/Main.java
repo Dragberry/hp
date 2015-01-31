@@ -44,7 +44,6 @@ public class Main {
 
         order.setFirstName("Максим");
         order.setLastName("Драгун");
-        order.setAddress("Прушинских 60 - 161");
         order.setPhone("+375 29 312 08 55");
         order.setStatus(OrderStatus.NEW);
         order.setEmail("max-hellfire@mail.ru");
