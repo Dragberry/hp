@@ -36,6 +36,10 @@
 		<pattern value="/order-and-delivery" />
 		<view-id value="/faces/orderAndDelivery.xhtml" />
 	</url-mapping>
+	<url-mapping id="administration">
+		<pattern value="/administration" />
+		<view-id value="/faces/administration.xhtml" />
+	</url-mapping>
 	
 	<!--  Promotions -->
 	<url-mapping id="actions">

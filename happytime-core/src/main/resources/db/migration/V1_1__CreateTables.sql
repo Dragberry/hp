@@ -1,8 +1,7 @@
 CREATE TABLE user (
 	id BIGINT AUTO_INCREMENT NOT NULL,
 	login VARCHAR(20) NOT NULL,
-	password VARCHAR(58) NOT NULL,
-	salt VARCHAR(58) NOT NULL,
+	password VARCHAR(60) NOT NULL,
 	enabled BIT NOT NULL,
 	first_name VARCHAR(50),
     last_name VARCHAR(50),
@@ -21,7 +20,7 @@ CREATE TABLE user (
 
 CREATE TABLE role (
 	id BIGINT AUTO_INCREMENT NOT NULL,
-	`value` VARCHAR(20),
+	role VARCHAR(20),
 	name VARCHAR(20),
     created_date TIMESTAMP, 
     last_modified_date TIMESTAMP,

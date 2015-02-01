@@ -1,11 +1,12 @@
 package by.happytime.domain;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
@@ -13,22 +14,18 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import by.happytime.security.SaltedHash;
-
 @Entity
 @Table(name = "user")
 public class User extends AbstractEntity {
 
     private static final long serialVersionUID = -4913568007053625240L;
     
-    public static final String GUEST = "guest";
-
+    public static final String ANONYMOUS_USER = "anonymousUser";
+    
     @Column(name = "login")
     private String login;
     @Column(name = "password")
     private String password;
-    @Column(name = "salt")
-    private String salt;
     @Column(name = "enabled")
     private Boolean enabled;
     @Column(name = "first_name")
@@ -44,25 +41,13 @@ public class User extends AbstractEntity {
     private String email;
     @Column(name = "phone")
     private String phone;
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "user_role",
             joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "role_id", referencedColumnName = "id")})
-    private List<Role> roles = new ArrayList<Role>();
+    private Set<Role> roles = new HashSet<Role>();
     
-    public SaltedHash getSaltedHash() {
-        return new SaltedHash(getPassword(), getSalt());
-    }
-    
-    public void setPasswordDetails(SaltedHash saltedHash) {
-        if (saltedHash.getHash() == null || saltedHash.getSalt() == null) {
-            throw new NullPointerException();
-        }
-        this.password = saltedHash.getHash();
-        this.salt = saltedHash.getSalt();
-    }
-
     public String getLogin() {
         return login;
     }
@@ -77,14 +62,6 @@ public class User extends AbstractEntity {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getSalt() {
-        return salt;
-    }
-
-    public void setSalt(String salt) {
-        this.salt = salt;
     }
 
     public String getPhone() {
@@ -143,12 +120,12 @@ public class User extends AbstractEntity {
         this.email = email;
     }
 
-    public List<Role> getRoles() {
+    public Set<Role> getRoles() {
         return roles;
     }
 
-    public void setRoles(List<Role> roles) {
+    public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
-    
+
 }

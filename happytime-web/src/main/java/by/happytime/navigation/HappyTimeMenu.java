@@ -11,9 +11,12 @@ import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
 
 import by.happytime.domain.Category;
+import by.happytime.domain.Role;
 import by.happytime.domain.Subcategory;
+import by.happytime.domain.User;
 import by.happytime.repository.CategoryRepo;
 import by.happytime.repository.SubcategoryRepo;
+import by.happytime.service.authentication.UserBean;
 import by.happytime.util.Translation;
 
 @ManagedBean(name = "menuBean")
@@ -23,10 +26,6 @@ public class HappyTimeMenu implements Serializable {
     private static final long serialVersionUID = -6394021934348528104L;
     
     private static final Map<String, MenuUnit> CATEGORY_MENU = new HashMap<String, MenuUnit>();
-    static {
-    	CATEGORY_MENU.put("balloons", null);
-    	CATEGORY_MENU.put("accessories", null);
-    }
     
     @ManagedProperty("#{translation}")
     private Translation translation;
@@ -34,6 +33,8 @@ public class HappyTimeMenu implements Serializable {
     private CategoryRepo categoryRepo;
     @ManagedProperty("#{subcategoryRepo}")
     private SubcategoryRepo subcategoryRepo;
+    @ManagedProperty("#{userBean}")
+    private UserBean userBean;
     
     private List<MenuUnit> model = null;
     
@@ -137,6 +138,15 @@ public class HappyTimeMenu implements Serializable {
         menuAnimatorAndToastmasterAndSoundman.setTitle(translation.translate("HTanimatorAndToastmasterAndSoundman"));
         menuHolidaysOrganization.add(menuAnimatorAndToastmasterAndSoundman);
         
+        if (userBean.hasPermission(Role.ROLE_ADMIN)) {
+            MenuUnit administration = new MenuUnit();
+            administration.setId("menuAdministration");
+            administration.setLink("/faces/administration");
+            administration.setTitle(translation.translate("HTadministration"));
+            administration.setPosition(MenuUnit.LEFT_POSITION_CLASS);
+            model.add(administration);
+        }
+        
         MenuUnit menuOrderAndDelivery = new MenuUnit();
         menuOrderAndDelivery.setId("menuOrderAndDelivery");
         menuOrderAndDelivery.setLink("/faces/orderAndDelivery");
@@ -221,5 +231,13 @@ public class HappyTimeMenu implements Serializable {
 	public void setCategoryRepo(CategoryRepo categoryRepo) {
 		this.categoryRepo = categoryRepo;
 	}
+
+    public UserBean getUserBean() {
+        return userBean;
+    }
+
+    public void setUserBean(UserBean userBean) {
+        this.userBean = userBean;
+    }
 
 }

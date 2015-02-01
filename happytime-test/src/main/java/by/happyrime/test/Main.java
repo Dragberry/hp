@@ -48,7 +48,6 @@ public class Main {
         order.setStatus(OrderStatus.NEW);
         order.setEmail("max-hellfire@mail.ru");
         order.setOrderDate(new Date());
-        order.setUser(userRepo.findByLogin(User.GUEST));
         
         OrderUnit orderUnit1 = new OrderUnit();
         orderUnit1.setProduct(productRepo.findOne(1L));

@@ -14,7 +14,9 @@ import org.springframework.data.repository.core.support.RepositoryFactorySupport
 import by.happytime.domain.AbstractEntity;
 
 public class ExtendedRepositoryFactoryBean<R extends JpaRepository<T, ID>, T extends AbstractEntity, ID extends Serializable>
-        extends JpaRepositoryFactoryBean<R, T, ID> {
+        extends JpaRepositoryFactoryBean<R, T, ID> implements Serializable {
+
+    private static final long serialVersionUID = 1043545568090220555L;
 
     @Override
     protected RepositoryFactorySupport createRepositoryFactory(EntityManager entityManager) {

@@ -10,14 +10,14 @@ public class Role extends AbstractEntity {
 
     private static final long serialVersionUID = -4589737618241523833L;
     
-    public static String ROLE_ADMIN = "admin";
-    public static String ROLE_GUEST = "guest";
-    public static String ROLE_USER = "user";
+    public static String ROLE_ADMIN = "ROLE_ADMIN";
+    public static String ROLE_ANONYMOUS = "guest";
+    public static String ROLE_USER = "ROLE_USER";
     
     @Column(name = "name")
     private String name;
-    @Column(name = "value")
-    private String value;
+    @Column(name = "role")
+    private String role;
 
     public String getName() {
         return name;
@@ -27,12 +27,12 @@ public class Role extends AbstractEntity {
         this.name = name;
     }
 
-    public String getValue() {
-        return value;
+    public String getRole() {
+        return role;
     }
 
-    public void setValue(String value) {
-        this.value = value;
+    public void setRole(String role) {
+        this.role = role;
     }
 
 }

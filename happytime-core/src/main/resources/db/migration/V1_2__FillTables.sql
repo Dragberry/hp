@@ -1,18 +1,18 @@
-INSERT INTO user (login, password, salt, enabled, created_date, last_modified_date, created_by, last_modified_by) 
-	VALUES ('admin', '3209dbc1c18eafab86262b5bb336824be83b11defaf2a229', '49f96dcace57de023761b5451c0b8f078830561cfe6628f3', TRUE, NOW(), NOW(), 1, 1);
-INSERT INTO user (login, password, salt, enabled, created_date, last_modified_date, created_by, last_modified_by) 
-	VALUES ('guest', '3209dbc1c18eafab86262b5bb336824be83b11defaf2a229', '49f96dcace57de023761b5451c0b8f078830561cfe6628f3', TRUE, NOW(), NOW(), 1, 1);
+INSERT INTO user (login, password, enabled, created_date, last_modified_date, created_by, last_modified_by) 
+	VALUES ('admin', '$2a$10$EblZqNptyYvcLm/VwDCVAuBjzZOI7khzdyGPBr08PpIi0na624b8.', TRUE, NOW(), NOW(), 1, 1);
+INSERT INTO user (login, password, enabled, created_date, last_modified_date, created_by, last_modified_by) 
+	VALUES ('anonymousUser', '$2a$10$EblZqNptyYvcLm/VwDCVAuBjzZOI7khzdyGPBr08PpIi0na624b8.', TRUE, NOW(), NOW(), 1, 1);
 
-INSERT INTO role (`value`, name, created_date, last_modified_date, created_by, last_modified_by) VALUES ('admin', 'Администратор', NOW(), NOW(), 1, 1);
-INSERT INTO role (`value`, name, created_date, last_modified_date, created_by, last_modified_by) VALUES ('guest', 'Гость', NOW(), NOW(), 1, 1);
-INSERT INTO role (`value`, name, created_date, last_modified_date, created_by, last_modified_by) VALUES ('user', 'Пользователь', NOW(), NOW(), 1, 1);
+INSERT INTO role (role, name, created_date, last_modified_date, created_by, last_modified_by) VALUES ('ROLE_ADMIN', 'Администратор', NOW(), NOW(), 1, 1);
+INSERT INTO role (role, name, created_date, last_modified_date, created_by, last_modified_by) VALUES ('ROLE_ANONYMOUS', 'Гость', NOW(), NOW(), 1, 1);
+INSERT INTO role (role, name, created_date, last_modified_date, created_by, last_modified_by) VALUES ('ROLE_USER', 'Пользователь', NOW(), NOW(), 1, 1);
 
 INSERT INTO user_role (user_id, role_id) VALUES (
-	(SELECT id FROM user WHERE login = 'admin'), (SELECT id FROM role WHERE `value` = 'admin'));
+	(SELECT id FROM user WHERE login = 'admin'), (SELECT id FROM role WHERE role = 'ROLE_ADMIN'));
 INSERT INTO user_role (user_id, role_id) VALUES (
-	(SELECT id FROM user WHERE login = 'admin'), (SELECT id FROM role WHERE `value` = 'user'));
+	(SELECT id FROM user WHERE login = 'admin'), (SELECT id FROM role WHERE role = 'ROLE_ANONYMOUS'));
 INSERT INTO user_role (user_id, role_id) VALUES (
-	(SELECT id FROM user WHERE login = 'guest'), (SELECT id FROM role WHERE `value` = 'guest'));
+	(SELECT id FROM user WHERE login = 'anonymousUser'), (SELECT id FROM role WHERE role = 'ROLE_ANONYMOUS'));
     
 INSERT INTO category (title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES ('Воздушные шары', 'balloons', 'Воздушные шары', NOW(), NOW(), 1, 1);
 INSERT INTO category (title, code, description, created_date, last_modified_date, created_by, last_modified_by) VALUES ('Аксессуары', 'accessories',  'Аксессуары', NOW(), NOW(), 1, 1);

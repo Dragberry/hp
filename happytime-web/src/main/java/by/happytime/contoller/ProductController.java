@@ -14,7 +14,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.primefaces.event.data.PageEvent;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-
 import by.happytime.domain.Category;
 import by.happytime.domain.Product;
 import by.happytime.domain.Subcategory;

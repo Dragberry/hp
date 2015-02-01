@@ -32,7 +32,6 @@ import by.happytime.repository.ProductRepo;
 import by.happytime.repository.RoleRepo;
 import by.happytime.repository.SubcategoryRepo;
 import by.happytime.repository.UserRepo;
-import by.happytime.security.PasswordHash;
 
 public class Main {
     

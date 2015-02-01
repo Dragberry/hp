@@ -1,0 +1,24 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:shop="http://java.sun.com/jsf/composite/shop">
+    
+    <ui:define name="title">
+	    Administration - HappyTime.by
+	</ui:define>
+	    
+	<ui:define name="headerParams">
+		<ui:param name="mainHeaderTitle" value="Administration - #{translation.translate('HTapplicationTitle')}"/>
+		<ui:param name="activeLink" value="menuAdministration"/>
+	</ui:define>
+	
+	<ui:define name="content">
+	</ui:define>
+	
+	<ui:define name="footer">
+	    <h:outputText value="Index footer" />
+	</ui:define>
+</ui:composition>

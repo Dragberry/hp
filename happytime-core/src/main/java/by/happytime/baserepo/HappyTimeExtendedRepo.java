@@ -7,6 +7,8 @@ import by.happytime.domain.AbstractEntity;
 
 public class HappyTimeExtendedRepo <T extends AbstractEntity> extends SimpleJpaRepository<T, Long> implements ExtendedRepo<T> {
 
+    private static final long serialVersionUID = 4649513799915806929L;
+    
     protected EntityManager entityManager;
     protected Class<T> domainClass;
     

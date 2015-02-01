@@ -5,6 +5,6 @@ import by.happytime.domain.Role;
 
 public interface RoleRepo extends BaseRepo<Role> {
     
-    Role findByValue(String value);
+    Role findByRole(String role);
 
 }
