@@ -37,7 +37,7 @@ public class Product extends AbstractEntity {
             name = "product_subcategory", 
             joinColumns = {@JoinColumn(name = "product_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "subcategory_id", referencedColumnName = "id")})
-    private List<Subcategory> subcategories = new ArrayList<Subcategory>();
+    private Set<Subcategory> subcategories = new HashSet<Subcategory>();
     @Column(name = "country")
     private String country;
     @Column(name = "manufacturer")
@@ -95,11 +95,11 @@ public class Product extends AbstractEntity {
         return new ArrayList<Category>(categories);
     }
 
-    public List<Subcategory> getSubcategories() {
+    public Set<Subcategory> getSubcategories() {
         return subcategories;
     }
 
-    public void setSubcategories(List<Subcategory> subcategories) {
+    public void setSubcategories(Set<Subcategory> subcategories) {
         this.subcategories = subcategories;
     }
 

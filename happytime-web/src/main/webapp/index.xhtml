@@ -17,14 +17,36 @@
 
 	<ui:define name="content">
 		ДОБРО ПОЖАЛОВАТЬ В СТУДИЮ ПРАЗДНИКОВ "HappyTime"
-		<p:fieldset styleClass="row">
-			<p:outputPanel styleClass="large-6 columns">
-				Image
-			</p:outputPanel>
-			<p:outputPanel styleClass="large-6 columns">
-				Text
-			</p:outputPanel>
-		</p:fieldset>
+		
+		<ui:repeat var="item" value="#{dashboard.dashboardItems}" varStatus="status">
+			<p:fieldset styleClass="row">
+				<p:outputPanel rendered="#{status.even}" styleClass="large-6 columns">
+					<p:graphicImage value="/resources/images/#{item.imgLink}"
+        				alt="#{item.alt}"/>
+				</p:outputPanel>
+				<p:outputPanel rendered="#{status.even}" styleClass="large-8 columns">
+					<h2>
+						<h:outputText value="#{item.title}"/>
+					</h2>
+					<p>
+						<h:outputText value="#{item.text}"/>
+					</p>
+				</p:outputPanel>
+				
+				<p:outputPanel rendered="#{status.odd}" styleClass="large-8 columns">
+					<h2>
+						<h:outputText value="#{item.title}"/>
+					</h2>
+					<p>
+						<h:outputText value="#{item.text}"/>
+					</p>
+				</p:outputPanel>
+				<p:outputPanel rendered="#{status.odd}" styleClass="large-6 columns">
+					<p:graphicImage value="/resources/images/#{item.imgLink}"
+        				alt="#{item.alt}"/>
+				</p:outputPanel>
+			</p:fieldset>
+		</ui:repeat>
 	</ui:define>
 
 </ui:composition>

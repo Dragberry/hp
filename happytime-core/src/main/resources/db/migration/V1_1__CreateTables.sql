@@ -138,3 +138,22 @@ CREATE TABLE order_unit (
     CONSTRAINT fk_order_unit FOREIGN KEY (order_id) REFERENCES `order` (id),
     CONSTRAINT fk_order_product FOREIGN KEY (product_id) REFERENCES product (id)
 ) ENGINE=INNODB;
+
+CREATE TABLE dashboard_item (
+	id BIGINT AUTO_INCREMENT NOT NULL,
+	position INT,
+	enabled BIT,
+    title VARCHAR(255),
+    text  VARCHAR(255),
+    alt  VARCHAR(255),
+    img_link VARCHAR (255),
+    link VARCHAR (255),
+    created_date TIMESTAMP, 
+    last_modified_date TIMESTAMP,
+    created_by BIGINT, 
+    last_modified_by BIGINT,
+	PRIMARY KEY (id),
+	CONSTRAINT fk_dashboard_item_created FOREIGN KEY (created_by) REFERENCES user (id),
+    CONSTRAINT fk_dashboard_item_modified FOREIGN KEY (last_modified_by) REFERENCES user (id)
+) ENGINE=INNODB;
+
