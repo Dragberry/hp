@@ -13,7 +13,6 @@ import javax.faces.bean.SessionScoped;
 import by.happytime.domain.Category;
 import by.happytime.domain.Role;
 import by.happytime.domain.Subcategory;
-import by.happytime.domain.User;
 import by.happytime.repository.CategoryRepo;
 import by.happytime.repository.SubcategoryRepo;
 import by.happytime.service.authentication.UserBean;

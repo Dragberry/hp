@@ -3,7 +3,9 @@ package by.happytime.transfer;
 import java.io.InputStream;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,8 +71,8 @@ public class ExcelImporter implements Importer {
         return null;
     }
     
-    private List<Subcategory> getSubcategoryList(Cell cell, Category category) {
-        List<Subcategory> subcategoryList = new ArrayList<Subcategory>();
+    private Set<Subcategory> getSubcategoryList(Cell cell, Category category) {
+        Set<Subcategory> subcategoryList = new HashSet<Subcategory>();
         String value = getString(cell);
         String[] values = value.split("/");
         for (String subcategoryTitle : values) {
