@@ -1,9 +1,9 @@
 package by.happytime.domain;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -57,7 +57,7 @@ public class Order extends AbstractEntity {
     private String additionalInfo;
     @OneToMany(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     @JoinColumn(name = "order_id")
-    private List<OrderUnit> orderUnits = new ArrayList<OrderUnit>();
+    private Set<OrderUnit> orderUnits = new HashSet<OrderUnit>();
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
@@ -141,11 +141,11 @@ public class Order extends AbstractEntity {
         this.phone = phone;
     }
 
-    public List<OrderUnit> getOrderUnits() {
+    public Set<OrderUnit> getOrderUnits() {
         return orderUnits;
     }
 
-    public void setOrderUnits(List<OrderUnit> orderUnits) {
+    public void setOrderUnits(Set<OrderUnit> orderUnits) {
         this.orderUnits = orderUnits;
     }
 

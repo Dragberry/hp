@@ -44,6 +44,7 @@
 				<p:outputPanel rendered="#{status.odd}" styleClass="large-6 columns">
 					<p:graphicImage value="/resources/images/#{item.imgLink}"
         				alt="#{item.alt}"/>
+        			<p:link outcome="/#{item.link}" />
 				</p:outputPanel>
 			</p:fieldset>
 		</ui:repeat>

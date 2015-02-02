@@ -126,7 +126,7 @@ public class Cart implements Serializable {
         email.setSubject("Test order");
         email.setMsg(mail);
         email.addTo("max-hellfire@mail.ru");
-        email.addTo("yuria-25@mail.ru");
+//        email.addTo("yuria-25@mail.ru");
         email.send();
     }
 
