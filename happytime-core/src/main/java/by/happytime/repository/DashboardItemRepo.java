@@ -7,6 +7,6 @@ import by.happytime.domain.DashboardItem;
 
 public interface DashboardItemRepo extends BaseRepo<DashboardItem> {
     
-    List<DashboardItem> findByEnabled(Boolean enabled);
+    List<DashboardItem> findByEnabledOrderByPositionAsc(Boolean enabled);
 
 }

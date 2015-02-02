@@ -29,7 +29,7 @@ public class Dashboard implements Serializable {
     }
 
     private List<DashboardItem> initializeDashboard() {
-        return dashboardItemRepo.findByEnabled(true);
+        return dashboardItemRepo.findByEnabledOrderByPositionAsc(true);
     }
 
     public void setDashboardItems(List<DashboardItem> dashboardItems) {

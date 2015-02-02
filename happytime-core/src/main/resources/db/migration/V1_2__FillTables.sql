@@ -58,7 +58,7 @@ INSERT INTO dashboard_item (position, enabled, title, text, alt, img_link, link,
 	NOW(), NOW(), 1, 1
 );
 INSERT INTO dashboard_item (position, enabled, title, text, alt, img_link, link, created_date, last_modified_date, created_by, last_modified_by) VALUES (
-	2, 
+	3, 
 	true,
 	'В поисках оригинальных и креативных подарков?',
 	'Студия праздников "HappyTime" нашла их для Вас!',
@@ -68,12 +68,22 @@ INSERT INTO dashboard_item (position, enabled, title, text, alt, img_link, link,
 	NOW(), NOW(), 1, 1
 );
 INSERT INTO dashboard_item (position, enabled, title, text, alt, img_link, link, created_date, last_modified_date, created_by, last_modified_by) VALUES (
-	3, 
+	4, 
 	true,
 	'Хотите весело и необычно отпраздновать важное событие в вашей жизни?',
 	'Студия "HappyTime" наполнит Ваш праздник незабываемыми моментами и неповторимыми эмоциями!',
 	'Веселый и необычный праздник',
 	'dashboard/party.png',
+	'animator-and-toast-master',
+	NOW(), NOW(), 1, 1
+);
+INSERT INTO dashboard_item (position, enabled, title, text, alt, img_link, link, created_date, last_modified_date, created_by, last_modified_by) VALUES (
+	2, 
+	true,
+	'Желаете порадовать своего ребенка?',
+	'Студия праздников "HappyTime" поможет Вам в этом!',
+	'Заказать детского аниматора в Минске',
+	'dashboard/clown.png',
 	'animator-and-toast-master',
 	NOW(), NOW(), 1, 1
 );

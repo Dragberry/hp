@@ -1,7 +1,7 @@
 @import "settings";
 
 $footer-height: 160px;
-$body-bg: rgb(124, 228, 146);
+$body-bg: #DCFFD7;
 
 html, body {
   height: 100%;
@@ -33,5 +33,9 @@ html, body {
 
 .page-buffer {
   height: $footer-height;
+}
+
+.ui-widget {
+	font-family: $font-family-sans-serif;
 }
 
