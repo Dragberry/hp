@@ -59,7 +59,7 @@ public class Main {
         orderUnit2 .setQuantity(35);
         orderUnit2.setOrder(order);
         
-        order.setOrderUnits(Arrays.asList(orderUnit1, orderUnit2));
+//        order.setOrderUnits(Arrays.asList(orderUnit1, orderUnit2));
         orderRepo.save(order);
         
         /*

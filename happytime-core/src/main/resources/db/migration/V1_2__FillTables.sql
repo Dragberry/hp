@@ -64,7 +64,7 @@ INSERT INTO dashboard_item (position, enabled, title, text, alt, img_link, link,
 	'Студия праздников "HappyTime" нашла их для Вас!',
 	'Оригинальные и креативные подарки, Минск',
 	'dashboard/gift.png',
-	'shop/original-gifts',
+	'shop/original-gifts/',
 	NOW(), NOW(), 1, 1
 );
 INSERT INTO dashboard_item (position, enabled, title, text, alt, img_link, link, created_date, last_modified_date, created_by, last_modified_by) VALUES (

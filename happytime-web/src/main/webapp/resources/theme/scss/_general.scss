@@ -1,7 +1,7 @@
 @import "settings";
 
 $footer-height: 160px;
-$body-bg: grey;
+$body-bg: rgb(124, 228, 146);
 
 html, body {
   height: 100%;
@@ -34,3 +34,4 @@ html, body {
 .page-buffer {
   height: $footer-height;
 }
+
