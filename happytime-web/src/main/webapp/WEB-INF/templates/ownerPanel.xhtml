@@ -1,0 +1,51 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+	<p:panel styleClass="owner-panel text-center">
+		<p:outputPanel>
+			<h:outputText style="font-size: small;"
+				value="#{translation.translate('HTapplicationTitleAlter')} #{translation.translate('HTapplicationTitle')}" />
+		</p:outputPanel>
+		<p:outputPanel>
+			<h:outputText style="font-size: small;"
+				value="#{translation.translate('HTcontacts')}" />
+		</p:outputPanel>
+		<p:outputPanel>
+			<h:outputText style="font-size: small;"
+				value="#{translation.translate('HTvelcomPhone')}" />
+		</p:outputPanel>
+		<p:outputPanel>
+			<h:outputText style="font-size: small;"
+				value="#{translation.translate('HTmtsPhone')}" />
+		</p:outputPanel>
+		<p:outputPanel>
+			<h:outputText style="font-size: small;"
+				value="#{translation.translate('HTschedule')}:" />
+		</p:outputPanel>
+		<p:outputPanel>
+			<h:outputText style="font-size: small;"
+				value="#{translation.translate('HTscheduleValueSimple')}" />
+		</p:outputPanel>
+		<p:outputPanel>
+			<h:outputText style="font-size: small;"
+				value="#{translation.translate('HTsevenDaysWeek')}" />
+		</p:outputPanel>
+		<br />
+		<p:outputPanel>
+			<h:outputText style="font-size: small;"
+				value="#{translation.translate('HTowner')}" />
+		</p:outputPanel>
+		<p:outputPanel>
+			<h:outputText style="font-size: small;"
+				value="#{translation.translate('HTownerAddress')}" />
+		</p:outputPanel>
+		<p:outputPanel>
+			<h:outputText style="font-size: small;"
+				value="#{translation.translate('HTownerRegistration')}" />
+		</p:outputPanel>
+	</p:panel>
+</ui:composition>

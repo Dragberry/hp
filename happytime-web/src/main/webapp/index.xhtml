@@ -16,16 +16,18 @@
 	</ui:define>
 
 	<ui:define name="content">
-		ДОБРО ПОЖАЛОВАТЬ В СТУДИЮ ПРАЗДНИКОВ "HappyTime"
+		<h2 class="text-center dashboard-header">
+			<h:outputText value="ДОБРО ПОЖАЛОВАТЬ В СТУДИЮ ПРАЗДНИКОВ &quot;#{translation.translate('HTapplicationTitle')}&quot;!"/>
+		</h2>
 		
 		<ui:repeat var="item" value="#{dashboard.dashboardItems}" varStatus="status">
-			<p:fieldset styleClass="row">
-				<p:outputPanel rendered="#{status.even}" styleClass="large-6 columns">
+			<p:outputPanel styleClass="row dashboard-item text-center">
+				<p:outputPanel rendered="#{status.even}" styleClass="large-4 columns">
 					<p:link href="/#{item.link}">
 						<p:graphicImage value="/resources/images/#{item.imgLink}" alt="#{item.alt}"/>
 					</p:link>
 				</p:outputPanel>
-				<p:outputPanel rendered="#{status.even}" styleClass="large-8 columns">
+				<p:outputPanel rendered="#{status.even}" styleClass="large-11 columns">
 					<h2>
 						<h:outputText value="#{item.title}"/>
 					</h2>
@@ -36,7 +38,7 @@
 				
 				</p:outputPanel>
 				
-				<p:outputPanel rendered="#{status.odd}" styleClass="large-8 columns">
+				<p:outputPanel rendered="#{status.odd}" styleClass="large-11 columns">
 					<h2>
 						<h:outputText value="#{item.title}"/>
 					</h2>
@@ -45,12 +47,12 @@
 					</p>
 					<p:link value="#{translation.translate('HTmoreInfo')}" href="/#{item.link}" />
 				</p:outputPanel>
-				<p:outputPanel rendered="#{status.odd}" styleClass="large-6 columns">
+				<p:outputPanel rendered="#{status.odd}" styleClass="large-4 columns">
 					<p:link href="/#{item.link}">
 						<p:graphicImage value="/resources/images/#{item.imgLink}" alt="#{item.alt}"/>
        				</p:link>
        			</p:outputPanel>
-			</p:fieldset>
+			</p:outputPanel>
 		</ui:repeat>
 	</ui:define>
 

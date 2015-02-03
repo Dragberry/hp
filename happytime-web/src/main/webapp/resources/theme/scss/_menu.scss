@@ -7,6 +7,37 @@ $menu-hover-shadow: 0px 0px 8px #ddd;
 $menu-border-radius: 15px;
 $menu-color: cornsilk;
 
+.cart-panel {
+	padding: 0 !important;
+	border-radius: $menu-border-radius $menu-border-radius 0 0 !important;
+	background: cornsilk !important;
+	border: 1px solid #1E642B;
+	
+	.ui-panel-titlebar {
+		border-radius: $menu-border-radius $menu-border-radius 0 0 !important;
+		background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 1)), to(rgba($menu-end-gradient, 1))) !important;
+		border: none !important;
+	}
+	
+	.ui-panel-content {
+		padding: 1.5em 0.5em !important;
+	}
+	
+	.ui-button {
+		background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 1)), to(rgba($menu-end-gradient, 1))) !important;
+		
+		.ui-button-text {
+			padding: 0.3em !important;
+			color: cornsilk !important;
+		}
+	}
+	
+	.ui-button .ui-state-hover {
+		background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
+	}
+	
+}
+
 
 .ui-menu {
 	background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 0.8)), to(rgba($menu-end-gradient, 0.8))) !important;

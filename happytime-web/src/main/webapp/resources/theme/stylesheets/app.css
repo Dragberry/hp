@@ -3159,27 +3159,27 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 /* line 269, ../foundation/scss/foundation/components/_type.scss */
 h1 {
-  font-size: 2.125rem;
+  font-size: 1.4375rem;
 }
 
 /* line 270, ../foundation/scss/foundation/components/_type.scss */
 h2 {
-  font-size: 1.6875rem;
+  font-size: 1.125rem;
 }
 
 /* line 271, ../foundation/scss/foundation/components/_type.scss */
 h3 {
-  font-size: 1.375rem;
+  font-size: 1rem;
 }
 
 /* line 272, ../foundation/scss/foundation/components/_type.scss */
 h4 {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 /* line 273, ../foundation/scss/foundation/components/_type.scss */
 h5 {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 /* line 274, ../foundation/scss/foundation/components/_type.scss */
@@ -3409,27 +3409,27 @@ blockquote p {
 
   /* line 456, ../foundation/scss/foundation/components/_type.scss */
   h1 {
-    font-size: 2.75rem;
+    font-size: 1.4375rem;
   }
 
   /* line 457, ../foundation/scss/foundation/components/_type.scss */
   h2 {
-    font-size: 2.3125rem;
+    font-size: 1.125rem;
   }
 
   /* line 458, ../foundation/scss/foundation/components/_type.scss */
   h3 {
-    font-size: 1.6875rem;
+    font-size: 1rem;
   }
 
   /* line 459, ../foundation/scss/foundation/components/_type.scss */
   h4 {
-    font-size: 1.4375rem;
+    font-size: 1rem;
   }
 
   /* line 460, ../foundation/scss/foundation/components/_type.scss */
   h5 {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   /* line 461, ../foundation/scss/foundation/components/_type.scss */
@@ -4281,7 +4281,38 @@ html, body {
   background: url("icons/full-cart-light.jpg");
 }
 
-/* line 11, ../scss/_menu.scss */
+/* line 10, ../scss/_menu.scss */
+.cart-panel {
+  padding: 0 !important;
+  border-radius: 15px 15px 0 0 !important;
+  background: cornsilk !important;
+  border: 1px solid #1E642B;
+}
+/* line 16, ../scss/_menu.scss */
+.cart-panel .ui-panel-titlebar {
+  border-radius: 15px 15px 0 0 !important;
+  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) !important;
+  border: none !important;
+}
+/* line 22, ../scss/_menu.scss */
+.cart-panel .ui-panel-content {
+  padding: 1.5em 0.5em !important;
+}
+/* line 26, ../scss/_menu.scss */
+.cart-panel .ui-button {
+  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) !important;
+}
+/* line 29, ../scss/_menu.scss */
+.cart-panel .ui-button .ui-button-text {
+  padding: 0.3em !important;
+  color: cornsilk !important;
+}
+/* line 35, ../scss/_menu.scss */
+.cart-panel .ui-button .ui-state-hover {
+  background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
+}
+
+/* line 42, ../scss/_menu.scss */
 .ui-menu {
   background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) !important;
   border: 1px solid #1E642B;
@@ -4289,13 +4320,13 @@ html, body {
   width: auto !important;
   padding: 0 !important;
 }
-/* line 20, ../scss/_menu.scss */
+/* line 51, ../scss/_menu.scss */
 .ui-menu .ui-menuitem-list .ui-menuitem .ui-state-hover {
   background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
   border-radius: 15px !important;
   padding: 0px 3px !important;
 }
-/* line 28, ../scss/_menu.scss */
+/* line 59, ../scss/_menu.scss */
 .ui-menu .ui-menuitem {
   width: 100%;
   float: left;
@@ -4304,17 +4335,17 @@ html, body {
   padding: 0px 3px !important;
   border-radius: 15px !important;
 }
-/* line 37, ../scss/_menu.scss */
+/* line 68, ../scss/_menu.scss */
 .ui-menu .menu-active {
   background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
 }
-/* line 39, ../scss/_menu.scss */
+/* line 70, ../scss/_menu.scss */
 .ui-menu .menu-active .ui-state-hover {
   background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
   border-radius: 15px !important;
   box-shadow: 0px 0px 8px #ddd !important;
 }
-/* line 46, ../scss/_menu.scss */
+/* line 77, ../scss/_menu.scss */
 .ui-menu .ui-menuitem-link {
   display: block;
   width: 100% !important;
@@ -4328,19 +4359,19 @@ html, body {
   cursor: pointer;
   color: cornsilk !important;
 }
-/* line 61, ../scss/_menu.scss */
+/* line 92, ../scss/_menu.scss */
 .ui-menu .ui-menuitem-active .ui-state-hover {
   background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
   border-radius: 15px !important;
   box-shadow: 0px 0px 8px #ddd !important;
 }
-/* line 69, ../scss/_menu.scss */
+/* line 100, ../scss/_menu.scss */
 .ui-menu .ui-menu-parent .ui-menu-child {
   width: auto !important;
   background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) !important;
   border: 1px solid #1E642B !important;
 }
-/* line 77, ../scss/_menu.scss */
+/* line 108, ../scss/_menu.scss */
 .ui-menu .ui-menu-list .ui-widget-header {
   width: 100% !important;
   margin: 0 !important;
@@ -4348,7 +4379,7 @@ html, body {
   background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) !important;
   border: none !important;
 }
-/* line 87, ../scss/_menu.scss */
+/* line 118, ../scss/_menu.scss */
 .ui-menu .ui-menu .ui-widget-header h1,
 .ui-menu .ui-menu .ui-widget-header h2,
 .ui-menu .ui-menu .ui-widget-header h3,
@@ -4363,40 +4394,60 @@ html, body {
   width: 100% !important;
 }
 
-/* line 102, ../scss/_menu.scss */
+/* line 133, ../scss/_menu.scss */
 .product-menu {
   border-radius: 15px 15px 0 0 !important;
 }
-/* line 105, ../scss/_menu.scss */
+/* line 136, ../scss/_menu.scss */
 .product-menu .ui-state-hover {
   background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
   box-shadow: 0px 0px 8px #ddd !important;
 }
 
-/* line 111, ../scss/_menu.scss */
+/* line 142, ../scss/_menu.scss */
 .ui-menubar {
   padding-left: 0.5em !important;
   padding-right: 0.5em !important;
 }
 
-/* line 118, ../scss/_menu.scss */
+/* line 149, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-header {
   background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) !important;
 }
-/* line 122, ../scss/_menu.scss */
+/* line 153, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-menuitem-link {
   width: 100% !important;
 }
-/* line 126, ../scss/_menu.scss */
+/* line 157, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content {
   background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.2)), to(rgba(7, 119, 11, 0.6))) !important;
   padding: 0.2em !important;
 }
-/* line 131, ../scss/_menu.scss */
+/* line 162, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-menuitem-link {
   color: cornsilk !important;
 }
-/* line 135, ../scss/_menu.scss */
+/* line 166, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-state-hover {
   background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
+}
+
+/* line 1, ../scss/_dashboard.scss */
+.dashboard-header {
+  margin: 0 0 1em 0;
+}
+
+/* line 5, ../scss/_dashboard.scss */
+.dashboard-item {
+  margin: 0 0 0.5em 0 !important;
+}
+
+/* line 9, ../scss/_dashboard.scss */
+.owner-panel {
+  margin-top: 1em !important;
+}
+
+/* line 14, ../scss/_dashboard.scss */
+.owner-panel .ui-panel-content {
+  padding: 0.3em 0 0.3em 0 !important;
 }

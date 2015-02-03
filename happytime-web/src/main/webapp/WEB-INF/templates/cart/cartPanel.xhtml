@@ -5,15 +5,17 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:c="http://java.sun.com/jsp/jstl/core">
 	
-	<p:panel id="cartPanel" header="#{translation.translate('HTcart')}">
+	<p:panel id="cartPanel" styleClass="cart-panel text-center" header="#{translation.translate('HTcart')}">
 		<f:facet name="footer">
 			<p:button outcome="/faces/cart/cart"
 				value="#{translation.translate('HTgoToCart')}"/>
 		</f:facet>
 		<h:outputText value="#{translation.translate('HTcartIsEmpty')}"
-			rendered="#{cart.emptyCart}"/>
+			rendered="#{cart.emptyCart}"
+			style="font-size:medium !important"/>
 		<h:outputText value="#{translation.translate('HTinYourCart', cart.productCount, cart.totalSum)}"
-			rendered="#{!cart.emptyCart}"/>
+			rendered="#{!cart.emptyCart}"
+			style="font-size:medium !important"/>
 	</p:panel>
 	
 </ui:composition>
