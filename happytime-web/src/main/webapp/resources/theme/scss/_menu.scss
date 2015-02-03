@@ -1,9 +1,29 @@
+$menu-main-color: #1D8225;
+$menu-active-color: #48C05C;
+$menu-start-gradient: #24FF2C;
+$menu-end-gradient: #07770B;
+$menu-hover-background: #F0F0F0;
+$menu-hover-shadow: 0px 0px 8px #ddd;
+$menu-border-radius: 15px;
+$menu-color: cornsilk;
+
+
 .ui-menu {
-	background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 248, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) !important;
+	background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 0.8)), to(rgba($menu-end-gradient, 0.8))) !important;
 	border: 1px solid #1E642B;
-	border-radius: 15px;
+	border-radius: $menu-border-radius !important;
 	width: auto !important;
 	padding: 0 !important;
+	
+	.ui-menuitem-list {
+		.ui-menuitem {
+			.ui-state-hover {
+				background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
+				border-radius: $menu-border-radius !important;
+				padding: 0px 3px !important;
+			}
+		}
+	}
 	
 	.ui-menuitem {
 		width: 100%;
@@ -11,12 +31,16 @@
 		clear: both;
 		margin: 3px 0 !important;
 		padding: 0px 3px !important;
-		border-radius: 15px !important;
+		border-radius: $menu-border-radius !important;
 	}
 	
 	.menu-active {
-		background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240,240,240,0.6)), to(rgba(240,240,240,0))) !important;
-		box-shadow: 0px 0px 8px #85b2cb !important; 
+		background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
+		.ui-state-hover {
+			background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
+			border-radius: $menu-border-radius !important;
+			box-shadow: $menu-hover-shadow !important; 
+		}
 	}
 	
 	.ui-menuitem-link {
@@ -30,20 +54,21 @@
 		line-height: 16px;
 		padding: 0.5em !important;
 		cursor: pointer;
-		color: cornsilk !important;
+		color: $menu-color !important;
 	}
 	
 	.ui-menuitem-active {
 		.ui-state-hover {
-			background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240,240,240,0.6)), to(rgba(240,240,240,0))) !important;
-			border-radius: 15px !important;
+			background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
+			border-radius: $menu-border-radius !important;
+			box-shadow: $menu-hover-shadow !important; 
 		}
 	}
 	
 	.ui-menu-parent {
 		.ui-menu-child {
 			width: auto !important;
-			background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 248, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) !important;
+			background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 0.8)), to(rgba($menu-end-gradient, 0.8))) !important;
 			border: 1px solid #1E642B !important;
 		}
 	}
@@ -52,14 +77,11 @@
 		.ui-widget-header {
 			width: 100% !important;
 			margin: 0 !important;
-			border-radius: 13px 13px 0 0 !important;
-			background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 248, 44, 1)), to(rgba(7, 119, 11, 1))) !important;
+			border-radius: $menu-border-radius $menu-border-radius 0 0 !important;
+			background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 1)), to(rgba($menu-end-gradient, 1))) !important;
 			border: none !important;
 		}
 		
-		.ui-cornel-all { 
-			border-radius: 0 13px 0 13px !important;
-		}
 	}
 	
 	.ui-menu .ui-widget-header h1, 
@@ -74,5 +96,46 @@
 		margin: 0 auto;
 		padding: 0.3em 3%;
 		width: 100% !important;
+	}
+}
+
+.product-menu {
+	border-radius: $menu-border-radius $menu-border-radius 0 0 !important;
+	
+	.ui-state-hover {
+		background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
+		box-shadow: $menu-hover-shadow !important; 
+	}
+}
+
+.ui-menubar {
+	padding-left: 0.5em !important;
+	padding-right: 0.5em !important;
+}
+
+.ui-panelmenu {
+	.ui-panelmenu-panel {
+		.ui-panelmenu-header {
+			background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 1)), to(rgba($menu-end-gradient, 1))) !important;
+		}
+		
+		.ui-menuitem-link {
+			width: 100% !important;
+		}
+		
+		.ui-panelmenu-content {
+			background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 0.2)), to(rgba($menu-end-gradient, 0.6))) !important;
+			padding: 0.2em !important;
+			
+			.ui-menuitem {
+				.ui-menuitem-link {
+					color: $menu-color !important;
+				}
+				
+				.ui-state-hover {
+					background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
+				}
+			}
+		}
 	}
 }

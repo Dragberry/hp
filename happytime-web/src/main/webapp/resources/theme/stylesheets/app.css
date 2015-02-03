@@ -4281,15 +4281,21 @@ html, body {
   background: url("icons/full-cart-light.jpg");
 }
 
-/* line 1, ../scss/_menu.scss */
+/* line 11, ../scss/_menu.scss */
 .ui-menu {
-  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 248, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) !important;
+  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) !important;
   border: 1px solid #1E642B;
-  border-radius: 15px;
+  border-radius: 15px !important;
   width: auto !important;
   padding: 0 !important;
 }
-/* line 8, ../scss/_menu.scss */
+/* line 20, ../scss/_menu.scss */
+.ui-menu .ui-menuitem-list .ui-menuitem .ui-state-hover {
+  background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
+  border-radius: 15px !important;
+  padding: 0px 3px !important;
+}
+/* line 28, ../scss/_menu.scss */
 .ui-menu .ui-menuitem {
   width: 100%;
   float: left;
@@ -4298,12 +4304,17 @@ html, body {
   padding: 0px 3px !important;
   border-radius: 15px !important;
 }
-/* line 17, ../scss/_menu.scss */
+/* line 37, ../scss/_menu.scss */
 .ui-menu .menu-active {
   background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
-  box-shadow: 0px 0px 8px #85b2cb !important;
 }
-/* line 22, ../scss/_menu.scss */
+/* line 39, ../scss/_menu.scss */
+.ui-menu .menu-active .ui-state-hover {
+  background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
+  border-radius: 15px !important;
+  box-shadow: 0px 0px 8px #ddd !important;
+}
+/* line 46, ../scss/_menu.scss */
 .ui-menu .ui-menuitem-link {
   display: block;
   width: 100% !important;
@@ -4317,30 +4328,27 @@ html, body {
   cursor: pointer;
   color: cornsilk !important;
 }
-/* line 37, ../scss/_menu.scss */
+/* line 61, ../scss/_menu.scss */
 .ui-menu .ui-menuitem-active .ui-state-hover {
   background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
   border-radius: 15px !important;
+  box-shadow: 0px 0px 8px #ddd !important;
 }
-/* line 44, ../scss/_menu.scss */
+/* line 69, ../scss/_menu.scss */
 .ui-menu .ui-menu-parent .ui-menu-child {
   width: auto !important;
-  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 248, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) !important;
+  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) !important;
   border: 1px solid #1E642B !important;
 }
-/* line 52, ../scss/_menu.scss */
+/* line 77, ../scss/_menu.scss */
 .ui-menu .ui-menu-list .ui-widget-header {
   width: 100% !important;
   margin: 0 !important;
-  border-radius: 13px 13px 0 0 !important;
-  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(#24f82c), to(#07770b)) !important;
+  border-radius: 15px 15px 0 0 !important;
+  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) !important;
   border: none !important;
 }
-/* line 60, ../scss/_menu.scss */
-.ui-menu .ui-menu-list .ui-cornel-all {
-  border-radius: 0 13px 0 13px !important;
-}
-/* line 65, ../scss/_menu.scss */
+/* line 87, ../scss/_menu.scss */
 .ui-menu .ui-menu .ui-widget-header h1,
 .ui-menu .ui-menu .ui-widget-header h2,
 .ui-menu .ui-menu .ui-widget-header h3,
@@ -4353,4 +4361,42 @@ html, body {
   margin: 0 auto;
   padding: 0.3em 3%;
   width: 100% !important;
+}
+
+/* line 102, ../scss/_menu.scss */
+.product-menu {
+  border-radius: 15px 15px 0 0 !important;
+}
+/* line 105, ../scss/_menu.scss */
+.product-menu .ui-state-hover {
+  background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
+  box-shadow: 0px 0px 8px #ddd !important;
+}
+
+/* line 111, ../scss/_menu.scss */
+.ui-menubar {
+  padding-left: 0.5em !important;
+  padding-right: 0.5em !important;
+}
+
+/* line 118, ../scss/_menu.scss */
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-header {
+  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) !important;
+}
+/* line 122, ../scss/_menu.scss */
+.ui-panelmenu .ui-panelmenu-panel .ui-menuitem-link {
+  width: 100% !important;
+}
+/* line 126, ../scss/_menu.scss */
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content {
+  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.2)), to(rgba(7, 119, 11, 0.6))) !important;
+  padding: 0.2em !important;
+}
+/* line 131, ../scss/_menu.scss */
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-menuitem-link {
+  color: cornsilk !important;
+}
+/* line 135, ../scss/_menu.scss */
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-state-hover {
+  background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
 }

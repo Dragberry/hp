@@ -7,7 +7,7 @@
 	
 	#{navigation.setCurrentSubPage(activeSubLink)}
 	
-	<p:menu>
+	<p:menu class="product-menu">
         <p:submenu label="#{menuModel.title}">
         	<c:forEach var="unit" items="#{menuModel.nestedMenu}">
         		<p:menuitem id="#{unit.id}" value="#{unit.title}" outcome="#{unit.link}" styleClass="#{navigation.isActiveSubPage(unit.id)}" />
