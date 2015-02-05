@@ -5,7 +5,7 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:c="http://java.sun.com/jsp/jstl/core">
 	
-	<p:panelMenu widgetVar="catalogMenu" id="#{menuBean.catalogMenu.id}">
+	<p:panelMenu widgetVar="catalogMenu" id="#{menuBean.catalogMenu.id}" >
        	<c:forEach var="unit" items="#{menuBean.catalogMenu.nestedMenu}">
        		<p:submenu label="#{unit.title}" id="#{unit.id}">
        			<c:forEach var="nestedUnit" items="#{unit.nestedMenu}">

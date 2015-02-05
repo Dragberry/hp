@@ -16,6 +16,13 @@ $header-top-margin: .2rem !default;
 $header-bottom-margin: .5rem !default;
 $header-text-rendering: optimizeLegibility !default;
 
+
+$main-header-color: #BA1212;
+$minor-header-color: #BA1212;
+$regular-color: #222222;
+$link-color: #008CBA;
+$link-hover-color: scale-color($link-color, $lightness: -14%);
+
 // We use these to control header font sizes
 $h1-font-size: rem-calc(23) !default;
 $h2-font-size: rem-calc(18) !default;
@@ -253,7 +260,6 @@ $align-class-breakpoints:
       font-family: $header-font-family;
       font-weight: $header-font-weight;
       font-style: $header-font-style;
-      color: $header-font-color;
       text-rendering: $header-text-rendering;
       margin-top: $header-top-margin;
       margin-bottom: $header-bottom-margin;
@@ -266,12 +272,30 @@ $align-class-breakpoints:
       }
     }
 
-    h1 { font-size: $h1-font-size - $h1-font-reduction; }
-    h2 { font-size: $h2-font-size - $h2-font-reduction; }
-    h3 { font-size: $h3-font-size - $h3-font-reduction; }
-    h4 { font-size: $h4-font-size - $h4-font-reduction; }
-    h5 { font-size: $h5-font-size - $h5-font-reduction; }
-    h6 { font-size: $h6-font-size - $h6-font-reduction; }
+    h1 { 
+    	font-size: $h1-font-size - $h1-font-reduction; 
+    	color: $main-header-color;
+    }
+    h2 { 
+    	font-size: $h2-font-size - $h2-font-reduction;
+    	color: $main-header-color;
+    }
+    h3 {
+    	font-size: $h3-font-size - $h3-font-reduction;
+    	color: $minor-header-color;
+    }
+    h4 {
+		font-size: $h4-font-size - $h4-font-reduction;
+		color: $minor-header-color;
+	}
+    h5 {
+		font-size: $h5-font-size - $h5-font-reduction;
+		color: $header-font-color;
+	}
+    h6 {
+    	font-size: $h6-font-size - $h6-font-reduction;
+    	color: $header-font-color;
+    }
 
     .subheader { @include subheader; }
 

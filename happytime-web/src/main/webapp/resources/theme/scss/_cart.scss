@@ -1,0 +1,40 @@
+.cart-panel {
+	padding: 0 !important;
+	border-radius: $panel-border-radius $panel-border-radius 0 0 !important;
+	background: $font-light-color !important;
+	border: 1px solid #1E642B;
+	
+	.ui-panel-footer {
+		@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+		
+	}
+	
+	.ui-panel-titlebar {
+		border-radius: $panel-border-radius $panel-border-radius 0 0 !important;
+		@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+		border: none !important;
+	}
+	
+	.ui-panel-content {
+		padding: 1.5em 0.5em !important;
+	}
+	
+	.ui-button {
+		@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+		
+		.ui-button-text {
+			padding: 0.3em !important;
+			color: $font-dark-color !important;
+		}
+	}
+	
+	.ui-state-hover {
+		@include background($bg-active-color, $bg-hover-color, 0.6, $bg-hover-color, 0);
+		
+		.ui-button-text {
+			color: $font-dark-color;
+			box-shadow: $bg-hover-shadow !important; 
+		}
+	}
+	
+}

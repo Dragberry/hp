@@ -22,6 +22,15 @@
 	</ui:define>
 	
 	<ui:define name="content">
+		<p:fieldset legend="Search panel">
+			<p:outputPanel styleClass="text-center">
+				<h2>Студия праздников "HappyTime" предлагает Вам огромный выбор воздушных шаров.</h2>
+				<p>
+					Устройте праздник для любимой, удивите любимого, порадуйте своих детей, подарите улыбку родным, доставьте удовольствие себе с шарами от студии праздников "HappyTime". А состав студии поможет Вам в этом.
+				</p>
+			</p:outputPanel>
+		</p:fieldset>
+		<br />
 		#{productController.doSearch(param['category'], param['subcategory'])}
 		<shop:product-data-grid controller="#{productController}"
 			model="#{productModel}"/>

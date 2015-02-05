@@ -2845,238 +2845,238 @@ textarea {
   min-height: 50px;
 }
 
-/* line 155, ../foundation/scss/foundation/components/_type.scss */
+/* line 162, ../foundation/scss/foundation/components/_type.scss */
 .text-left {
   text-align: left !important;
 }
 
-/* line 156, ../foundation/scss/foundation/components/_type.scss */
+/* line 163, ../foundation/scss/foundation/components/_type.scss */
 .text-right {
   text-align: right !important;
 }
 
-/* line 157, ../foundation/scss/foundation/components/_type.scss */
+/* line 164, ../foundation/scss/foundation/components/_type.scss */
 .text-center {
   text-align: center !important;
 }
 
-/* line 158, ../foundation/scss/foundation/components/_type.scss */
+/* line 165, ../foundation/scss/foundation/components/_type.scss */
 .text-justify {
   text-align: justify !important;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 162, ../foundation/scss/foundation/components/_type.scss */
+  /* line 169, ../foundation/scss/foundation/components/_type.scss */
   .small-only-text-left {
     text-align: left !important;
   }
 
-  /* line 163, ../foundation/scss/foundation/components/_type.scss */
+  /* line 170, ../foundation/scss/foundation/components/_type.scss */
   .small-only-text-right {
     text-align: right !important;
   }
 
-  /* line 164, ../foundation/scss/foundation/components/_type.scss */
+  /* line 171, ../foundation/scss/foundation/components/_type.scss */
   .small-only-text-center {
     text-align: center !important;
   }
 
-  /* line 165, ../foundation/scss/foundation/components/_type.scss */
+  /* line 172, ../foundation/scss/foundation/components/_type.scss */
   .small-only-text-justify {
     text-align: justify !important;
   }
 }
 @media only screen {
-  /* line 162, ../foundation/scss/foundation/components/_type.scss */
+  /* line 169, ../foundation/scss/foundation/components/_type.scss */
   .small-text-left {
     text-align: left !important;
   }
 
-  /* line 163, ../foundation/scss/foundation/components/_type.scss */
+  /* line 170, ../foundation/scss/foundation/components/_type.scss */
   .small-text-right {
     text-align: right !important;
   }
 
-  /* line 164, ../foundation/scss/foundation/components/_type.scss */
+  /* line 171, ../foundation/scss/foundation/components/_type.scss */
   .small-text-center {
     text-align: center !important;
   }
 
-  /* line 165, ../foundation/scss/foundation/components/_type.scss */
+  /* line 172, ../foundation/scss/foundation/components/_type.scss */
   .small-text-justify {
     text-align: justify !important;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 162, ../foundation/scss/foundation/components/_type.scss */
+  /* line 169, ../foundation/scss/foundation/components/_type.scss */
   .medium-only-text-left {
     text-align: left !important;
   }
 
-  /* line 163, ../foundation/scss/foundation/components/_type.scss */
+  /* line 170, ../foundation/scss/foundation/components/_type.scss */
   .medium-only-text-right {
     text-align: right !important;
   }
 
-  /* line 164, ../foundation/scss/foundation/components/_type.scss */
+  /* line 171, ../foundation/scss/foundation/components/_type.scss */
   .medium-only-text-center {
     text-align: center !important;
   }
 
-  /* line 165, ../foundation/scss/foundation/components/_type.scss */
+  /* line 172, ../foundation/scss/foundation/components/_type.scss */
   .medium-only-text-justify {
     text-align: justify !important;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 162, ../foundation/scss/foundation/components/_type.scss */
+  /* line 169, ../foundation/scss/foundation/components/_type.scss */
   .medium-text-left {
     text-align: left !important;
   }
 
-  /* line 163, ../foundation/scss/foundation/components/_type.scss */
+  /* line 170, ../foundation/scss/foundation/components/_type.scss */
   .medium-text-right {
     text-align: right !important;
   }
 
-  /* line 164, ../foundation/scss/foundation/components/_type.scss */
+  /* line 171, ../foundation/scss/foundation/components/_type.scss */
   .medium-text-center {
     text-align: center !important;
   }
 
-  /* line 165, ../foundation/scss/foundation/components/_type.scss */
+  /* line 172, ../foundation/scss/foundation/components/_type.scss */
   .medium-text-justify {
     text-align: justify !important;
   }
 }
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  /* line 162, ../foundation/scss/foundation/components/_type.scss */
+  /* line 169, ../foundation/scss/foundation/components/_type.scss */
   .large-only-text-left {
     text-align: left !important;
   }
 
-  /* line 163, ../foundation/scss/foundation/components/_type.scss */
+  /* line 170, ../foundation/scss/foundation/components/_type.scss */
   .large-only-text-right {
     text-align: right !important;
   }
 
-  /* line 164, ../foundation/scss/foundation/components/_type.scss */
+  /* line 171, ../foundation/scss/foundation/components/_type.scss */
   .large-only-text-center {
     text-align: center !important;
   }
 
-  /* line 165, ../foundation/scss/foundation/components/_type.scss */
+  /* line 172, ../foundation/scss/foundation/components/_type.scss */
   .large-only-text-justify {
     text-align: justify !important;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 162, ../foundation/scss/foundation/components/_type.scss */
+  /* line 169, ../foundation/scss/foundation/components/_type.scss */
   .large-text-left {
     text-align: left !important;
   }
 
-  /* line 163, ../foundation/scss/foundation/components/_type.scss */
+  /* line 170, ../foundation/scss/foundation/components/_type.scss */
   .large-text-right {
     text-align: right !important;
   }
 
-  /* line 164, ../foundation/scss/foundation/components/_type.scss */
+  /* line 171, ../foundation/scss/foundation/components/_type.scss */
   .large-text-center {
     text-align: center !important;
   }
 
-  /* line 165, ../foundation/scss/foundation/components/_type.scss */
+  /* line 172, ../foundation/scss/foundation/components/_type.scss */
   .large-text-justify {
     text-align: justify !important;
   }
 }
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
-  /* line 162, ../foundation/scss/foundation/components/_type.scss */
+  /* line 169, ../foundation/scss/foundation/components/_type.scss */
   .xlarge-only-text-left {
     text-align: left !important;
   }
 
-  /* line 163, ../foundation/scss/foundation/components/_type.scss */
+  /* line 170, ../foundation/scss/foundation/components/_type.scss */
   .xlarge-only-text-right {
     text-align: right !important;
   }
 
-  /* line 164, ../foundation/scss/foundation/components/_type.scss */
+  /* line 171, ../foundation/scss/foundation/components/_type.scss */
   .xlarge-only-text-center {
     text-align: center !important;
   }
 
-  /* line 165, ../foundation/scss/foundation/components/_type.scss */
+  /* line 172, ../foundation/scss/foundation/components/_type.scss */
   .xlarge-only-text-justify {
     text-align: justify !important;
   }
 }
 @media only screen and (min-width: 90.063em) {
-  /* line 162, ../foundation/scss/foundation/components/_type.scss */
+  /* line 169, ../foundation/scss/foundation/components/_type.scss */
   .xlarge-text-left {
     text-align: left !important;
   }
 
-  /* line 163, ../foundation/scss/foundation/components/_type.scss */
+  /* line 170, ../foundation/scss/foundation/components/_type.scss */
   .xlarge-text-right {
     text-align: right !important;
   }
 
-  /* line 164, ../foundation/scss/foundation/components/_type.scss */
+  /* line 171, ../foundation/scss/foundation/components/_type.scss */
   .xlarge-text-center {
     text-align: center !important;
   }
 
-  /* line 165, ../foundation/scss/foundation/components/_type.scss */
+  /* line 172, ../foundation/scss/foundation/components/_type.scss */
   .xlarge-text-justify {
     text-align: justify !important;
   }
 }
 @media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
-  /* line 162, ../foundation/scss/foundation/components/_type.scss */
+  /* line 169, ../foundation/scss/foundation/components/_type.scss */
   .xxlarge-only-text-left {
     text-align: left !important;
   }
 
-  /* line 163, ../foundation/scss/foundation/components/_type.scss */
+  /* line 170, ../foundation/scss/foundation/components/_type.scss */
   .xxlarge-only-text-right {
     text-align: right !important;
   }
 
-  /* line 164, ../foundation/scss/foundation/components/_type.scss */
+  /* line 171, ../foundation/scss/foundation/components/_type.scss */
   .xxlarge-only-text-center {
     text-align: center !important;
   }
 
-  /* line 165, ../foundation/scss/foundation/components/_type.scss */
+  /* line 172, ../foundation/scss/foundation/components/_type.scss */
   .xxlarge-only-text-justify {
     text-align: justify !important;
   }
 }
 @media only screen and (min-width: 120.063em) {
-  /* line 162, ../foundation/scss/foundation/components/_type.scss */
+  /* line 169, ../foundation/scss/foundation/components/_type.scss */
   .xxlarge-text-left {
     text-align: left !important;
   }
 
-  /* line 163, ../foundation/scss/foundation/components/_type.scss */
+  /* line 170, ../foundation/scss/foundation/components/_type.scss */
   .xxlarge-text-right {
     text-align: right !important;
   }
 
-  /* line 164, ../foundation/scss/foundation/components/_type.scss */
+  /* line 171, ../foundation/scss/foundation/components/_type.scss */
   .xxlarge-text-center {
     text-align: center !important;
   }
 
-  /* line 165, ../foundation/scss/foundation/components/_type.scss */
+  /* line 172, ../foundation/scss/foundation/components/_type.scss */
   .xxlarge-text-justify {
     text-align: justify !important;
   }
 }
 /* Typography resets */
-/* line 193, ../foundation/scss/foundation/components/_type.scss */
+/* line 200, ../foundation/scss/foundation/components/_type.scss */
 div,
 dl,
 dt,
@@ -3101,23 +3101,23 @@ td {
 }
 
 /* Default Link Styles */
-/* line 217, ../foundation/scss/foundation/components/_type.scss */
+/* line 224, ../foundation/scss/foundation/components/_type.scss */
 a {
   color: #008CBA;
   text-decoration: none;
   line-height: inherit;
 }
-/* line 222, ../foundation/scss/foundation/components/_type.scss */
+/* line 229, ../foundation/scss/foundation/components/_type.scss */
 a:hover, a:focus {
   color: #0078a0;
 }
-/* line 230, ../foundation/scss/foundation/components/_type.scss */
+/* line 237, ../foundation/scss/foundation/components/_type.scss */
 a img {
   border: none;
 }
 
 /* Default paragraph styles */
-/* line 234, ../foundation/scss/foundation/components/_type.scss */
+/* line 241, ../foundation/scss/foundation/components/_type.scss */
 p {
   font-family: inherit;
   font-weight: normal;
@@ -3126,12 +3126,12 @@ p {
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility;
 }
-/* line 242, ../foundation/scss/foundation/components/_type.scss */
+/* line 249, ../foundation/scss/foundation/components/_type.scss */
 p.lead {
   font-size: 1.21875rem;
   line-height: 1.6;
 }
-/* line 244, ../foundation/scss/foundation/components/_type.scss */
+/* line 251, ../foundation/scss/foundation/components/_type.scss */
 p aside {
   font-size: 0.875rem;
   line-height: 1.35;
@@ -3139,55 +3139,60 @@ p aside {
 }
 
 /* Default header styles */
-/* line 252, ../foundation/scss/foundation/components/_type.scss */
+/* line 259, ../foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #222222;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   line-height: 1.4;
 }
-/* line 262, ../foundation/scss/foundation/components/_type.scss */
+/* line 268, ../foundation/scss/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
   color: #6f6f6f;
   line-height: 0;
 }
 
-/* line 269, ../foundation/scss/foundation/components/_type.scss */
+/* line 275, ../foundation/scss/foundation/components/_type.scss */
 h1 {
   font-size: 1.4375rem;
+  color: #BA1212;
 }
 
-/* line 270, ../foundation/scss/foundation/components/_type.scss */
+/* line 279, ../foundation/scss/foundation/components/_type.scss */
 h2 {
   font-size: 1.125rem;
+  color: #BA1212;
 }
 
-/* line 271, ../foundation/scss/foundation/components/_type.scss */
+/* line 283, ../foundation/scss/foundation/components/_type.scss */
 h3 {
   font-size: 1rem;
+  color: #BA1212;
 }
 
-/* line 272, ../foundation/scss/foundation/components/_type.scss */
+/* line 287, ../foundation/scss/foundation/components/_type.scss */
 h4 {
   font-size: 1rem;
+  color: #BA1212;
 }
 
-/* line 273, ../foundation/scss/foundation/components/_type.scss */
+/* line 291, ../foundation/scss/foundation/components/_type.scss */
 h5 {
   font-size: 1rem;
+  color: #222222;
 }
 
-/* line 274, ../foundation/scss/foundation/components/_type.scss */
+/* line 295, ../foundation/scss/foundation/components/_type.scss */
 h6 {
   font-size: 1rem;
+  color: #222222;
 }
 
-/* line 276, ../foundation/scss/foundation/components/_type.scss */
+/* line 300, ../foundation/scss/foundation/components/_type.scss */
 .subheader {
   line-height: 1.4;
   color: #6f6f6f;
@@ -3196,7 +3201,7 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
-/* line 278, ../foundation/scss/foundation/components/_type.scss */
+/* line 302, ../foundation/scss/foundation/components/_type.scss */
 hr {
   border: solid #DDDDDD;
   border-width: 1px 0 0;
@@ -3206,27 +3211,27 @@ hr {
 }
 
 /* Helpful Typography Defaults */
-/* line 287, ../foundation/scss/foundation/components/_type.scss */
+/* line 311, ../foundation/scss/foundation/components/_type.scss */
 em,
 i {
   font-style: italic;
   line-height: inherit;
 }
 
-/* line 293, ../foundation/scss/foundation/components/_type.scss */
+/* line 317, ../foundation/scss/foundation/components/_type.scss */
 strong,
 b {
   font-weight: bold;
   line-height: inherit;
 }
 
-/* line 299, ../foundation/scss/foundation/components/_type.scss */
+/* line 323, ../foundation/scss/foundation/components/_type.scss */
 small {
   font-size: 60%;
   line-height: inherit;
 }
 
-/* line 304, ../foundation/scss/foundation/components/_type.scss */
+/* line 328, ../foundation/scss/foundation/components/_type.scss */
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: normal;
@@ -3239,7 +3244,7 @@ code {
 }
 
 /* Lists */
-/* line 316, ../foundation/scss/foundation/components/_type.scss */
+/* line 340, ../foundation/scss/foundation/components/_type.scss */
 ul,
 ol,
 dl {
@@ -3250,15 +3255,15 @@ dl {
   font-family: inherit;
 }
 
-/* line 326, ../foundation/scss/foundation/components/_type.scss */
+/* line 350, ../foundation/scss/foundation/components/_type.scss */
 ul {
   margin-left: 1.1rem;
 }
-/* line 328, ../foundation/scss/foundation/components/_type.scss */
+/* line 352, ../foundation/scss/foundation/components/_type.scss */
 ul.no-bullet {
   margin-left: 0;
 }
-/* line 331, ../foundation/scss/foundation/components/_type.scss */
+/* line 355, ../foundation/scss/foundation/components/_type.scss */
 ul.no-bullet li ul,
 ul.no-bullet li ol {
   margin-left: 1.25rem;
@@ -3267,42 +3272,42 @@ ul.no-bullet li ol {
 }
 
 /* Unordered Lists */
-/* line 344, ../foundation/scss/foundation/components/_type.scss */
+/* line 368, ../foundation/scss/foundation/components/_type.scss */
 ul li ul,
 ul li ol {
   margin-left: 1.25rem;
   margin-bottom: 0;
 }
-/* line 353, ../foundation/scss/foundation/components/_type.scss */
+/* line 377, ../foundation/scss/foundation/components/_type.scss */
 ul.square li ul, ul.circle li ul, ul.disc li ul {
   list-style: inherit;
 }
-/* line 356, ../foundation/scss/foundation/components/_type.scss */
+/* line 380, ../foundation/scss/foundation/components/_type.scss */
 ul.square {
   list-style-type: square;
   margin-left: 1.1rem;
 }
-/* line 357, ../foundation/scss/foundation/components/_type.scss */
+/* line 381, ../foundation/scss/foundation/components/_type.scss */
 ul.circle {
   list-style-type: circle;
   margin-left: 1.1rem;
 }
-/* line 358, ../foundation/scss/foundation/components/_type.scss */
+/* line 382, ../foundation/scss/foundation/components/_type.scss */
 ul.disc {
   list-style-type: disc;
   margin-left: 1.1rem;
 }
-/* line 359, ../foundation/scss/foundation/components/_type.scss */
+/* line 383, ../foundation/scss/foundation/components/_type.scss */
 ul.no-bullet {
   list-style: none;
 }
 
 /* Ordered Lists */
-/* line 363, ../foundation/scss/foundation/components/_type.scss */
+/* line 387, ../foundation/scss/foundation/components/_type.scss */
 ol {
   margin-left: 1.4rem;
 }
-/* line 366, ../foundation/scss/foundation/components/_type.scss */
+/* line 390, ../foundation/scss/foundation/components/_type.scss */
 ol li ul,
 ol li ol {
   margin-left: 1.25rem;
@@ -3310,18 +3315,18 @@ ol li ol {
 }
 
 /* Definition Lists */
-/* line 376, ../foundation/scss/foundation/components/_type.scss */
+/* line 400, ../foundation/scss/foundation/components/_type.scss */
 dl dt {
   margin-bottom: 0.3rem;
   font-weight: bold;
 }
-/* line 380, ../foundation/scss/foundation/components/_type.scss */
+/* line 404, ../foundation/scss/foundation/components/_type.scss */
 dl dd {
   margin-bottom: 0.75rem;
 }
 
 /* Abbreviations */
-/* line 384, ../foundation/scss/foundation/components/_type.scss */
+/* line 408, ../foundation/scss/foundation/components/_type.scss */
 abbr,
 acronym {
   text-transform: uppercase;
@@ -3330,39 +3335,39 @@ acronym {
   cursor: help;
 }
 
-/* line 391, ../foundation/scss/foundation/components/_type.scss */
+/* line 415, ../foundation/scss/foundation/components/_type.scss */
 abbr {
   text-transform: none;
 }
-/* line 393, ../foundation/scss/foundation/components/_type.scss */
+/* line 417, ../foundation/scss/foundation/components/_type.scss */
 abbr[title] {
   border-bottom: 1px dotted #DDDDDD;
 }
 
 /* Blockquotes */
-/* line 399, ../foundation/scss/foundation/components/_type.scss */
+/* line 423, ../foundation/scss/foundation/components/_type.scss */
 blockquote {
   margin: 0 0 1.25rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #DDDDDD;
 }
-/* line 404, ../foundation/scss/foundation/components/_type.scss */
+/* line 428, ../foundation/scss/foundation/components/_type.scss */
 blockquote cite {
   display: block;
   font-size: 0.8125rem;
   color: #555555;
 }
-/* line 408, ../foundation/scss/foundation/components/_type.scss */
+/* line 432, ../foundation/scss/foundation/components/_type.scss */
 blockquote cite:before {
   content: "\2014 \0020";
 }
-/* line 412, ../foundation/scss/foundation/components/_type.scss */
+/* line 436, ../foundation/scss/foundation/components/_type.scss */
 blockquote cite a,
 blockquote cite a:visited {
   color: #555555;
 }
 
-/* line 418, ../foundation/scss/foundation/components/_type.scss */
+/* line 442, ../foundation/scss/foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
@@ -3370,29 +3375,29 @@ blockquote p {
 }
 
 /* Microformats */
-/* line 425, ../foundation/scss/foundation/components/_type.scss */
+/* line 449, ../foundation/scss/foundation/components/_type.scss */
 .vcard {
   display: inline-block;
   margin: 0 0 1.25rem 0;
   border: 1px solid #DDDDDD;
   padding: 0.625rem 0.75rem;
 }
-/* line 431, ../foundation/scss/foundation/components/_type.scss */
+/* line 455, ../foundation/scss/foundation/components/_type.scss */
 .vcard li {
   margin: 0;
   display: block;
 }
-/* line 435, ../foundation/scss/foundation/components/_type.scss */
+/* line 459, ../foundation/scss/foundation/components/_type.scss */
 .vcard .fn {
   font-weight: bold;
   font-size: 0.9375rem;
 }
 
-/* line 442, ../foundation/scss/foundation/components/_type.scss */
+/* line 466, ../foundation/scss/foundation/components/_type.scss */
 .vevent .summary {
   font-weight: bold;
 }
-/* line 444, ../foundation/scss/foundation/components/_type.scss */
+/* line 468, ../foundation/scss/foundation/components/_type.scss */
 .vevent abbr {
   cursor: default;
   text-decoration: none;
@@ -3402,37 +3407,37 @@ blockquote p {
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 455, ../foundation/scss/foundation/components/_type.scss */
+  /* line 479, ../foundation/scss/foundation/components/_type.scss */
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
   }
 
-  /* line 456, ../foundation/scss/foundation/components/_type.scss */
+  /* line 480, ../foundation/scss/foundation/components/_type.scss */
   h1 {
     font-size: 1.4375rem;
   }
 
-  /* line 457, ../foundation/scss/foundation/components/_type.scss */
+  /* line 481, ../foundation/scss/foundation/components/_type.scss */
   h2 {
     font-size: 1.125rem;
   }
 
-  /* line 458, ../foundation/scss/foundation/components/_type.scss */
+  /* line 482, ../foundation/scss/foundation/components/_type.scss */
   h3 {
     font-size: 1rem;
   }
 
-  /* line 459, ../foundation/scss/foundation/components/_type.scss */
+  /* line 483, ../foundation/scss/foundation/components/_type.scss */
   h4 {
     font-size: 1rem;
   }
 
-  /* line 460, ../foundation/scss/foundation/components/_type.scss */
+  /* line 484, ../foundation/scss/foundation/components/_type.scss */
   h5 {
     font-size: 1rem;
   }
 
-  /* line 461, ../foundation/scss/foundation/components/_type.scss */
+  /* line 485, ../foundation/scss/foundation/components/_type.scss */
   h6 {
     font-size: 1rem;
   }
@@ -3443,13 +3448,13 @@ blockquote p {
  * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
  * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
 */
-/* line 472, ../foundation/scss/foundation/components/_type.scss */
+/* line 496, ../foundation/scss/foundation/components/_type.scss */
 .print-only {
   display: none !important;
 }
 
 @media print {
-  /* line 474, ../foundation/scss/foundation/components/_type.scss */
+  /* line 498, ../foundation/scss/foundation/components/_type.scss */
   * {
     background: transparent !important;
     color: #000000 !important;
@@ -3458,49 +3463,49 @@ blockquote p {
     text-shadow: none !important;
   }
 
-  /* line 481, ../foundation/scss/foundation/components/_type.scss */
+  /* line 505, ../foundation/scss/foundation/components/_type.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 483, ../foundation/scss/foundation/components/_type.scss */
+  /* line 507, ../foundation/scss/foundation/components/_type.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 485, ../foundation/scss/foundation/components/_type.scss */
+  /* line 509, ../foundation/scss/foundation/components/_type.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 488, ../foundation/scss/foundation/components/_type.scss */
+  /* line 512, ../foundation/scss/foundation/components/_type.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 492, ../foundation/scss/foundation/components/_type.scss */
+  /* line 516, ../foundation/scss/foundation/components/_type.scss */
   pre,
   blockquote {
     border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
-  /* line 498, ../foundation/scss/foundation/components/_type.scss */
+  /* line 522, ../foundation/scss/foundation/components/_type.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 500, ../foundation/scss/foundation/components/_type.scss */
+  /* line 524, ../foundation/scss/foundation/components/_type.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 503, ../foundation/scss/foundation/components/_type.scss */
+  /* line 527, ../foundation/scss/foundation/components/_type.scss */
   img {
     max-width: 100% !important;
   }
@@ -3508,7 +3513,7 @@ blockquote p {
   @page {
     margin: 0.5cm;
   }
-  /* line 507, ../foundation/scss/foundation/components/_type.scss */
+  /* line 531, ../foundation/scss/foundation/components/_type.scss */
   p,
   h2,
   h3 {
@@ -3516,28 +3521,28 @@ blockquote p {
     widows: 3;
   }
 
-  /* line 514, ../foundation/scss/foundation/components/_type.scss */
+  /* line 538, ../foundation/scss/foundation/components/_type.scss */
   h2,
   h3 {
     page-break-after: avoid;
   }
 
-  /* line 517, ../foundation/scss/foundation/components/_type.scss */
+  /* line 541, ../foundation/scss/foundation/components/_type.scss */
   .hide-on-print {
     display: none !important;
   }
 
-  /* line 518, ../foundation/scss/foundation/components/_type.scss */
+  /* line 542, ../foundation/scss/foundation/components/_type.scss */
   .print-only {
     display: block !important;
   }
 
-  /* line 519, ../foundation/scss/foundation/components/_type.scss */
+  /* line 543, ../foundation/scss/foundation/components/_type.scss */
   .hide-for-print {
     display: none !important;
   }
 
-  /* line 520, ../foundation/scss/foundation/components/_type.scss */
+  /* line 544, ../foundation/scss/foundation/components/_type.scss */
   .show-for-print {
     display: inherit !important;
   }
@@ -4276,57 +4281,43 @@ html, body {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+/* line 42, ../scss/_general.scss */
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
 /* line 1, ../scss/_images.scss */
 .ui-icon-cart {
   background: url("icons/full-cart-light.jpg");
 }
 
 /* line 10, ../scss/_menu.scss */
-.cart-panel {
-  padding: 0 !important;
-  border-radius: 15px 15px 0 0 !important;
-  background: cornsilk !important;
-  border: 1px solid #1E642B;
-}
-/* line 16, ../scss/_menu.scss */
-.cart-panel .ui-panel-titlebar {
-  border-radius: 15px 15px 0 0 !important;
-  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) !important;
-  border: none !important;
-}
-/* line 22, ../scss/_menu.scss */
-.cart-panel .ui-panel-content {
-  padding: 1.5em 0.5em !important;
-}
-/* line 26, ../scss/_menu.scss */
-.cart-panel .ui-button {
-  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) !important;
-}
-/* line 29, ../scss/_menu.scss */
-.cart-panel .ui-button .ui-button-text {
-  padding: 0.3em !important;
-  color: cornsilk !important;
-}
-/* line 35, ../scss/_menu.scss */
-.cart-panel .ui-button .ui-state-hover {
-  background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
-}
-
-/* line 42, ../scss/_menu.scss */
 .ui-menu {
-  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) !important;
-  border: 1px solid #1E642B;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) #1D8225 !important;
+  background: -moz-linear-gradient(center top, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) repeat scroll 0% 0% #1D8225 !important;
+  background: -o-linear-gradient(center top, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) #1D8225 !important;
+  background: linear-gradient(to bottom, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) #1D8225 !important;
+  border: 1px solid #1E642B !important;
   border-radius: 15px !important;
   width: auto !important;
   padding: 0 !important;
 }
-/* line 51, ../scss/_menu.scss */
+/* line 19, ../scss/_menu.scss */
 .ui-menu .ui-menuitem-list .ui-menuitem .ui-state-hover {
-  background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
   border-radius: 15px !important;
   padding: 0px 3px !important;
 }
-/* line 59, ../scss/_menu.scss */
+/* line 27, ../scss/_menu.scss */
 .ui-menu .ui-menuitem {
   width: 100%;
   float: left;
@@ -4335,17 +4326,23 @@ html, body {
   padding: 0px 3px !important;
   border-radius: 15px !important;
 }
-/* line 68, ../scss/_menu.scss */
+/* line 36, ../scss/_menu.scss */
 .ui-menu .menu-active {
-  background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
 }
-/* line 70, ../scss/_menu.scss */
+/* line 38, ../scss/_menu.scss */
 .ui-menu .menu-active .ui-state-hover {
-  background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
   border-radius: 15px !important;
   box-shadow: 0px 0px 8px #ddd !important;
 }
-/* line 77, ../scss/_menu.scss */
+/* line 45, ../scss/_menu.scss */
 .ui-menu .ui-menuitem-link {
   display: block;
   width: 100% !important;
@@ -4359,77 +4356,100 @@ html, body {
   cursor: pointer;
   color: cornsilk !important;
 }
-/* line 92, ../scss/_menu.scss */
+/* line 60, ../scss/_menu.scss */
 .ui-menu .ui-menuitem-active .ui-state-hover {
-  background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
   border-radius: 15px !important;
   box-shadow: 0px 0px 8px #ddd !important;
 }
-/* line 100, ../scss/_menu.scss */
+/* line 68, ../scss/_menu.scss */
 .ui-menu .ui-menu-parent .ui-menu-child {
   width: auto !important;
-  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) #1D8225 !important;
+  background: -moz-linear-gradient(center top, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) repeat scroll 0% 0% #1D8225 !important;
+  background: -o-linear-gradient(center top, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) #1D8225 !important;
+  background: linear-gradient(to bottom, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) #1D8225 !important;
   border: 1px solid #1E642B !important;
 }
-/* line 108, ../scss/_menu.scss */
+/* line 76, ../scss/_menu.scss */
 .ui-menu .ui-menu-list .ui-widget-header {
   width: 100% !important;
   margin: 0 !important;
   border-radius: 15px 15px 0 0 !important;
-  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
   border: none !important;
 }
-/* line 118, ../scss/_menu.scss */
-.ui-menu .ui-menu .ui-widget-header h1,
-.ui-menu .ui-menu .ui-widget-header h2,
-.ui-menu .ui-menu .ui-widget-header h3,
-.ui-menu .ui-menu .ui-widget-header h4,
-.ui-menu .ui-menu .ui-widget-header h5,
-.ui-menu .ui-menu .ui-widget-header h6 {
+
+/* line 87, ../scss/_menu.scss */
+.ui-menu .ui-widget-header h1,
+.ui-menu .ui-widget-header h2,
+.ui-menu .ui-widget-header h3,
+.ui-menu .ui-widget-header h4,
+.ui-menu .ui-widget-header h5,
+.ui-menu .ui-widget-header h6 {
   float: left;
   display: block;
   font-size: 1em;
   margin: 0 auto;
   padding: 0.3em 3%;
   width: 100% !important;
+  color: #222222 !important;
 }
 
-/* line 133, ../scss/_menu.scss */
+/* line 102, ../scss/_menu.scss */
 .product-menu {
   border-radius: 15px 15px 0 0 !important;
 }
-/* line 136, ../scss/_menu.scss */
+/* line 105, ../scss/_menu.scss */
 .product-menu .ui-state-hover {
-  background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
   box-shadow: 0px 0px 8px #ddd !important;
 }
 
-/* line 142, ../scss/_menu.scss */
+/* line 111, ../scss/_menu.scss */
 .ui-menubar {
   padding-left: 0.5em !important;
   padding-right: 0.5em !important;
 }
 
-/* line 149, ../scss/_menu.scss */
+/* line 118, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-header {
-  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
 }
-/* line 153, ../scss/_menu.scss */
+/* line 122, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-menuitem-link {
   width: 100% !important;
 }
-/* line 157, ../scss/_menu.scss */
+/* line 126, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content {
-  background: #1D8225 -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.2)), to(rgba(7, 119, 11, 0.6))) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.2)), to(rgba(7, 119, 11, 0.6))) #1D8225 !important;
+  background: -moz-linear-gradient(center top, rgba(36, 255, 44, 0.2), rgba(7, 119, 11, 0.6)) repeat scroll 0% 0% #1D8225 !important;
+  background: -o-linear-gradient(center top, rgba(36, 255, 44, 0.2), rgba(7, 119, 11, 0.6)) #1D8225 !important;
+  background: linear-gradient(to bottom, rgba(36, 255, 44, 0.2), rgba(7, 119, 11, 0.6)) #1D8225 !important;
   padding: 0.2em !important;
 }
-/* line 162, ../scss/_menu.scss */
+/* line 131, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-menuitem-link {
   color: cornsilk !important;
 }
-/* line 166, ../scss/_menu.scss */
+/* line 135, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-state-hover {
-  background: #48C05C -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
 }
 
 /* line 1, ../scss/_dashboard.scss */
@@ -4450,4 +4470,56 @@ html, body {
 /* line 14, ../scss/_dashboard.scss */
 .owner-panel .ui-panel-content {
   padding: 0.3em 0 0.3em 0 !important;
+}
+
+/* line 1, ../scss/_cart.scss */
+.cart-panel {
+  padding: 0 !important;
+  border-radius: 15px 15px 0 0 !important;
+  background: cornsilk !important;
+  border: 1px solid #1E642B;
+}
+/* line 7, ../scss/_cart.scss */
+.cart-panel .ui-panel-footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+}
+/* line 12, ../scss/_cart.scss */
+.cart-panel .ui-panel-titlebar {
+  border-radius: 15px 15px 0 0 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+  border: none !important;
+}
+/* line 18, ../scss/_cart.scss */
+.cart-panel .ui-panel-content {
+  padding: 1.5em 0.5em !important;
+}
+/* line 22, ../scss/_cart.scss */
+.cart-panel .ui-button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+}
+/* line 25, ../scss/_cart.scss */
+.cart-panel .ui-button .ui-button-text {
+  padding: 0.3em !important;
+  color: #222222 !important;
+}
+/* line 31, ../scss/_cart.scss */
+.cart-panel .ui-state-hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+}
+/* line 34, ../scss/_cart.scss */
+.cart-panel .ui-state-hover .ui-button-text {
+  color: #222222;
+  box-shadow: 0px 0px 8px #ddd !important;
 }

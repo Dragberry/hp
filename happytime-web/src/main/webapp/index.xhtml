@@ -24,7 +24,9 @@
 			<p:outputPanel styleClass="row dashboard-item text-center">
 				<p:outputPanel rendered="#{status.even}" styleClass="large-4 columns">
 					<p:link href="/#{item.link}">
-						<p:graphicImage value="/resources/images/#{item.imgLink}" alt="#{item.alt}"/>
+						<p:graphicImage value="/resources/images/#{item.imgLink}" 
+							alt="#{item.alt}"
+							title="#{translation.translate('HTmoreInfo')}"/>
 					</p:link>
 				</p:outputPanel>
 				<p:outputPanel rendered="#{status.even}" styleClass="large-11 columns">
@@ -49,7 +51,9 @@
 				</p:outputPanel>
 				<p:outputPanel rendered="#{status.odd}" styleClass="large-4 columns">
 					<p:link href="/#{item.link}">
-						<p:graphicImage value="/resources/images/#{item.imgLink}" alt="#{item.alt}"/>
+						<p:graphicImage value="/resources/images/#{item.imgLink}" 
+							alt="#{item.alt}"
+							title="#{translation.translate('HTmoreInfo')}"/>
        				</p:link>
        			</p:outputPanel>
 			</p:outputPanel>

@@ -1,47 +1,15 @@
-$menu-main-color: #1D8225;
-$menu-active-color: #48C05C;
-$menu-start-gradient: #24FF2C;
-$menu-end-gradient: #07770B;
-$menu-hover-background: #F0F0F0;
-$menu-hover-shadow: 0px 0px 8px #ddd;
-$menu-border-radius: 15px;
-$menu-color: cornsilk;
-
-.cart-panel {
-	padding: 0 !important;
-	border-radius: $menu-border-radius $menu-border-radius 0 0 !important;
-	background: cornsilk !important;
-	border: 1px solid #1E642B;
-	
-	.ui-panel-titlebar {
-		border-radius: $menu-border-radius $menu-border-radius 0 0 !important;
-		background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 1)), to(rgba($menu-end-gradient, 1))) !important;
-		border: none !important;
-	}
-	
-	.ui-panel-content {
-		padding: 1.5em 0.5em !important;
-	}
-	
-	.ui-button {
-		background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 1)), to(rgba($menu-end-gradient, 1))) !important;
-		
-		.ui-button-text {
-			padding: 0.3em !important;
-			color: cornsilk !important;
-		}
-	}
-	
-	.ui-button .ui-state-hover {
-		background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
-	}
-	
-}
-
+$menu-main-color: $bg-main-color;
+$menu-active-color: $bg-active-color;
+$menu-start-gradient: $bg-light-color;
+$menu-end-gradient: $bg-dark-color;
+$menu-hover-background: $bg-hover-color;
+$menu-hover-shadow: $bg-hover-shadow;
+$menu-border-radius: $panel-border-radius;
+$menu-color: $font-light-color;
 
 .ui-menu {
-	background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 0.8)), to(rgba($menu-end-gradient, 0.8))) !important;
-	border: 1px solid #1E642B;
+	@include background($menu-main-color, $menu-start-gradient, 0.8, $menu-end-gradient, 0.8);
+	border: 1px solid #1E642B !important;
 	border-radius: $menu-border-radius !important;
 	width: auto !important;
 	padding: 0 !important;
@@ -49,7 +17,7 @@ $menu-color: cornsilk;
 	.ui-menuitem-list {
 		.ui-menuitem {
 			.ui-state-hover {
-				background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
+				@include background($menu-active-color, $menu-hover-background, 0.6, $menu-hover-background, 0);
 				border-radius: $menu-border-radius !important;
 				padding: 0px 3px !important;
 			}
@@ -66,9 +34,9 @@ $menu-color: cornsilk;
 	}
 	
 	.menu-active {
-		background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
+		@include background($menu-active-color, $menu-hover-background, 0.6, $menu-hover-background, 0);
 		.ui-state-hover {
-			background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
+			@include background($menu-active-color, $menu-hover-background, 0.6, $menu-hover-background, 0);
 			border-radius: $menu-border-radius !important;
 			box-shadow: $menu-hover-shadow !important; 
 		}
@@ -90,7 +58,7 @@ $menu-color: cornsilk;
 	
 	.ui-menuitem-active {
 		.ui-state-hover {
-			background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
+			@include background($menu-active-color, $menu-hover-background, 0.6, $menu-hover-background, 0);
 			border-radius: $menu-border-radius !important;
 			box-shadow: $menu-hover-shadow !important; 
 		}
@@ -99,7 +67,7 @@ $menu-color: cornsilk;
 	.ui-menu-parent {
 		.ui-menu-child {
 			width: auto !important;
-			background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 0.8)), to(rgba($menu-end-gradient, 0.8))) !important;
+			@include background($menu-main-color, $menu-start-gradient, 0.8, $menu-end-gradient, 0.8);
 			border: 1px solid #1E642B !important;
 		}
 	}
@@ -109,32 +77,33 @@ $menu-color: cornsilk;
 			width: 100% !important;
 			margin: 0 !important;
 			border-radius: $menu-border-radius $menu-border-radius 0 0 !important;
-			background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 1)), to(rgba($menu-end-gradient, 1))) !important;
+			@include background($menu-main-color, $menu-start-gradient, 1, $menu-end-gradient, 1);
 			border: none !important;
 		}
 		
 	}
-	
-	.ui-menu .ui-widget-header h1, 
-	.ui-menu .ui-widget-header h2, 
-	.ui-menu .ui-widget-header h3, 
-	.ui-menu .ui-widget-header h4, 
-	.ui-menu .ui-widget-header h5, 
-	.ui-menu .ui-widget-header h6 {
-		float: left;
-		display: block;
-		font-size: 1em;
-		margin: 0 auto;
-		padding: 0.3em 3%;
-		width: 100% !important;
-	}
+}
+
+.ui-menu .ui-widget-header h1, 
+.ui-menu .ui-widget-header h2, 
+.ui-menu .ui-widget-header h3, 
+.ui-menu .ui-widget-header h4, 
+.ui-menu .ui-widget-header h5, 
+.ui-menu .ui-widget-header h6 {
+	float: left;
+	display: block;
+	font-size: 1em;
+	margin: 0 auto;
+	padding: 0.3em 3%;
+	width: 100% !important;
+	color: $regular-color !important;
 }
 
 .product-menu {
 	border-radius: $menu-border-radius $menu-border-radius 0 0 !important;
 	
 	.ui-state-hover {
-		background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
+		@include background($menu-active-color, $menu-hover-background, 0.6, $menu-hover-background, 0);
 		box-shadow: $menu-hover-shadow !important; 
 	}
 }
@@ -147,7 +116,7 @@ $menu-color: cornsilk;
 .ui-panelmenu {
 	.ui-panelmenu-panel {
 		.ui-panelmenu-header {
-			background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 1)), to(rgba($menu-end-gradient, 1))) !important;
+			@include background($menu-main-color, $menu-start-gradient, 1, $menu-end-gradient, 1);
 		}
 		
 		.ui-menuitem-link {
@@ -155,7 +124,7 @@ $menu-color: cornsilk;
 		}
 		
 		.ui-panelmenu-content {
-			background: $menu-main-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-start-gradient, 0.2)), to(rgba($menu-end-gradient, 0.6))) !important;
+			@include background($menu-main-color, $menu-start-gradient, 0.2, $menu-end-gradient, 0.6);
 			padding: 0.2em !important;
 			
 			.ui-menuitem {
@@ -164,7 +133,7 @@ $menu-color: cornsilk;
 				}
 				
 				.ui-state-hover {
-					background: $menu-active-color -webkit-gradient(linear, left top, left bottom, from(rgba($menu-hover-background,0.6)), to(rgba($menu-hover-background,0))) !important;
+					@include background($menu-active-color, $menu-hover-background, 0.6, $menu-hover-background, 0);
 				}
 			}
 		}
