@@ -31,12 +31,17 @@
  
         <p:panel header="#{product.title}" 
         	styleClass="product-item-grid text-center">
-        	<h:link title="#{translation.translate('HTmoreInfo')}" 
-        		outcome="/faces/shop/product?productId=#{product.id}" 
-        		target="_blank">
-        		<p:graphicImage value="/resources/images/#{product.imgLink}"
-        			alt="#{product.keywords}"/>
-        	</h:link>
+        	
+        	<p:outputPanel styleClass="product-item-image-wrapper">
+	        	<h:link title="#{translation.translate('HTmoreInfo')}" 
+	        		outcome="/faces/shop/product?productId=#{product.id}" 
+	        		target="_blank"
+	        		styleClass="product-item-image-link">
+	        		<p:graphicImage value="/resources/images/#{product.imgLink}"
+	        			alt="#{product.keywords}"
+	        			styleClass="product-item-image"/>
+	        	</h:link>
+        	</p:outputPanel>
 
        		<p:outputPanel styleClass="price-block">
        			<h:outputText value="#{translation.translate('HTcostLabel', product.cost)}" />
