@@ -4539,11 +4539,27 @@ hr {
   background: #BA1212 !important;
   padding: 4px !important;
 }
-/* line 14, ../scss/_shop.scss */
+/* line 11, ../scss/_shop.scss */
+.ui-datagrid.product-datagrid .ui-panel .ui-panel-titlebar {
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+  padding: 0.6em 0em 0.3em !important;
+  height: 4em !important;
+}
+/* line 16, ../scss/_shop.scss */
+.ui-datagrid.product-datagrid .ui-panel .ui-panel-titlebar:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+}
+/* line 23, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-panel-content {
   background: cornsilk !important;
 }
-/* line 18, ../scss/_shop.scss */
+/* line 27, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-widget-header.ui-paginator-top {
   background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
   background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
@@ -4551,46 +4567,46 @@ hr {
   background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
   border-radius: 15px 15px 0 0 !important;
 }
-/* line 23, ../scss/_shop.scss */
+/* line 32, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-widget-header.ui-paginator-bottom {
   background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
   background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
   background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
   background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
 }
-/* line 28, ../scss/_shop.scss */
+/* line 37, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-widget-header .ui-state-default {
   border: none;
 }
-/* line 34, ../scss/_shop.scss */
+/* line 43, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-datagrid-column {
-  background: #ffe065 !important;
+  background: cornsilk !important;
 }
-/* line 38, ../scss/_shop.scss */
+/* line 47, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator {
   font-size: small !important;
 }
-/* line 42, ../scss/_shop.scss */
+/* line 51, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-rpp-options {
   background: cornsilk !important;
   box-shadow: none !important;
   border-radius: 0 !important;
 }
-/* line 48, ../scss/_shop.scss */
+/* line 57, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-rpp-options.ui-state-hover {
   background: #ffe065 !important;
 }
-/* line 51, ../scss/_shop.scss */
+/* line 60, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-rpp-options.ui-state-focus {
   background: #ffe065 !important;
   border: none !important;
   box-shadow: none !important;
 }
-/* line 58, ../scss/_shop.scss */
+/* line 67, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-rpp-label {
   margin-left: 1em !important;
 }
-/* line 62, ../scss/_shop.scss */
+/* line 71, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-page,
 .ui-datagrid.product-datagrid .ui-paginator-next,
 .ui-datagrid.product-datagrid .ui-paginator-last,
@@ -4601,7 +4617,7 @@ hr {
   background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
   background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
 }
-/* line 70, ../scss/_shop.scss */
+/* line 79, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-page.ui-state-hover,
 .ui-datagrid.product-datagrid .ui-paginator-next.ui-state-hover,
 .ui-datagrid.product-datagrid .ui-paginator-last.ui-state-hover,
@@ -4612,7 +4628,7 @@ hr {
   background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
   background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
 }
-/* line 78, ../scss/_shop.scss */
+/* line 87, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-page.ui-state-active {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
   background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
@@ -4620,7 +4636,7 @@ hr {
   background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
 }
 
-/* line 83, ../scss/_shop.scss */
+/* line 92, ../scss/_shop.scss */
 .product-item-image-wrapper {
   padding: 0.5em;
   max-width: 14em;
@@ -4628,12 +4644,12 @@ hr {
   display: block;
 }
 
-/* line 90, ../scss/_shop.scss */
+/* line 99, ../scss/_shop.scss */
 .product-item-image-link {
   display: block;
 }
 
-/* line 94, ../scss/_shop.scss */
+/* line 103, ../scss/_shop.scss */
 .product-item-image {
   height: auto;
   width: auto;
@@ -4641,13 +4657,13 @@ hr {
   max-height: 10em;
 }
 
-/* line 101, ../scss/_shop.scss */
+/* line 110, ../scss/_shop.scss */
 .product-item-image:hover {
-  box-shadow: 0px 0px 15px #444444 !important;
+  box-shadow: 0px 0px 25px #444444 !important;
 }
 
-/* line 105, ../scss/_shop.scss */
-.price-block {
+/* line 114, ../scss/_shop.scss */
+.product-item-price-block {
   margin: 1em 0 !important;
   display: block !important;
   background: #BA1212 !important;
@@ -4656,4 +4672,36 @@ hr {
   font-weight: bold  !important;
   font-size: large !important;
   font-family: Arial,sans-serif !important;
+}
+
+/* line 125, ../scss/_shop.scss */
+.product-item-description-block {
+  height: 5em;
+  overflow: hidden;
+}
+
+/* line 130, ../scss/_shop.scss */
+.add-to-cart-button.ui-button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+}
+/* line 133, ../scss/_shop.scss */
+.add-to-cart-button.ui-button .ui-button-text {
+  padding: 0.3em !important;
+  color: #222222 !important;
+}
+
+/* line 139, ../scss/_shop.scss */
+.add-to-cart-button.ui-button.ui-state-hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+}
+
+/* line 143, ../scss/_shop.scss */
+.add-to-cart-button.ui-button.ui-state-focus {
+  border: none !important;
 }

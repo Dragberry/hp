@@ -7,6 +7,15 @@
 	.ui-panel {
 		background: $main-header-color !important;
 		padding: 4px !important;
+		
+		.ui-panel-titlebar {
+			@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+			padding: 0.6em 0em 0.3em !important;
+			height: 4em !important;
+		}
+		.ui-panel-titlebar:hover {
+			@include background($bg-active-color, $bg-hover-color, 0.6, $bg-hover-color, 0);
+		}
 	}
 
 	border-radius: $panel-border-radius !important;
@@ -32,7 +41,7 @@
 	
 	
 	.ui-datagrid-column {
-		background: scale-color($font-light-color, $lightness: -25%) !important;
+		background: $font-light-color !important;
 	}
 	
 	.ui-paginator {
@@ -99,10 +108,10 @@
 }
 
 .product-item-image:hover {
-	box-shadow: 0px 0px 15px #444444 !important; 
+	box-shadow: 0px 0px 25px #444444 !important; 
 }
 
-.price-block {
+.product-item-price-block {
 	margin: 1em 0 !important;
 	display: block !important;
 	background: $main-header-color !important;
@@ -112,3 +121,25 @@
 	font-size: large !important;
 	font-family: Arial,sans-serif !important;
 }
+
+.product-item-description-block {
+	height: 5em;
+	overflow: hidden;
+}
+
+.add-to-cart-button.ui-button {
+	@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+	
+	.ui-button-text {
+		padding: 0.3em !important;
+		color: $font-dark-color !important;
+	}
+}
+
+.add-to-cart-button.ui-button.ui-state-hover {
+	@include background($bg-active-color, $bg-hover-color, 0.6, $bg-hover-color, 0);
+}	
+
+.add-to-cart-button.ui-button.ui-state-focus {
+	border: none !important
+}	

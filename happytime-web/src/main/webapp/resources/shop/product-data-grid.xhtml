@@ -29,8 +29,13 @@
         styleClass="product-datagrid"
         emptyMessage="#{translation.translate('HTnoResultSearch')}">
  
-        <p:panel header="#{product.title}" 
-        	styleClass="product-item-grid text-center">
+        <p:panel styleClass="product-item-grid text-center">
+        	<f:facet name="header">
+        		<h:link outcome="/faces/shop/product?productId=#{product.id}" 
+        			target="_blank">
+        			<h:outputText value="#{product.title}" />
+        		</h:link>
+        	</f:facet>
         	
         	<p:outputPanel styleClass="product-item-image-wrapper">
 	        	<h:link title="#{translation.translate('HTmoreInfo')}" 
@@ -43,17 +48,21 @@
 	        	</h:link>
         	</p:outputPanel>
 
-       		<p:outputPanel styleClass="price-block">
+       		<p:outputPanel styleClass="product-item-price-block">
        			<h:outputText value="#{translation.translate('HTcostLabel', product.cost)}" />
        		</p:outputPanel>
        		
-	        <h:outputText value="#{product.description}" />
+       		<p:outputPanel styleClass="product-item-description-block">
+	        	<h:outputText value="#{product.description}" />
+	        </p:outputPanel>
+	        
 	        <p:commandButton id="addToCartButton"
 	        	value="#{translation.translate('HTaddToCart')}"
 	        	ajax="true"
 	        	process="@this"
 	        	actionListener="#{cc.attrs.controller.addToCart(product)}"
-	        	update="@([id$=cartMessages]) @([id$=cartPanel])" />
+	        	update="@([id$=cartMessages]) @([id$=cartPanel])"
+	        	styleClass="add-to-cart-button" />
         </p:panel>
  
     </p:dataGrid>
