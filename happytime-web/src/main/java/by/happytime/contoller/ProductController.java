@@ -49,15 +49,21 @@ public class ProductController implements Serializable {
     public void doSearch(String category, String subcategory) {
         productModel.getDataModel().setCategoryList(null);
         productModel.getDataModel().setSubcategoryList(null);
+        productModel.setTitle(null);
+        productModel.setDescription(null);
         if (StringUtils.isNotBlank(category) && StringUtils.isBlank(subcategory)) {
             List<Category> categoryList = new ArrayList<Category>();
             Category c = categoryRepo.findByCode(category);
+            productModel.setTitle(c.getDescriptionTitle());
+            productModel.setDescription(c.getDescription());
             categoryList.add(c);
             productModel.getDataModel().setCategoryList(categoryList);
         } else if (StringUtils.isNotBlank(subcategory)) {
             List<Subcategory> subcategoryList = new ArrayList<Subcategory>();
             Subcategory sc = subcategoryRepo.findByCode(subcategory);
             subcategoryList.add(sc);
+            productModel.setTitle(sc.getCategory().getDescriptionTitle());
+            productModel.setDescription(sc.getCategory().getDescription());
             productModel.getDataModel().setSubcategoryList(subcategoryList);
         } 
     }

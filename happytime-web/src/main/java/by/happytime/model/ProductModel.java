@@ -1,6 +1,7 @@
 package by.happytime.model;
 
 import java.io.Serializable;
+
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
@@ -17,6 +18,10 @@ public class ProductModel implements Serializable {
     
     @ManagedProperty("#{productRepo}")
     private ProductRepo productRepo;
+    
+    private String title;
+    
+    private String description;
     
     private Subcategory subcategory;
     
@@ -48,5 +53,21 @@ public class ProductModel implements Serializable {
     public void setDataModel(ProductLazyDataModel dataModel) {
         this.dataModel = dataModel;
     }
-    
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
 }

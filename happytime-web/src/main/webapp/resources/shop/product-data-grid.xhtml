@@ -23,17 +23,25 @@
         paginator="true" 
         paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
         currentPageReportTemplate="#{translation.translate('HTpage')} {currentPage} #{translation.translate('HTpageOf')} {totalPages}"
-        rowsPerPageTemplate="6,12,16">
-        
-        <p:ajax event="page" listener="#{cc.attrs.controller.onPageChange}" />
+        rowsPerPageTemplate="6,12,21"
+        rowsPerPageLabel="#{translation.translate('HTunitsPerPage')}"
+        pageLinks="5"
+        styleClass="product-datagrid"
+        emptyMessage="#{translation.translate('HTnoResultSearch')}">
  
-        <p:panel header="#{product.title}" style="text-align:center">
-        	<h:link value="Details" outcome="/faces/shop/product?productId=#{product.id}" target="_blank"/>
-        	<p:graphicImage value="/resources/images/#{product.imgLink}"
-        		alt="#{product.keywords}"/>
-       		<br/>
-       		<h:outputText value="#{product.cost}" />
-       		<br />
+        <p:panel header="#{product.title}" 
+        	styleClass="product-item-grid text-center">
+        	<h:link title="#{translation.translate('HTmoreInfo')}" 
+        		outcome="/faces/shop/product?productId=#{product.id}" 
+        		target="_blank">
+        		<p:graphicImage value="/resources/images/#{product.imgLink}"
+        			alt="#{product.keywords}"/>
+        	</h:link>
+
+       		<p:outputPanel styleClass="price-block">
+       			<h:outputText value="#{translation.translate('HTcostLabel', product.cost)}" />
+       		</p:outputPanel>
+       		
 	        <h:outputText value="#{product.description}" />
 	        <p:commandButton id="addToCartButton"
 	        	value="#{translation.translate('HTaddToCart')}"

@@ -42,6 +42,7 @@ CREATE TABLE category (
 	id BIGINT AUTO_INCREMENT NOT NULL,
     title VARCHAR(50),
     code VARCHAR(32),
+    description_title VARCHAR(255),
     description VARCHAR(255),
     created_date TIMESTAMP, 
     last_modified_date TIMESTAMP,

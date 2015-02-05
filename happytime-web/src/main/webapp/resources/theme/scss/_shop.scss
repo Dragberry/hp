@@ -1,0 +1,88 @@
+.product-list-title-panel {
+	border-radius: $panel-border-radius !important;
+	background: $font-light-color !important;
+}
+
+.ui-datagrid.product-datagrid {
+	border-radius: $panel-border-radius !important;
+	
+	.ui-panel-content {
+		background: $font-light-color !important;
+		padding: 0 !important;
+	}
+		
+	.ui-widget-header.ui-paginator-top {
+		@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+		border-radius: $panel-border-radius $panel-border-radius 0 0 !important;
+	}
+	
+	.ui-widget-header.ui-paginator-bottom {
+		@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+	}
+	
+	.ui-widget-header {
+		.ui-state-default {
+			border: none;
+		}
+	}
+	
+	
+	.ui-datagrid-column {
+		background: scale-color($font-light-color, $lightness: -25%) !important;
+	}
+	
+	.ui-paginator {
+		font-size: small !important;
+	}
+	
+	.ui-paginator-rpp-options {
+		background: $font-light-color !important;
+		box-shadow: none !important;
+		border-radius: 0 !important;
+	}
+	
+	.ui-paginator-rpp-options.ui-state-hover {
+		background: scale-color($font-light-color, $lightness: -25%) !important;
+	}
+	.ui-paginator-rpp-options.ui-state-focus {
+		background: scale-color($font-light-color, $lightness: -25%) !important;
+		border: none !important;
+		box-shadow: none !important;
+	}
+	
+	
+	.ui-paginator-rpp-label {
+		margin-left: 1em !important;
+	}
+	
+	.ui-paginator-page,
+	.ui-paginator-next,
+	.ui-paginator-last,
+	.ui-paginator-first,
+	.ui-paginator-prev {
+		@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+	}
+	
+	.ui-paginator-page.ui-state-hover,
+	.ui-paginator-next.ui-state-hover,
+	.ui-paginator-last.ui-state-hover,
+	.ui-paginator-first.ui-state-hover,
+	.ui-paginator-prev.ui-state-hover {
+		@include background($bg-active-color, $bg-hover-color, 0.6, $bg-hover-color, 0);
+	}
+	
+	.ui-paginator-page.ui-state-active {
+		@include background($bg-active-color, $bg-hover-color, 0.6, $bg-hover-color, 0);
+	}
+}
+
+.price-block {
+	margin: 1em 0 !important;
+	display: block !important;
+	background: $main-header-color !important;
+	padding: 0.5em 0 !important;
+	color: white  !important;
+	font-weight: bold  !important;
+	font-size: large !important;
+	font-family: Arial,sans-serif !important;
+}

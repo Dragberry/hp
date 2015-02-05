@@ -14,6 +14,8 @@ public class Category extends AbstractEntity {
     private String title;
     @Column(name = "code")
     private String code;
+    @Column(name = "description_title")
+    private String descriptionTitle;
     @Column(name = "description")
     private String description;
 
@@ -40,4 +42,14 @@ public class Category extends AbstractEntity {
 	public void setCode(String code) {
 		this.code = code;
 	}
+
+	public String getDescriptionTitle() {
+		return descriptionTitle;
+	}
+
+	public void setDescriptionTitle(String descriptionTitle) {
+		this.descriptionTitle = descriptionTitle;
+	}
+	
+	
 }
