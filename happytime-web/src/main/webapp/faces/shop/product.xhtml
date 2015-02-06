@@ -20,28 +20,50 @@
 	</ui:define>
 	
 	<ui:define name="content">
-		<p:panelGrid columns="1">
+		<p:growl id="cartMessages" sticky="true" showDetail="true" /> 
+	
+		<p:panel styleClass="product-item-details">
 			<f:facet name="header">
 				<h:outputText value="#{productDetailsModel.product.title}"/>
-				<br />
-				<p:graphicImage value="/resources/images/#{productDetailsModel.product.imgLink}"
-        			alt="#{productDetailsModel.product.keywords}"/>
 			</f:facet>
-			
-			<h:outputText value="#{productDetailsModel.product.fullDescription}"/>
-			
-			<p:dataList value="#{productDetailsModel.product.categories}"
-				var="category"
-				type="ordered">
-				<h:outputText value="#{category.title}"/>
-			</p:dataList>
-			
-			<p:dataList value="#{productDetailsModel.product.subcategories}"
-				var="subcategory"
-				type="ordered">
-				<h:outputText value="#{subcategory.title}"/>
-			</p:dataList>
-		</p:panelGrid>
+			<p:outputPanel styleClass="row">
+				<p:outputPanel styleClass="large-9 columns">
+					<p:outputPanel styleClass="row text-center">
+						<p:graphicImage value="/resources/images/#{productDetailsModel.product.imgLink}"
+	        				alt="#{productDetailsModel.product.keywords}"/>
+					</p:outputPanel>
+					
+					<p:outputPanel styleClass="product-item-price-block text-center">
+		      			<h:outputText value="#{translation.translate('HTcostLabel', productDetailsModel.product.cost)}" />
+		      		</p:outputPanel>
+		      		
+		      		<p:outputPanel styleClass="text-center">
+			      		<p:commandButton id="addToCartButton"
+				        	value="#{translation.translate('HTaddToCart')}"
+				        	ajax="true"
+				        	process="@this"
+				        	actionListener="#{productController.addToCart(productDetailsModel.product)}"
+				        	update="@([id$=cartMessages]) @([id$=cartPanel])"
+				        	styleClass="add-to-cart-button" />
+				    </p:outputPanel>
+				</p:outputPanel>
+				
+				<p:outputPanel styleClass="large-6 columns">
+					<p:tree value="#{productDetailsModel.categoryTree}" 
+						var="node"
+						styleClass="category-tree">
+				        <p:treeNode>
+				            <h:outputText value="#{node}" />
+				        </p:treeNode>
+				    </p:tree>
+				</p:outputPanel>
+				
+				<p:outputPanel styleClass="large-15 columns text-center">
+					<hr />
+					<h:outputText value="#{productDetailsModel.product.fullDescription}"/>
+				</p:outputPanel>
+			</p:outputPanel>
+		</p:panel>		
 	</ui:define>
 	
 </ui:composition>

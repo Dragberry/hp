@@ -1,6 +1,7 @@
 package by.happytime.contoller;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +15,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.primefaces.event.data.PageEvent;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+
 import by.happytime.domain.Category;
 import by.happytime.domain.Product;
 import by.happytime.domain.Subcategory;
@@ -90,7 +92,8 @@ public class ProductController implements Serializable {
         Product product = new Product();
         product.setTitle("Извините, по данному запросу продукт не найден");
         product.setImgLink("no_photo.jpg");
-        product.setDescription("Извините, по данному запросу продукт не найден");
+        product.setFullDescription("Извините, по данному запросу продукт не найден");
+        product.setCost(BigDecimal.ZERO);
         return product;
     }
     

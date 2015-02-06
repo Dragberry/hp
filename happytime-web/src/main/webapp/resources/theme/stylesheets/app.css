@@ -67,7 +67,7 @@ html, body {
   height: 100%;
 }
 
-/* line 407, ../foundation/scss/foundation/components/_global.scss */
+/* line 409, ../foundation/scss/foundation/components/_global.scss */
 *,
 *:before,
 *:after {
@@ -76,7 +76,7 @@ html, body {
   box-sizing: border-box;
 }
 
-/* line 413, ../foundation/scss/foundation/components/_global.scss */
+/* line 414, ../foundation/scss/foundation/components/_global.scss */
 html,
 body {
   font-size: 100%;
@@ -84,8 +84,8 @@ body {
 
 /* line 417, ../foundation/scss/foundation/components/_global.scss */
 body {
-  background: #DCFFD7;
-  color: #222;
+  background: #dcffd7;
+  color: #222222;
   padding: 0;
   margin: 0;
   font-family: "Comic Sans MS", cursive, sans-serif;
@@ -112,7 +112,7 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 439, ../foundation/scss/foundation/components/_global.scss */
+/* line 441, ../foundation/scss/foundation/components/_global.scss */
 #map_canvas img,
 #map_canvas embed,
 #map_canvas object,
@@ -701,179 +701,6 @@ textarea {
     clear: both;
   }
 }
-/* line 348, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-version {
-  font-family: "/5.5.0/";
-}
-
-/* line 352, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-small {
-  font-family: "/only screen/";
-  width: 0;
-}
-
-/* line 357, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-small-only {
-  font-family: "/only screen and (max-width: 40em)/";
-  width: 0;
-}
-
-/* line 362, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-medium {
-  font-family: "/only screen and (min-width:40.063em)/";
-  width: 40.063em;
-}
-
-/* line 367, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-medium-only {
-  font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/";
-  width: 40.063em;
-}
-
-/* line 372, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-large {
-  font-family: "/only screen and (min-width:64.063em)/";
-  width: 64.063em;
-}
-
-/* line 377, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-large-only {
-  font-family: "/only screen and (min-width:64.063em) and (max-width:90em)/";
-  width: 64.063em;
-}
-
-/* line 382, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-xlarge {
-  font-family: "/only screen and (min-width:90.063em)/";
-  width: 90.063em;
-}
-
-/* line 387, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-xlarge-only {
-  font-family: "/only screen and (min-width:90.063em) and (max-width:120em)/";
-  width: 90.063em;
-}
-
-/* line 392, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-xxlarge {
-  font-family: "/only screen and (min-width:120.063em)/";
-  width: 120.063em;
-}
-
-/* line 397, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-data-attribute-namespace {
-  font-family: false;
-}
-
-/* line 404, ../foundation/scss/foundation/components/_global.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 407, ../foundation/scss/foundation/components/_global.scss */
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 413, ../foundation/scss/foundation/components/_global.scss */
-html,
-body {
-  font-size: 100%;
-}
-
-/* line 417, ../foundation/scss/foundation/components/_global.scss */
-body {
-  background: #DCFFD7;
-  color: #222;
-  padding: 0;
-  margin: 0;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 100%;
-  position: relative;
-  cursor: auto;
-}
-
-/* line 430, ../foundation/scss/foundation/components/_global.scss */
-a:hover {
-  cursor: pointer;
-}
-
-/* line 433, ../foundation/scss/foundation/components/_global.scss */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 435, ../foundation/scss/foundation/components/_global.scss */
-img {
-  -ms-interpolation-mode: bicubic;
-}
-
-/* line 439, ../foundation/scss/foundation/components/_global.scss */
-#map_canvas img,
-#map_canvas embed,
-#map_canvas object,
-.map_canvas img,
-.map_canvas embed,
-.map_canvas object {
-  max-width: none !important;
-}
-
-/* line 446, ../foundation/scss/foundation/components/_global.scss */
-.left {
-  float: left !important;
-}
-
-/* line 447, ../foundation/scss/foundation/components/_global.scss */
-.right {
-  float: right !important;
-}
-
-/* line 172, ../foundation/scss/foundation/components/_global.scss */
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-/* line 173, ../foundation/scss/foundation/components/_global.scss */
-.clearfix:after {
-  clear: both;
-}
-
-/* line 451, ../foundation/scss/foundation/components/_global.scss */
-.hide {
-  display: none !important;
-  visibility: hidden;
-}
-
-/* line 457, ../foundation/scss/foundation/components/_global.scss */
-.invisible {
-  visibility: hidden;
-}
-
-/* line 463, ../foundation/scss/foundation/components/_global.scss */
-.antialiased {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 466, ../foundation/scss/foundation/components/_global.scss */
-img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* line 476, ../foundation/scss/foundation/components/_global.scss */
-textarea {
-  height: auto;
-  min-height: 50px;
-}
-
 /* line 232, ../foundation/scss/foundation/components/_grid.scss */
 .row {
   width: 100%;
@@ -892,7 +719,7 @@ textarea {
 .row:after {
   clear: both;
 }
-/* line 236, ../foundation/scss/foundation/components/_grid.scss */
+/* line 237, ../foundation/scss/foundation/components/_grid.scss */
 .row.collapse > .column,
 .row.collapse > .columns {
   padding-left: 0;
@@ -937,7 +764,7 @@ textarea {
   clear: both;
 }
 
-/* line 247, ../foundation/scss/foundation/components/_grid.scss */
+/* line 248, ../foundation/scss/foundation/components/_grid.scss */
 .column,
 .columns {
   padding-left: 0.9375rem;
@@ -1167,7 +994,7 @@ textarea {
     left: auto;
   }
 
-  /* line 167, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 168, ../foundation/scss/foundation/components/_grid.scss */
   .column,
   .columns {
     position: relative;
@@ -1335,7 +1162,7 @@ textarea {
     float: left;
   }
 
-  /* line 187, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 188, ../foundation/scss/foundation/components/_grid.scss */
   .column.small-centered,
   .columns.small-centered {
     margin-left: auto;
@@ -1343,7 +1170,7 @@ textarea {
     float: none;
   }
 
-  /* line 190, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 191, ../foundation/scss/foundation/components/_grid.scss */
   .column.small-uncentered,
   .columns.small-uncentered {
     margin-left: 0;
@@ -1351,25 +1178,25 @@ textarea {
     float: left;
   }
 
-  /* line 198, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 199, ../foundation/scss/foundation/components/_grid.scss */
   .column.small-centered:last-child,
   .columns.small-centered:last-child {
     float: none;
   }
 
-  /* line 204, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 205, ../foundation/scss/foundation/components/_grid.scss */
   .column.small-uncentered:last-child,
   .columns.small-uncentered:last-child {
     float: left;
   }
 
-  /* line 209, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 210, ../foundation/scss/foundation/components/_grid.scss */
   .column.small-uncentered.opposite,
   .columns.small-uncentered.opposite {
     float: right;
   }
 
-  /* line 216, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 217, ../foundation/scss/foundation/components/_grid.scss */
   .row.small-collapse > .column,
   .row.small-collapse > .columns {
     padding-left: 0;
@@ -1380,7 +1207,7 @@ textarea {
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 222, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 223, ../foundation/scss/foundation/components/_grid.scss */
   .row.small-uncollapse > .column,
   .row.small-uncollapse > .columns {
     padding-left: 0.9375rem;
@@ -1599,7 +1426,7 @@ textarea {
     left: auto;
   }
 
-  /* line 167, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 168, ../foundation/scss/foundation/components/_grid.scss */
   .column,
   .columns {
     position: relative;
@@ -1767,7 +1594,7 @@ textarea {
     float: left;
   }
 
-  /* line 187, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 188, ../foundation/scss/foundation/components/_grid.scss */
   .column.medium-centered,
   .columns.medium-centered {
     margin-left: auto;
@@ -1775,7 +1602,7 @@ textarea {
     float: none;
   }
 
-  /* line 190, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 191, ../foundation/scss/foundation/components/_grid.scss */
   .column.medium-uncentered,
   .columns.medium-uncentered {
     margin-left: 0;
@@ -1783,25 +1610,25 @@ textarea {
     float: left;
   }
 
-  /* line 198, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 199, ../foundation/scss/foundation/components/_grid.scss */
   .column.medium-centered:last-child,
   .columns.medium-centered:last-child {
     float: none;
   }
 
-  /* line 204, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 205, ../foundation/scss/foundation/components/_grid.scss */
   .column.medium-uncentered:last-child,
   .columns.medium-uncentered:last-child {
     float: left;
   }
 
-  /* line 209, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 210, ../foundation/scss/foundation/components/_grid.scss */
   .column.medium-uncentered.opposite,
   .columns.medium-uncentered.opposite {
     float: right;
   }
 
-  /* line 216, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 217, ../foundation/scss/foundation/components/_grid.scss */
   .row.medium-collapse > .column,
   .row.medium-collapse > .columns {
     padding-left: 0;
@@ -1812,7 +1639,7 @@ textarea {
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 222, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 223, ../foundation/scss/foundation/components/_grid.scss */
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns {
     padding-left: 0.9375rem;
@@ -2241,7 +2068,7 @@ textarea {
     left: auto;
   }
 
-  /* line 167, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 168, ../foundation/scss/foundation/components/_grid.scss */
   .column,
   .columns {
     position: relative;
@@ -2409,7 +2236,7 @@ textarea {
     float: left;
   }
 
-  /* line 187, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 188, ../foundation/scss/foundation/components/_grid.scss */
   .column.large-centered,
   .columns.large-centered {
     margin-left: auto;
@@ -2417,7 +2244,7 @@ textarea {
     float: none;
   }
 
-  /* line 190, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 191, ../foundation/scss/foundation/components/_grid.scss */
   .column.large-uncentered,
   .columns.large-uncentered {
     margin-left: 0;
@@ -2425,25 +2252,25 @@ textarea {
     float: left;
   }
 
-  /* line 198, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 199, ../foundation/scss/foundation/components/_grid.scss */
   .column.large-centered:last-child,
   .columns.large-centered:last-child {
     float: none;
   }
 
-  /* line 204, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 205, ../foundation/scss/foundation/components/_grid.scss */
   .column.large-uncentered:last-child,
   .columns.large-uncentered:last-child {
     float: left;
   }
 
-  /* line 209, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 210, ../foundation/scss/foundation/components/_grid.scss */
   .column.large-uncentered.opposite,
   .columns.large-uncentered.opposite {
     float: right;
   }
 
-  /* line 216, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 217, ../foundation/scss/foundation/components/_grid.scss */
   .row.large-collapse > .column,
   .row.large-collapse > .columns {
     padding-left: 0;
@@ -2454,7 +2281,7 @@ textarea {
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 222, ../foundation/scss/foundation/components/_grid.scss */
+  /* line 223, ../foundation/scss/foundation/components/_grid.scss */
   .row.large-uncollapse > .column,
   .row.large-uncollapse > .columns {
     padding-left: 0.9375rem;
@@ -2672,179 +2499,6 @@ textarea {
     left: auto;
   }
 }
-/* line 348, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-version {
-  font-family: "/5.5.0/";
-}
-
-/* line 352, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-small {
-  font-family: "/only screen/";
-  width: 0;
-}
-
-/* line 357, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-small-only {
-  font-family: "/only screen and (max-width: 40em)/";
-  width: 0;
-}
-
-/* line 362, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-medium {
-  font-family: "/only screen and (min-width:40.063em)/";
-  width: 40.063em;
-}
-
-/* line 367, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-medium-only {
-  font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/";
-  width: 40.063em;
-}
-
-/* line 372, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-large {
-  font-family: "/only screen and (min-width:64.063em)/";
-  width: 64.063em;
-}
-
-/* line 377, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-large-only {
-  font-family: "/only screen and (min-width:64.063em) and (max-width:90em)/";
-  width: 64.063em;
-}
-
-/* line 382, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-xlarge {
-  font-family: "/only screen and (min-width:90.063em)/";
-  width: 90.063em;
-}
-
-/* line 387, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-xlarge-only {
-  font-family: "/only screen and (min-width:90.063em) and (max-width:120em)/";
-  width: 90.063em;
-}
-
-/* line 392, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-xxlarge {
-  font-family: "/only screen and (min-width:120.063em)/";
-  width: 120.063em;
-}
-
-/* line 397, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-data-attribute-namespace {
-  font-family: false;
-}
-
-/* line 404, ../foundation/scss/foundation/components/_global.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 407, ../foundation/scss/foundation/components/_global.scss */
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 413, ../foundation/scss/foundation/components/_global.scss */
-html,
-body {
-  font-size: 100%;
-}
-
-/* line 417, ../foundation/scss/foundation/components/_global.scss */
-body {
-  background: #DCFFD7;
-  color: #222;
-  padding: 0;
-  margin: 0;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 100%;
-  position: relative;
-  cursor: auto;
-}
-
-/* line 430, ../foundation/scss/foundation/components/_global.scss */
-a:hover {
-  cursor: pointer;
-}
-
-/* line 433, ../foundation/scss/foundation/components/_global.scss */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 435, ../foundation/scss/foundation/components/_global.scss */
-img {
-  -ms-interpolation-mode: bicubic;
-}
-
-/* line 439, ../foundation/scss/foundation/components/_global.scss */
-#map_canvas img,
-#map_canvas embed,
-#map_canvas object,
-.map_canvas img,
-.map_canvas embed,
-.map_canvas object {
-  max-width: none !important;
-}
-
-/* line 446, ../foundation/scss/foundation/components/_global.scss */
-.left {
-  float: left !important;
-}
-
-/* line 447, ../foundation/scss/foundation/components/_global.scss */
-.right {
-  float: right !important;
-}
-
-/* line 172, ../foundation/scss/foundation/components/_global.scss */
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-/* line 173, ../foundation/scss/foundation/components/_global.scss */
-.clearfix:after {
-  clear: both;
-}
-
-/* line 451, ../foundation/scss/foundation/components/_global.scss */
-.hide {
-  display: none !important;
-  visibility: hidden;
-}
-
-/* line 457, ../foundation/scss/foundation/components/_global.scss */
-.invisible {
-  visibility: hidden;
-}
-
-/* line 463, ../foundation/scss/foundation/components/_global.scss */
-.antialiased {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 466, ../foundation/scss/foundation/components/_global.scss */
-img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* line 476, ../foundation/scss/foundation/components/_global.scss */
-textarea {
-  height: auto;
-  min-height: 50px;
-}
-
 /* line 162, ../foundation/scss/foundation/components/_type.scss */
 .text-left {
   text-align: left !important;
@@ -3076,7 +2730,7 @@ textarea {
   }
 }
 /* Typography resets */
-/* line 200, ../foundation/scss/foundation/components/_type.scss */
+/* line 218, ../foundation/scss/foundation/components/_type.scss */
 div,
 dl,
 dt,
@@ -3103,11 +2757,11 @@ td {
 /* Default Link Styles */
 /* line 224, ../foundation/scss/foundation/components/_type.scss */
 a {
-  color: #008CBA;
+  color: #008cba;
   text-decoration: none;
   line-height: inherit;
 }
-/* line 229, ../foundation/scss/foundation/components/_type.scss */
+/* line 230, ../foundation/scss/foundation/components/_type.scss */
 a:hover, a:focus {
   color: #0078a0;
 }
@@ -3159,25 +2813,25 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 /* line 275, ../foundation/scss/foundation/components/_type.scss */
 h1 {
   font-size: 1.4375rem;
-  color: #BA1212;
+  color: #ba1212;
 }
 
 /* line 279, ../foundation/scss/foundation/components/_type.scss */
 h2 {
   font-size: 1.125rem;
-  color: #BA1212;
+  color: #ba1212;
 }
 
 /* line 283, ../foundation/scss/foundation/components/_type.scss */
 h3 {
   font-size: 1rem;
-  color: #BA1212;
+  color: #ba1212;
 }
 
 /* line 287, ../foundation/scss/foundation/components/_type.scss */
 h4 {
   font-size: 1rem;
-  color: #BA1212;
+  color: #ba1212;
 }
 
 /* line 291, ../foundation/scss/foundation/components/_type.scss */
@@ -3203,7 +2857,7 @@ h6 {
 
 /* line 302, ../foundation/scss/foundation/components/_type.scss */
 hr {
-  border: solid #DDDDDD;
+  border: solid #dddddd;
   border-width: 1px 0 0;
   clear: both;
   margin: 1.25rem 0 1.1875rem;
@@ -3211,14 +2865,14 @@ hr {
 }
 
 /* Helpful Typography Defaults */
-/* line 311, ../foundation/scss/foundation/components/_type.scss */
+/* line 312, ../foundation/scss/foundation/components/_type.scss */
 em,
 i {
   font-style: italic;
   line-height: inherit;
 }
 
-/* line 317, ../foundation/scss/foundation/components/_type.scss */
+/* line 318, ../foundation/scss/foundation/components/_type.scss */
 strong,
 b {
   font-weight: bold;
@@ -3244,7 +2898,7 @@ code {
 }
 
 /* Lists */
-/* line 340, ../foundation/scss/foundation/components/_type.scss */
+/* line 342, ../foundation/scss/foundation/components/_type.scss */
 ul,
 ol,
 dl {
@@ -3263,7 +2917,7 @@ ul {
 ul.no-bullet {
   margin-left: 0;
 }
-/* line 355, ../foundation/scss/foundation/components/_type.scss */
+/* line 356, ../foundation/scss/foundation/components/_type.scss */
 ul.no-bullet li ul,
 ul.no-bullet li ol {
   margin-left: 1.25rem;
@@ -3272,7 +2926,7 @@ ul.no-bullet li ol {
 }
 
 /* Unordered Lists */
-/* line 368, ../foundation/scss/foundation/components/_type.scss */
+/* line 369, ../foundation/scss/foundation/components/_type.scss */
 ul li ul,
 ul li ol {
   margin-left: 1.25rem;
@@ -3307,7 +2961,7 @@ ul.no-bullet {
 ol {
   margin-left: 1.4rem;
 }
-/* line 390, ../foundation/scss/foundation/components/_type.scss */
+/* line 391, ../foundation/scss/foundation/components/_type.scss */
 ol li ul,
 ol li ol {
   margin-left: 1.25rem;
@@ -3326,12 +2980,12 @@ dl dd {
 }
 
 /* Abbreviations */
-/* line 408, ../foundation/scss/foundation/components/_type.scss */
+/* line 409, ../foundation/scss/foundation/components/_type.scss */
 abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222;
+  color: #222222;
   cursor: help;
 }
 
@@ -3341,7 +2995,7 @@ abbr {
 }
 /* line 417, ../foundation/scss/foundation/components/_type.scss */
 abbr[title] {
-  border-bottom: 1px dotted #DDDDDD;
+  border-bottom: 1px dotted #dddddd;
 }
 
 /* Blockquotes */
@@ -3349,7 +3003,7 @@ abbr[title] {
 blockquote {
   margin: 0 0 1.25rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
-  border-left: 1px solid #DDDDDD;
+  border-left: 1px solid #dddddd;
 }
 /* line 428, ../foundation/scss/foundation/components/_type.scss */
 blockquote cite {
@@ -3361,13 +3015,13 @@ blockquote cite {
 blockquote cite:before {
   content: "\2014 \0020";
 }
-/* line 436, ../foundation/scss/foundation/components/_type.scss */
+/* line 437, ../foundation/scss/foundation/components/_type.scss */
 blockquote cite a,
 blockquote cite a:visited {
   color: #555555;
 }
 
-/* line 442, ../foundation/scss/foundation/components/_type.scss */
+/* line 443, ../foundation/scss/foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
@@ -3379,7 +3033,7 @@ blockquote p {
 .vcard {
   display: inline-block;
   margin: 0 0 1.25rem 0;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   padding: 0.625rem 0.75rem;
 }
 /* line 455, ../foundation/scss/foundation/components/_type.scss */
@@ -3457,13 +3111,13 @@ blockquote p {
   /* line 498, ../foundation/scss/foundation/components/_type.scss */
   * {
     background: transparent !important;
-    color: #000000 !important;
+    color: black !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important;
   }
 
-  /* line 505, ../foundation/scss/foundation/components/_type.scss */
+  /* line 506, ../foundation/scss/foundation/components/_type.scss */
   a,
   a:visited {
     text-decoration: underline;
@@ -3479,14 +3133,14 @@ blockquote p {
     content: " (" attr(title) ")";
   }
 
-  /* line 512, ../foundation/scss/foundation/components/_type.scss */
+  /* line 514, ../foundation/scss/foundation/components/_type.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 516, ../foundation/scss/foundation/components/_type.scss */
+  /* line 517, ../foundation/scss/foundation/components/_type.scss */
   pre,
   blockquote {
     border: 1px solid #999999;
@@ -3499,7 +3153,7 @@ blockquote p {
     /* h5bp.com/t */
   }
 
-  /* line 524, ../foundation/scss/foundation/components/_type.scss */
+  /* line 525, ../foundation/scss/foundation/components/_type.scss */
   tr,
   img {
     page-break-inside: avoid;
@@ -3512,8 +3166,9 @@ blockquote p {
 
   @page {
     margin: 0.5cm;
-  }
-  /* line 531, ../foundation/scss/foundation/components/_type.scss */
+}
+
+  /* line 533, ../foundation/scss/foundation/components/_type.scss */
   p,
   h2,
   h3 {
@@ -3521,7 +3176,7 @@ blockquote p {
     widows: 3;
   }
 
-  /* line 538, ../foundation/scss/foundation/components/_type.scss */
+  /* line 539, ../foundation/scss/foundation/components/_type.scss */
   h2,
   h3 {
     page-break-after: avoid;
@@ -3547,193 +3202,20 @@ blockquote p {
     display: inherit !important;
   }
 }
-/* line 348, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-version {
-  font-family: "/5.5.0/";
-}
-
-/* line 352, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-small {
-  font-family: "/only screen/";
-  width: 0;
-}
-
-/* line 357, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-small-only {
-  font-family: "/only screen and (max-width: 40em)/";
-  width: 0;
-}
-
-/* line 362, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-medium {
-  font-family: "/only screen and (min-width:40.063em)/";
-  width: 40.063em;
-}
-
-/* line 367, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-medium-only {
-  font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/";
-  width: 40.063em;
-}
-
-/* line 372, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-large {
-  font-family: "/only screen and (min-width:64.063em)/";
-  width: 64.063em;
-}
-
-/* line 377, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-large-only {
-  font-family: "/only screen and (min-width:64.063em) and (max-width:90em)/";
-  width: 64.063em;
-}
-
-/* line 382, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-xlarge {
-  font-family: "/only screen and (min-width:90.063em)/";
-  width: 90.063em;
-}
-
-/* line 387, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-xlarge-only {
-  font-family: "/only screen and (min-width:90.063em) and (max-width:120em)/";
-  width: 90.063em;
-}
-
-/* line 392, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-xxlarge {
-  font-family: "/only screen and (min-width:120.063em)/";
-  width: 120.063em;
-}
-
-/* line 397, ../foundation/scss/foundation/components/_global.scss */
-meta.foundation-data-attribute-namespace {
-  font-family: false;
-}
-
-/* line 404, ../foundation/scss/foundation/components/_global.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 407, ../foundation/scss/foundation/components/_global.scss */
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 413, ../foundation/scss/foundation/components/_global.scss */
-html,
-body {
-  font-size: 100%;
-}
-
-/* line 417, ../foundation/scss/foundation/components/_global.scss */
-body {
-  background: #DCFFD7;
-  color: #222;
-  padding: 0;
-  margin: 0;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 100%;
-  position: relative;
-  cursor: auto;
-}
-
-/* line 430, ../foundation/scss/foundation/components/_global.scss */
-a:hover {
-  cursor: pointer;
-}
-
-/* line 433, ../foundation/scss/foundation/components/_global.scss */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 435, ../foundation/scss/foundation/components/_global.scss */
-img {
-  -ms-interpolation-mode: bicubic;
-}
-
-/* line 439, ../foundation/scss/foundation/components/_global.scss */
-#map_canvas img,
-#map_canvas embed,
-#map_canvas object,
-.map_canvas img,
-.map_canvas embed,
-.map_canvas object {
-  max-width: none !important;
-}
-
-/* line 446, ../foundation/scss/foundation/components/_global.scss */
-.left {
-  float: left !important;
-}
-
-/* line 447, ../foundation/scss/foundation/components/_global.scss */
-.right {
-  float: right !important;
-}
-
-/* line 172, ../foundation/scss/foundation/components/_global.scss */
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-/* line 173, ../foundation/scss/foundation/components/_global.scss */
-.clearfix:after {
-  clear: both;
-}
-
-/* line 451, ../foundation/scss/foundation/components/_global.scss */
-.hide {
-  display: none !important;
-  visibility: hidden;
-}
-
-/* line 457, ../foundation/scss/foundation/components/_global.scss */
-.invisible {
-  visibility: hidden;
-}
-
-/* line 463, ../foundation/scss/foundation/components/_global.scss */
-.antialiased {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 466, ../foundation/scss/foundation/components/_global.scss */
-img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* line 476, ../foundation/scss/foundation/components/_global.scss */
-textarea {
-  height: auto;
-  min-height: 50px;
-}
-
 /* small displays */
 @media only screen {
   /* line 244, ../foundation/scss/foundation/components/_visibility.scss */
-  .show-for-small-only, .show-for-small-up, .show-for-small, .show-for-small-down, .hide-for-medium-only, .hide-for-medium-up, .hide-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
+  .show-for-small-only, .show-for-small-up, .show-for-small, .show-for-small-down, .hide-for-medium-only, .hide-for-medium-up, .hide-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge-only, .hide-for-xxlarge-up {
     display: inherit !important;
   }
 
   /* line 247, ../foundation/scss/foundation/components/_visibility.scss */
-  .hide-for-small-only, .hide-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
+  .hide-for-small-only, .hide-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge-only, .show-for-xxlarge-up {
     display: none !important;
   }
 
   /* line 251, ../foundation/scss/foundation/components/_visibility.scss */
-  .visible-for-small-only, .visible-for-small-up, .visible-for-small, .visible-for-small-down, .hidden-for-medium-only, .hidden-for-medium-up, .hidden-for-medium, .visible-for-medium-down, .hidden-for-large-only, .hidden-for-large-up, .hidden-for-large, .visible-for-large-down, .hidden-for-xlarge-only, .hidden-for-xlarge-up, .hidden-for-xlarge, .visible-for-xlarge-down, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up, .hidden-for-xxlarge, .visible-for-xxlarge-down {
+  .visible-for-small-only, .visible-for-small-up, .visible-for-small, .visible-for-small-down, .hidden-for-medium-only, .hidden-for-medium-up, .hidden-for-medium, .visible-for-medium-down, .hidden-for-large-only, .hidden-for-large-up, .hidden-for-large, .visible-for-large-down, .hidden-for-xlarge-only, .hidden-for-xlarge-up, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up {
     position: static !important;
     height: auto;
     width: auto;
@@ -3742,7 +3224,7 @@ textarea {
   }
 
   /* line 254, ../foundation/scss/foundation/components/_visibility.scss */
-  .hidden-for-small-only, .hidden-for-small-up, .hidden-for-small, .hidden-for-small-down, .visible-for-medium-only, .visible-for-medium-up, .visible-for-medium, .hidden-for-medium-down, .visible-for-large-only, .visible-for-large-up, .visible-for-large, .hidden-for-large-down, .visible-for-xlarge-only, .visible-for-xlarge-up, .visible-for-xlarge, .hidden-for-xlarge-down, .visible-for-xxlarge-only, .visible-for-xxlarge-up, .visible-for-xxlarge, .hidden-for-xxlarge-down {
+  .hidden-for-small-only, .hidden-for-small-up, .hidden-for-small, .hidden-for-small-down, .visible-for-medium-only, .visible-for-medium-up, .visible-for-medium, .hidden-for-medium-down, .visible-for-large-only, .visible-for-large-up, .visible-for-large, .hidden-for-large-down, .visible-for-xlarge-only, .visible-for-xlarge-up, .visible-for-xxlarge-only, .visible-for-xxlarge-up {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -3751,44 +3233,44 @@ textarea {
   }
 
   /* line 259, ../foundation/scss/foundation/components/_visibility.scss */
-  table.show-for-small-only, table.show-for-small-up, table.show-for-small, table.show-for-small-down, table.hide-for-medium-only, table.hide-for-medium-up, table.hide-for-medium, table.show-for-medium-down, table.hide-for-large-only, table.hide-for-large-up, table.hide-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xlarge, table.show-for-xlarge-down, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge, table.show-for-xxlarge-down {
+  table.show-for-small-only, table.show-for-small-up, table.show-for-small, table.show-for-small-down, table.hide-for-medium-only, table.hide-for-medium-up, table.hide-for-medium, table.show-for-medium-down, table.hide-for-large-only, table.hide-for-large-up, table.hide-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up {
     display: table !important;
   }
 
   /* line 262, ../foundation/scss/foundation/components/_visibility.scss */
-  thead.show-for-small-only, thead.show-for-small-up, thead.show-for-small, thead.show-for-small-down, thead.hide-for-medium-only, thead.hide-for-medium-up, thead.hide-for-medium, thead.show-for-medium-down, thead.hide-for-large-only, thead.hide-for-large-up, thead.hide-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xlarge, thead.show-for-xlarge-down, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge, thead.show-for-xxlarge-down {
+  thead.show-for-small-only, thead.show-for-small-up, thead.show-for-small, thead.show-for-small-down, thead.hide-for-medium-only, thead.hide-for-medium-up, thead.hide-for-medium, thead.show-for-medium-down, thead.hide-for-large-only, thead.hide-for-large-up, thead.hide-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up {
     display: table-header-group !important;
   }
 
   /* line 265, ../foundation/scss/foundation/components/_visibility.scss */
-  tbody.show-for-small-only, tbody.show-for-small-up, tbody.show-for-small, tbody.show-for-small-down, tbody.hide-for-medium-only, tbody.hide-for-medium-up, tbody.hide-for-medium, tbody.show-for-medium-down, tbody.hide-for-large-only, tbody.hide-for-large-up, tbody.hide-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge, tbody.show-for-xlarge-down, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge, tbody.show-for-xxlarge-down {
+  tbody.show-for-small-only, tbody.show-for-small-up, tbody.show-for-small, tbody.show-for-small-down, tbody.hide-for-medium-only, tbody.hide-for-medium-up, tbody.hide-for-medium, tbody.show-for-medium-down, tbody.hide-for-large-only, tbody.hide-for-large-up, tbody.hide-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up {
     display: table-row-group !important;
   }
 
   /* line 268, ../foundation/scss/foundation/components/_visibility.scss */
-  tr.show-for-small-only, tr.show-for-small-up, tr.show-for-small, tr.show-for-small-down, tr.hide-for-medium-only, tr.hide-for-medium-up, tr.hide-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
+  tr.show-for-small-only, tr.show-for-small-up, tr.show-for-small, tr.show-for-small-down, tr.hide-for-medium-only, tr.hide-for-medium-up, tr.hide-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up {
     display: table-row !important;
   }
 
   /* line 271, ../foundation/scss/foundation/components/_visibility.scss */
-  th.show-for-small-only, td.show-for-small-only, th.show-for-small-up, td.show-for-small-up, th.show-for-small, td.show-for-small, th.show-for-small-down, td.show-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.hide-for-medium-up, td.hide-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, td.hide-for-large-up, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
+  th.show-for-small-only, td.show-for-small-only, th.show-for-small-up, td.show-for-small-up, th.show-for-small, td.show-for-small, th.show-for-small-down, td.show-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.hide-for-medium-up, td.hide-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, td.hide-for-large-up, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up {
     display: table-cell !important;
   }
 }
 /* medium displays */
 @media only screen and (min-width: 40.063em) {
   /* line 244, ../foundation/scss/foundation/components/_visibility.scss */
-  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
+  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge-only, .hide-for-xxlarge-up {
     display: inherit !important;
   }
 
   /* line 247, ../foundation/scss/foundation/components/_visibility.scss */
-  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .hide-for-medium-only, .hide-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
+  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .hide-for-medium-only, .hide-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge-only, .show-for-xxlarge-up {
     display: none !important;
   }
 
   /* line 251, ../foundation/scss/foundation/components/_visibility.scss */
-  .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .visible-for-medium-only, .visible-for-medium-up, .visible-for-medium, .visible-for-medium-down, .hidden-for-large-only, .hidden-for-large-up, .hidden-for-large, .visible-for-large-down, .hidden-for-xlarge-only, .hidden-for-xlarge-up, .hidden-for-xlarge, .visible-for-xlarge-down, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up, .hidden-for-xxlarge, .visible-for-xxlarge-down {
+  .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .visible-for-medium-only, .visible-for-medium-up, .visible-for-medium, .visible-for-medium-down, .hidden-for-large-only, .hidden-for-large-up, .hidden-for-large, .visible-for-large-down, .hidden-for-xlarge-only, .hidden-for-xlarge-up, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up {
     position: static !important;
     height: auto;
     width: auto;
@@ -3797,7 +3279,7 @@ textarea {
   }
 
   /* line 254, ../foundation/scss/foundation/components/_visibility.scss */
-  .visible-for-small-only, .hidden-for-small-up, .visible-for-small, .visible-for-small-down, .hidden-for-medium-only, .hidden-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .visible-for-large-only, .visible-for-large-up, .visible-for-large, .hidden-for-large-down, .visible-for-xlarge-only, .visible-for-xlarge-up, .visible-for-xlarge, .hidden-for-xlarge-down, .visible-for-xxlarge-only, .visible-for-xxlarge-up, .visible-for-xxlarge, .hidden-for-xxlarge-down {
+  .visible-for-small-only, .hidden-for-small-up, .visible-for-small, .visible-for-small-down, .hidden-for-medium-only, .hidden-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .visible-for-large-only, .visible-for-large-up, .visible-for-large, .hidden-for-large-down, .visible-for-xlarge-only, .visible-for-xlarge-up, .visible-for-xxlarge-only, .visible-for-xxlarge-up {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -3806,44 +3288,44 @@ textarea {
   }
 
   /* line 259, ../foundation/scss/foundation/components/_visibility.scss */
-  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.show-for-medium-only, table.show-for-medium-up, table.show-for-medium, table.show-for-medium-down, table.hide-for-large-only, table.hide-for-large-up, table.hide-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xlarge, table.show-for-xlarge-down, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge, table.show-for-xxlarge-down {
+  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.show-for-medium-only, table.show-for-medium-up, table.show-for-medium, table.show-for-medium-down, table.hide-for-large-only, table.hide-for-large-up, table.hide-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up {
     display: table !important;
   }
 
   /* line 262, ../foundation/scss/foundation/components/_visibility.scss */
-  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.show-for-medium-only, thead.show-for-medium-up, thead.show-for-medium, thead.show-for-medium-down, thead.hide-for-large-only, thead.hide-for-large-up, thead.hide-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xlarge, thead.show-for-xlarge-down, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge, thead.show-for-xxlarge-down {
+  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.show-for-medium-only, thead.show-for-medium-up, thead.show-for-medium, thead.show-for-medium-down, thead.hide-for-large-only, thead.hide-for-large-up, thead.hide-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up {
     display: table-header-group !important;
   }
 
   /* line 265, ../foundation/scss/foundation/components/_visibility.scss */
-  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.show-for-medium-only, tbody.show-for-medium-up, tbody.show-for-medium, tbody.show-for-medium-down, tbody.hide-for-large-only, tbody.hide-for-large-up, tbody.hide-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge, tbody.show-for-xlarge-down, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge, tbody.show-for-xxlarge-down {
+  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.show-for-medium-only, tbody.show-for-medium-up, tbody.show-for-medium, tbody.show-for-medium-down, tbody.hide-for-large-only, tbody.hide-for-large-up, tbody.hide-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up {
     display: table-row-group !important;
   }
 
   /* line 268, ../foundation/scss/foundation/components/_visibility.scss */
-  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.show-for-medium-only, tr.show-for-medium-up, tr.show-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
+  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.show-for-medium-only, tr.show-for-medium-up, tr.show-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up {
     display: table-row !important;
   }
 
   /* line 271, ../foundation/scss/foundation/components/_visibility.scss */
-  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.show-for-medium-only, td.show-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.show-for-medium, td.show-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, td.hide-for-large-up, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
+  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.show-for-medium-only, td.show-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.show-for-medium, td.show-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, td.hide-for-large-up, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up {
     display: table-cell !important;
   }
 }
 /* large displays */
 @media only screen and (min-width: 64.063em) {
   /* line 244, ../foundation/scss/foundation/components/_visibility.scss */
-  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
+  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge-only, .hide-for-xxlarge-up {
     display: inherit !important;
   }
 
   /* line 247, ../foundation/scss/foundation/components/_visibility.scss */
-  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
+  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge-only, .show-for-xxlarge-up {
     display: none !important;
   }
 
   /* line 251, ../foundation/scss/foundation/components/_visibility.scss */
-  .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .hidden-for-medium-only, .visible-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .visible-for-large-only, .visible-for-large-up, .visible-for-large, .visible-for-large-down, .hidden-for-xlarge-only, .hidden-for-xlarge-up, .hidden-for-xlarge, .visible-for-xlarge-down, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up, .hidden-for-xxlarge, .visible-for-xxlarge-down {
+  .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .hidden-for-medium-only, .visible-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .visible-for-large-only, .visible-for-large-up, .visible-for-large, .visible-for-large-down, .hidden-for-xlarge-only, .hidden-for-xlarge-up, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up {
     position: static !important;
     height: auto;
     width: auto;
@@ -3852,7 +3334,7 @@ textarea {
   }
 
   /* line 254, ../foundation/scss/foundation/components/_visibility.scss */
-  .visible-for-small-only, .hidden-for-small-up, .visible-for-small, .visible-for-small-down, .visible-for-medium-only, .hidden-for-medium-up, .visible-for-medium, .visible-for-medium-down, .hidden-for-large-only, .hidden-for-large-up, .hidden-for-large, .hidden-for-large-down, .visible-for-xlarge-only, .visible-for-xlarge-up, .visible-for-xlarge, .hidden-for-xlarge-down, .visible-for-xxlarge-only, .visible-for-xxlarge-up, .visible-for-xxlarge, .hidden-for-xxlarge-down {
+  .visible-for-small-only, .hidden-for-small-up, .visible-for-small, .visible-for-small-down, .visible-for-medium-only, .hidden-for-medium-up, .visible-for-medium, .visible-for-medium-down, .hidden-for-large-only, .hidden-for-large-up, .hidden-for-large, .hidden-for-large-down, .visible-for-xlarge-only, .visible-for-xlarge-up, .visible-for-xxlarge-only, .visible-for-xxlarge-up {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -3861,44 +3343,44 @@ textarea {
   }
 
   /* line 259, ../foundation/scss/foundation/components/_visibility.scss */
-  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.hide-for-medium-only, table.show-for-medium-up, table.hide-for-medium, table.hide-for-medium-down, table.show-for-large-only, table.show-for-large-up, table.show-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xlarge, table.show-for-xlarge-down, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge, table.show-for-xxlarge-down {
+  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.hide-for-medium-only, table.show-for-medium-up, table.hide-for-medium, table.hide-for-medium-down, table.show-for-large-only, table.show-for-large-up, table.show-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up {
     display: table !important;
   }
 
   /* line 262, ../foundation/scss/foundation/components/_visibility.scss */
-  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.hide-for-medium, thead.hide-for-medium-down, thead.show-for-large-only, thead.show-for-large-up, thead.show-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xlarge, thead.show-for-xlarge-down, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge, thead.show-for-xxlarge-down {
+  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.hide-for-medium, thead.hide-for-medium-down, thead.show-for-large-only, thead.show-for-large-up, thead.show-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up {
     display: table-header-group !important;
   }
 
   /* line 265, ../foundation/scss/foundation/components/_visibility.scss */
-  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.show-for-large-only, tbody.show-for-large-up, tbody.show-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge, tbody.show-for-xlarge-down, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge, tbody.show-for-xxlarge-down {
+  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.show-for-large-only, tbody.show-for-large-up, tbody.show-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up {
     display: table-row-group !important;
   }
 
   /* line 268, ../foundation/scss/foundation/components/_visibility.scss */
-  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.show-for-large-only, tr.show-for-large-up, tr.show-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
+  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.show-for-large-only, tr.show-for-large-up, tr.show-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up {
     display: table-row !important;
   }
 
   /* line 271, ../foundation/scss/foundation/components/_visibility.scss */
-  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.show-for-large-only, td.show-for-large-only, th.show-for-large-up, td.show-for-large-up, th.show-for-large, td.show-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
+  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.show-for-large-only, td.show-for-large-only, th.show-for-large-up, td.show-for-large-up, th.show-for-large, td.show-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up {
     display: table-cell !important;
   }
 }
 /* xlarge displays */
 @media only screen and (min-width: 90.063em) {
   /* line 244, ../foundation/scss/foundation/components/_visibility.scss */
-  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
+  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .hide-for-xxlarge-only, .hide-for-xxlarge-up {
     display: inherit !important;
   }
 
   /* line 247, ../foundation/scss/foundation/components/_visibility.scss */
-  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
+  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .show-for-xxlarge-only, .show-for-xxlarge-up {
     display: none !important;
   }
 
   /* line 251, ../foundation/scss/foundation/components/_visibility.scss */
-  .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .hidden-for-medium-only, .visible-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .hidden-for-large-only, .visible-for-large-up, .hidden-for-large, .hidden-for-large-down, .visible-for-xlarge-only, .visible-for-xlarge-up, .visible-for-xlarge, .visible-for-xlarge-down, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up, .hidden-for-xxlarge, .visible-for-xxlarge-down {
+  .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .hidden-for-medium-only, .visible-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .hidden-for-large-only, .visible-for-large-up, .hidden-for-large, .hidden-for-large-down, .visible-for-xlarge-only, .visible-for-xlarge-up, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up {
     position: static !important;
     height: auto;
     width: auto;
@@ -3907,7 +3389,7 @@ textarea {
   }
 
   /* line 254, ../foundation/scss/foundation/components/_visibility.scss */
-  .visible-for-small-only, .hidden-for-small-up, .visible-for-small, .visible-for-small-down, .visible-for-medium-only, .hidden-for-medium-up, .visible-for-medium, .visible-for-medium-down, .visible-for-large-only, .hidden-for-large-up, .visible-for-large, .visible-for-large-down, .hidden-for-xlarge-only, .hidden-for-xlarge-up, .hidden-for-xlarge, .hidden-for-xlarge-down, .visible-for-xxlarge-only, .visible-for-xxlarge-up, .visible-for-xxlarge, .hidden-for-xxlarge-down {
+  .visible-for-small-only, .hidden-for-small-up, .visible-for-small, .visible-for-small-down, .visible-for-medium-only, .hidden-for-medium-up, .visible-for-medium, .visible-for-medium-down, .visible-for-large-only, .hidden-for-large-up, .visible-for-large, .visible-for-large-down, .hidden-for-xlarge-only, .hidden-for-xlarge-up, .visible-for-xxlarge-only, .visible-for-xxlarge-up {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -3916,44 +3398,44 @@ textarea {
   }
 
   /* line 259, ../foundation/scss/foundation/components/_visibility.scss */
-  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.hide-for-medium-only, table.show-for-medium-up, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-large-only, table.show-for-large-up, table.hide-for-large, table.hide-for-large-down, table.show-for-xlarge-only, table.show-for-xlarge-up, table.show-for-xlarge, table.show-for-xlarge-down, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge, table.show-for-xxlarge-down {
+  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.hide-for-medium-only, table.show-for-medium-up, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-large-only, table.show-for-large-up, table.hide-for-large, table.hide-for-large-down, table.show-for-xlarge-only, table.show-for-xlarge-up, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up {
     display: table !important;
   }
 
   /* line 262, ../foundation/scss/foundation/components/_visibility.scss */
-  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-large-only, thead.show-for-large-up, thead.hide-for-large, thead.hide-for-large-down, thead.show-for-xlarge-only, thead.show-for-xlarge-up, thead.show-for-xlarge, thead.show-for-xlarge-down, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge, thead.show-for-xxlarge-down {
+  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-large-only, thead.show-for-large-up, thead.hide-for-large, thead.hide-for-large-down, thead.show-for-xlarge-only, thead.show-for-xlarge-up, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up {
     display: table-header-group !important;
   }
 
   /* line 265, ../foundation/scss/foundation/components/_visibility.scss */
-  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-large-only, tbody.show-for-large-up, tbody.hide-for-large, tbody.hide-for-large-down, tbody.show-for-xlarge-only, tbody.show-for-xlarge-up, tbody.show-for-xlarge, tbody.show-for-xlarge-down, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge, tbody.show-for-xxlarge-down {
+  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-large-only, tbody.show-for-large-up, tbody.hide-for-large, tbody.hide-for-large-down, tbody.show-for-xlarge-only, tbody.show-for-xlarge-up, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up {
     display: table-row-group !important;
   }
 
   /* line 268, ../foundation/scss/foundation/components/_visibility.scss */
-  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-large-only, tr.show-for-large-up, tr.hide-for-large, tr.hide-for-large-down, tr.show-for-xlarge-only, tr.show-for-xlarge-up, tr.show-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
+  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-large-only, tr.show-for-large-up, tr.hide-for-large, tr.hide-for-large-down, tr.show-for-xlarge-only, tr.show-for-xlarge-up, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up {
     display: table-row !important;
   }
 
   /* line 271, ../foundation/scss/foundation/components/_visibility.scss */
-  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.show-for-large-up, td.show-for-large-up, th.hide-for-large, td.hide-for-large, th.hide-for-large-down, td.hide-for-large-down, th.show-for-xlarge-only, td.show-for-xlarge-only, th.show-for-xlarge-up, td.show-for-xlarge-up, th.show-for-xlarge, td.show-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
+  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.show-for-large-up, td.show-for-large-up, th.hide-for-large, td.hide-for-large, th.hide-for-large-down, td.hide-for-large-down, th.show-for-xlarge-only, td.show-for-xlarge-only, th.show-for-xlarge-up, td.show-for-xlarge-up, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up {
     display: table-cell !important;
   }
 }
 /* xxlarge displays */
 @media only screen and (min-width: 120.063em) {
   /* line 244, ../foundation/scss/foundation/components/_visibility.scss */
-  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .hide-for-xlarge-only, .show-for-xlarge-up, .hide-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .show-for-xxlarge-down {
+  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .hide-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge-only, .show-for-xxlarge-up {
     display: inherit !important;
   }
 
   /* line 247, ../foundation/scss/foundation/components/_visibility.scss */
-  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .show-for-large, .show-for-large-down, .show-for-xlarge-only, .hide-for-xlarge-up, .show-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .hide-for-xxlarge-down {
+  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .show-for-large, .show-for-large-down, .show-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge-only, .hide-for-xxlarge-up {
     display: none !important;
   }
 
   /* line 251, ../foundation/scss/foundation/components/_visibility.scss */
-  .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .hidden-for-medium-only, .visible-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .hidden-for-large-only, .visible-for-large-up, .hidden-for-large, .hidden-for-large-down, .hidden-for-xlarge-only, .visible-for-xlarge-up, .hidden-for-xlarge, .hidden-for-xlarge-down, .visible-for-xxlarge-only, .visible-for-xxlarge-up, .visible-for-xxlarge, .visible-for-xxlarge-down {
+  .hidden-for-small-only, .visible-for-small-up, .hidden-for-small, .hidden-for-small-down, .hidden-for-medium-only, .visible-for-medium-up, .hidden-for-medium, .hidden-for-medium-down, .hidden-for-large-only, .visible-for-large-up, .hidden-for-large, .hidden-for-large-down, .hidden-for-xlarge-only, .visible-for-xlarge-up, .visible-for-xxlarge-only, .visible-for-xxlarge-up {
     position: static !important;
     height: auto;
     width: auto;
@@ -3962,7 +3444,7 @@ textarea {
   }
 
   /* line 254, ../foundation/scss/foundation/components/_visibility.scss */
-  .visible-for-small-only, .hidden-for-small-up, .visible-for-small, .visible-for-small-down, .visible-for-medium-only, .hidden-for-medium-up, .visible-for-medium, .visible-for-medium-down, .visible-for-large-only, .hidden-for-large-up, .visible-for-large, .visible-for-large-down, .visible-for-xlarge-only, .hidden-for-xlarge-up, .visible-for-xlarge, .visible-for-xlarge-down, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up, .hidden-for-xxlarge, .hidden-for-xxlarge-down {
+  .visible-for-small-only, .hidden-for-small-up, .visible-for-small, .visible-for-small-down, .visible-for-medium-only, .hidden-for-medium-up, .visible-for-medium, .visible-for-medium-down, .visible-for-large-only, .hidden-for-large-up, .visible-for-large, .visible-for-large-down, .visible-for-xlarge-only, .hidden-for-xlarge-up, .hidden-for-xxlarge-only, .hidden-for-xxlarge-up {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -3971,65 +3453,65 @@ textarea {
   }
 
   /* line 259, ../foundation/scss/foundation/components/_visibility.scss */
-  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.hide-for-medium-only, table.show-for-medium-up, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-large-only, table.show-for-large-up, table.hide-for-large, table.hide-for-large-down, table.hide-for-xlarge-only, table.show-for-xlarge-up, table.hide-for-xlarge, table.hide-for-xlarge-down, table.show-for-xxlarge-only, table.show-for-xxlarge-up, table.show-for-xxlarge, table.show-for-xxlarge-down {
+  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.hide-for-medium-only, table.show-for-medium-up, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-large-only, table.show-for-large-up, table.hide-for-large, table.hide-for-large-down, table.hide-for-xlarge-only, table.show-for-xlarge-up, table.show-for-xxlarge-only, table.show-for-xxlarge-up {
     display: table !important;
   }
 
   /* line 262, ../foundation/scss/foundation/components/_visibility.scss */
-  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-large-only, thead.show-for-large-up, thead.hide-for-large, thead.hide-for-large-down, thead.hide-for-xlarge-only, thead.show-for-xlarge-up, thead.hide-for-xlarge, thead.hide-for-xlarge-down, thead.show-for-xxlarge-only, thead.show-for-xxlarge-up, thead.show-for-xxlarge, thead.show-for-xxlarge-down {
+  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-large-only, thead.show-for-large-up, thead.hide-for-large, thead.hide-for-large-down, thead.hide-for-xlarge-only, thead.show-for-xlarge-up, thead.show-for-xxlarge-only, thead.show-for-xxlarge-up {
     display: table-header-group !important;
   }
 
   /* line 265, ../foundation/scss/foundation/components/_visibility.scss */
-  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-large-only, tbody.show-for-large-up, tbody.hide-for-large, tbody.hide-for-large-down, tbody.hide-for-xlarge-only, tbody.show-for-xlarge-up, tbody.hide-for-xlarge, tbody.hide-for-xlarge-down, tbody.show-for-xxlarge-only, tbody.show-for-xxlarge-up, tbody.show-for-xxlarge, tbody.show-for-xxlarge-down {
+  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-large-only, tbody.show-for-large-up, tbody.hide-for-large, tbody.hide-for-large-down, tbody.hide-for-xlarge-only, tbody.show-for-xlarge-up, tbody.show-for-xxlarge-only, tbody.show-for-xxlarge-up {
     display: table-row-group !important;
   }
 
   /* line 268, ../foundation/scss/foundation/components/_visibility.scss */
-  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-large-only, tr.show-for-large-up, tr.hide-for-large, tr.hide-for-large-down, tr.hide-for-xlarge-only, tr.show-for-xlarge-up, tr.hide-for-xlarge, tr.hide-for-xlarge-down, tr.show-for-xxlarge-only, tr.show-for-xxlarge-up, tr.show-for-xxlarge, tr.show-for-xxlarge-down {
+  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-large-only, tr.show-for-large-up, tr.hide-for-large, tr.hide-for-large-down, tr.hide-for-xlarge-only, tr.show-for-xlarge-up, tr.show-for-xxlarge-only, tr.show-for-xxlarge-up {
     display: table-row !important;
   }
 
   /* line 271, ../foundation/scss/foundation/components/_visibility.scss */
-  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.show-for-large-up, td.show-for-large-up, th.hide-for-large, td.hide-for-large, th.hide-for-large-down, td.hide-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.show-for-xlarge-up, td.show-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.hide-for-xlarge-down, td.hide-for-xlarge-down, th.show-for-xxlarge-only, td.show-for-xxlarge-only, th.show-for-xxlarge-up, td.show-for-xxlarge-up, th.show-for-xxlarge, td.show-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
+  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.show-for-large-up, td.show-for-large-up, th.hide-for-large, td.hide-for-large, th.hide-for-large-down, td.hide-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.show-for-xlarge-up, td.show-for-xlarge-up, th.show-for-xxlarge-only, td.show-for-xxlarge-only, th.show-for-xxlarge-up, td.show-for-xxlarge-up {
     display: table-cell !important;
   }
 }
 /* Orientation targeting */
-/* line 285, ../foundation/scss/foundation/components/_visibility.scss */
+/* line 286, ../foundation/scss/foundation/components/_visibility.scss */
 .show-for-landscape,
 .hide-for-portrait {
   display: inherit !important;
 }
 
-/* line 287, ../foundation/scss/foundation/components/_visibility.scss */
+/* line 288, ../foundation/scss/foundation/components/_visibility.scss */
 .hide-for-landscape,
 .show-for-portrait {
   display: none !important;
 }
 
 /* Specific visibility for tables */
-/* line 292, ../foundation/scss/foundation/components/_visibility.scss */
+/* line 293, ../foundation/scss/foundation/components/_visibility.scss */
 table.hide-for-landscape, table.show-for-portrait {
   display: table !important;
 }
 
-/* line 296, ../foundation/scss/foundation/components/_visibility.scss */
+/* line 297, ../foundation/scss/foundation/components/_visibility.scss */
 thead.hide-for-landscape, thead.show-for-portrait {
   display: table-header-group !important;
 }
 
-/* line 300, ../foundation/scss/foundation/components/_visibility.scss */
+/* line 301, ../foundation/scss/foundation/components/_visibility.scss */
 tbody.hide-for-landscape, tbody.show-for-portrait {
   display: table-row-group !important;
 }
 
-/* line 304, ../foundation/scss/foundation/components/_visibility.scss */
+/* line 305, ../foundation/scss/foundation/components/_visibility.scss */
 tr.hide-for-landscape, tr.show-for-portrait {
   display: table-row !important;
 }
 
-/* line 309, ../foundation/scss/foundation/components/_visibility.scss */
+/* line 310, ../foundation/scss/foundation/components/_visibility.scss */
 td.hide-for-landscape, td.show-for-portrait,
 th.hide-for-landscape,
 th.show-for-portrait {
@@ -4037,40 +3519,40 @@ th.show-for-portrait {
 }
 
 @media only screen and (orientation: landscape) {
-  /* line 314, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 315, ../foundation/scss/foundation/components/_visibility.scss */
   .show-for-landscape,
   .hide-for-portrait {
     display: inherit !important;
   }
 
-  /* line 316, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 317, ../foundation/scss/foundation/components/_visibility.scss */
   .hide-for-landscape,
   .show-for-portrait {
     display: none !important;
   }
 
   /* Specific visibility for tables */
-  /* line 321, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 322, ../foundation/scss/foundation/components/_visibility.scss */
   table.show-for-landscape, table.hide-for-portrait {
     display: table !important;
   }
 
-  /* line 325, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 326, ../foundation/scss/foundation/components/_visibility.scss */
   thead.show-for-landscape, thead.hide-for-portrait {
     display: table-header-group !important;
   }
 
-  /* line 329, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 330, ../foundation/scss/foundation/components/_visibility.scss */
   tbody.show-for-landscape, tbody.hide-for-portrait {
     display: table-row-group !important;
   }
 
-  /* line 333, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 334, ../foundation/scss/foundation/components/_visibility.scss */
   tr.show-for-landscape, tr.hide-for-portrait {
     display: table-row !important;
   }
 
-  /* line 338, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 339, ../foundation/scss/foundation/components/_visibility.scss */
   td.show-for-landscape, td.hide-for-portrait,
   th.show-for-landscape,
   th.hide-for-portrait {
@@ -4078,40 +3560,40 @@ th.show-for-portrait {
   }
 }
 @media only screen and (orientation: portrait) {
-  /* line 344, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 345, ../foundation/scss/foundation/components/_visibility.scss */
   .show-for-portrait,
   .hide-for-landscape {
     display: inherit !important;
   }
 
-  /* line 346, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 347, ../foundation/scss/foundation/components/_visibility.scss */
   .hide-for-portrait,
   .show-for-landscape {
     display: none !important;
   }
 
   /* Specific visibility for tables */
-  /* line 351, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 352, ../foundation/scss/foundation/components/_visibility.scss */
   table.show-for-portrait, table.hide-for-landscape {
     display: table !important;
   }
 
-  /* line 355, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 356, ../foundation/scss/foundation/components/_visibility.scss */
   thead.show-for-portrait, thead.hide-for-landscape {
     display: table-header-group !important;
   }
 
-  /* line 359, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 360, ../foundation/scss/foundation/components/_visibility.scss */
   tbody.show-for-portrait, tbody.hide-for-landscape {
     display: table-row-group !important;
   }
 
-  /* line 363, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 364, ../foundation/scss/foundation/components/_visibility.scss */
   tr.show-for-portrait, tr.hide-for-landscape {
     display: table-row !important;
   }
 
-  /* line 368, ../foundation/scss/foundation/components/_visibility.scss */
+  /* line 369, ../foundation/scss/foundation/components/_visibility.scss */
   td.show-for-portrait, td.hide-for-landscape,
   th.show-for-portrait,
   th.hide-for-landscape {
@@ -4251,13 +3733,13 @@ html, body {
 
 /* line 13, ../scss/_general.scss */
 .row .header {
-  background-color: #DCFFD7;
+  background-color: #dcffd7;
   padding: 0;
 }
 
 /* line 19, ../scss/_general.scss */
 .body {
-  background-color: #DCFFD7;
+  background-color: #dcffd7;
 }
 
 /* line 23, ../scss/_general.scss */
@@ -4286,10 +3768,10 @@ hr {
   border: 0;
   height: 1px;
   background: #333;
-  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
-  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
-  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
-  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -webkit-linear-gradient(left, #cccccc, #333333, #cccccc);
+  background-image: -moz-linear-gradient(left, #cccccc, #333333, #cccccc);
+  background-image: -ms-linear-gradient(left, #cccccc, #333333, #cccccc);
+  background-image: -o-linear-gradient(left, #cccccc, #333333, #cccccc);
 }
 
 /* line 1, ../scss/_images.scss */
@@ -4299,10 +3781,10 @@ hr {
 
 /* line 10, ../scss/_menu.scss */
 .ui-menu {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) #1D8225 !important;
-  background: -moz-linear-gradient(center top, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) repeat scroll 0% 0% #1D8225 !important;
-  background: -o-linear-gradient(center top, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) #1D8225 !important;
-  background: linear-gradient(to bottom, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) #1D8225 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) #1d8225 !important;
+  background: -moz-linear-gradient(center top, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) #1d8225 !important;
+  background: linear-gradient(to bottom, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) #1d8225 !important;
   border: 1px solid #1E642B !important;
   border-radius: 15px !important;
   width: auto !important;
@@ -4310,10 +3792,10 @@ hr {
 }
 /* line 19, ../scss/_menu.scss */
 .ui-menu .ui-menuitem-list .ui-menuitem .ui-state-hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
-  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
-  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
-  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48c05c !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48c05c !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
   border-radius: 15px !important;
   padding: 0px 3px !important;
 }
@@ -4328,19 +3810,19 @@ hr {
 }
 /* line 36, ../scss/_menu.scss */
 .ui-menu .menu-active {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
-  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
-  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
-  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48c05c !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48c05c !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
 }
 /* line 38, ../scss/_menu.scss */
 .ui-menu .menu-active .ui-state-hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
-  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
-  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
-  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48c05c !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48c05c !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
   border-radius: 15px !important;
-  box-shadow: 0px 0px 8px #ddd !important;
+  box-shadow: 0px 0px 8px #dddddd !important;
 }
 /* line 45, ../scss/_menu.scss */
 .ui-menu .ui-menuitem-link {
@@ -4358,20 +3840,20 @@ hr {
 }
 /* line 60, ../scss/_menu.scss */
 .ui-menu .ui-menuitem-active .ui-state-hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
-  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
-  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
-  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48c05c !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48c05c !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
   border-radius: 15px !important;
-  box-shadow: 0px 0px 8px #ddd !important;
+  box-shadow: 0px 0px 8px #dddddd !important;
 }
 /* line 68, ../scss/_menu.scss */
 .ui-menu .ui-menu-parent .ui-menu-child {
   width: auto !important;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) #1D8225 !important;
-  background: -moz-linear-gradient(center top, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) repeat scroll 0% 0% #1D8225 !important;
-  background: -o-linear-gradient(center top, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) #1D8225 !important;
-  background: linear-gradient(to bottom, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) #1D8225 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.8)), to(rgba(7, 119, 11, 0.8))) #1d8225 !important;
+  background: -moz-linear-gradient(center top, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) #1d8225 !important;
+  background: linear-gradient(to bottom, rgba(36, 255, 44, 0.8), rgba(7, 119, 11, 0.8)) #1d8225 !important;
   border: 1px solid #1E642B !important;
 }
 /* line 76, ../scss/_menu.scss */
@@ -4379,14 +3861,14 @@ hr {
   width: 100% !important;
   margin: 0 !important;
   border-radius: 15px 15px 0 0 !important;
-  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
-  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
-  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
-  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1d8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1d8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1d8225 !important;
   border: none !important;
 }
 
-/* line 87, ../scss/_menu.scss */
+/* line 92, ../scss/_menu.scss */
 .ui-menu .ui-widget-header h1,
 .ui-menu .ui-widget-header h2,
 .ui-menu .ui-widget-header h3,
@@ -4408,11 +3890,11 @@ hr {
 }
 /* line 105, ../scss/_menu.scss */
 .product-menu .ui-state-hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
-  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
-  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
-  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
-  box-shadow: 0px 0px 8px #ddd !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48c05c !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48c05c !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
+  box-shadow: 0px 0px 8px #dddddd !important;
 }
 
 /* line 111, ../scss/_menu.scss */
@@ -4423,10 +3905,10 @@ hr {
 
 /* line 118, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-header {
-  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
-  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
-  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
-  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1d8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1d8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1d8225 !important;
 }
 /* line 122, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-menuitem-link {
@@ -4434,10 +3916,10 @@ hr {
 }
 /* line 126, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.2)), to(rgba(7, 119, 11, 0.6))) #1D8225 !important;
-  background: -moz-linear-gradient(center top, rgba(36, 255, 44, 0.2), rgba(7, 119, 11, 0.6)) repeat scroll 0% 0% #1D8225 !important;
-  background: -o-linear-gradient(center top, rgba(36, 255, 44, 0.2), rgba(7, 119, 11, 0.6)) #1D8225 !important;
-  background: linear-gradient(to bottom, rgba(36, 255, 44, 0.2), rgba(7, 119, 11, 0.6)) #1D8225 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.2)), to(rgba(7, 119, 11, 0.6))) #1d8225 !important;
+  background: -moz-linear-gradient(center top, rgba(36, 255, 44, 0.2), rgba(7, 119, 11, 0.6)) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, rgba(36, 255, 44, 0.2), rgba(7, 119, 11, 0.6)) #1d8225 !important;
+  background: linear-gradient(to bottom, rgba(36, 255, 44, 0.2), rgba(7, 119, 11, 0.6)) #1d8225 !important;
   padding: 0.2em !important;
 }
 /* line 131, ../scss/_menu.scss */
@@ -4446,10 +3928,10 @@ hr {
 }
 /* line 135, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-state-hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
-  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
-  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
-  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48c05c !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48c05c !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
 }
 
 /* line 1, ../scss/_dashboard.scss */
@@ -4481,18 +3963,18 @@ hr {
 }
 /* line 7, ../scss/_cart.scss */
 .cart-panel .ui-panel-footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
-  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
-  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
-  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1d8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1d8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1d8225 !important;
 }
 /* line 12, ../scss/_cart.scss */
 .cart-panel .ui-panel-titlebar {
   border-radius: 15px 15px 0 0 !important;
-  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
-  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
-  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
-  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1d8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1d8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1d8225 !important;
   border: none !important;
 }
 /* line 18, ../scss/_cart.scss */
@@ -4501,10 +3983,10 @@ hr {
 }
 /* line 22, ../scss/_cart.scss */
 .cart-panel .ui-button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
-  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
-  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
-  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1d8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1d8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1d8225 !important;
 }
 /* line 25, ../scss/_cart.scss */
 .cart-panel .ui-button .ui-button-text {
@@ -4513,15 +3995,15 @@ hr {
 }
 /* line 31, ../scss/_cart.scss */
 .cart-panel .ui-state-hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
-  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
-  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
-  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48c05c !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48c05c !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
 }
 /* line 34, ../scss/_cart.scss */
 .cart-panel .ui-state-hover .ui-button-text {
   color: #222222;
-  box-shadow: 0px 0px 8px #ddd !important;
+  box-shadow: 0px 0px 8px #dddddd !important;
 }
 
 /* line 1, ../scss/_shop.scss */
@@ -4531,125 +4013,152 @@ hr {
 }
 
 /* line 6, ../scss/_shop.scss */
+.ui-panel.product-item-details {
+  background: #ffe065 !important;
+}
+/* line 9, ../scss/_shop.scss */
+.ui-panel.product-item-details .ui-panel-titlebar {
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1d8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1d8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1d8225 !important;
+}
+/* line 13, ../scss/_shop.scss */
+.ui-panel.product-item-details .ui-panel-content {
+  background: cornsilk !important;
+}
+
+/* line 19, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid {
   border-radius: 15px !important;
 }
-/* line 7, ../scss/_shop.scss */
+/* line 20, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-panel {
-  background: #BA1212 !important;
+  background: #ffe065 !important;
   padding: 4px !important;
 }
-/* line 11, ../scss/_shop.scss */
+/* line 24, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-panel .ui-panel-titlebar {
-  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
-  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
-  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
-  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1d8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1d8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1d8225 !important;
   padding: 0.6em 0em 0.3em !important;
-  height: 4em !important;
+  min-height: 4em !important;
 }
-/* line 16, ../scss/_shop.scss */
+/* line 29, ../scss/_shop.scss */
+.ui-datagrid.product-datagrid .ui-panel .ui-panel-titlebar .ui-panel-title {
+  margin: 0.1em !important;
+}
+/* line 33, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-panel .ui-panel-titlebar:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
-  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
-  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
-  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48c05c !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48c05c !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
 }
-/* line 23, ../scss/_shop.scss */
+/* line 40, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-panel-content {
   background: cornsilk !important;
 }
-/* line 27, ../scss/_shop.scss */
+/* line 45, ../scss/_shop.scss */
+.ui-datagrid.product-datagrid .ui-widget-header a {
+  color: #222222 !important;
+}
+/* line 47, ../scss/_shop.scss */
+.ui-datagrid.product-datagrid .ui-widget-header a:hover {
+  color: #000000 !important;
+}
+/* line 53, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-widget-header.ui-paginator-top {
-  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
-  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
-  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
-  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1d8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1d8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1d8225 !important;
   border-radius: 15px 15px 0 0 !important;
 }
-/* line 32, ../scss/_shop.scss */
+/* line 58, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-widget-header.ui-paginator-bottom {
-  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
-  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
-  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
-  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1d8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1d8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1d8225 !important;
 }
-/* line 37, ../scss/_shop.scss */
+/* line 63, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-widget-header .ui-state-default {
   border: none;
 }
-/* line 43, ../scss/_shop.scss */
+/* line 69, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-datagrid-column {
   background: cornsilk !important;
 }
-/* line 47, ../scss/_shop.scss */
+/* line 73, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator {
   font-size: small !important;
 }
-/* line 51, ../scss/_shop.scss */
+/* line 77, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-rpp-options {
   background: cornsilk !important;
   box-shadow: none !important;
   border-radius: 0 !important;
 }
-/* line 57, ../scss/_shop.scss */
+/* line 83, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-rpp-options.ui-state-hover {
   background: #ffe065 !important;
 }
-/* line 60, ../scss/_shop.scss */
+/* line 86, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-rpp-options.ui-state-focus {
   background: #ffe065 !important;
   border: none !important;
   box-shadow: none !important;
 }
-/* line 67, ../scss/_shop.scss */
+/* line 93, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-rpp-label {
   margin-left: 1em !important;
 }
-/* line 71, ../scss/_shop.scss */
+/* line 101, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-page,
 .ui-datagrid.product-datagrid .ui-paginator-next,
 .ui-datagrid.product-datagrid .ui-paginator-last,
 .ui-datagrid.product-datagrid .ui-paginator-first,
 .ui-datagrid.product-datagrid .ui-paginator-prev {
-  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
-  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
-  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
-  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1d8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1d8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1d8225 !important;
 }
-/* line 79, ../scss/_shop.scss */
+/* line 109, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-page.ui-state-hover,
 .ui-datagrid.product-datagrid .ui-paginator-next.ui-state-hover,
 .ui-datagrid.product-datagrid .ui-paginator-last.ui-state-hover,
 .ui-datagrid.product-datagrid .ui-paginator-first.ui-state-hover,
 .ui-datagrid.product-datagrid .ui-paginator-prev.ui-state-hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
-  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
-  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
-  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48c05c !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48c05c !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
 }
-/* line 87, ../scss/_shop.scss */
+/* line 113, ../scss/_shop.scss */
 .ui-datagrid.product-datagrid .ui-paginator-page.ui-state-active {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
-  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
-  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
-  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48c05c !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48c05c !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
 }
 
-/* line 92, ../scss/_shop.scss */
+/* line 118, ../scss/_shop.scss */
 .product-item-image-wrapper {
   padding: 0.5em;
-  max-width: 14em;
   height: 10em;
   display: block;
 }
 
-/* line 99, ../scss/_shop.scss */
+/* line 124, ../scss/_shop.scss */
 .product-item-image-link {
   display: block;
 }
 
-/* line 103, ../scss/_shop.scss */
+/* line 128, ../scss/_shop.scss */
 .product-item-image {
   height: auto;
   width: auto;
@@ -4657,16 +4166,16 @@ hr {
   max-height: 10em;
 }
 
-/* line 110, ../scss/_shop.scss */
+/* line 135, ../scss/_shop.scss */
 .product-item-image:hover {
   box-shadow: 0px 0px 25px #444444 !important;
 }
 
-/* line 114, ../scss/_shop.scss */
+/* line 139, ../scss/_shop.scss */
 .product-item-price-block {
   margin: 1em 0 !important;
   display: block !important;
-  background: #BA1212 !important;
+  background: #ba1212 !important;
   padding: 0.5em 0 !important;
   color: white  !important;
   font-weight: bold  !important;
@@ -4674,34 +4183,39 @@ hr {
   font-family: Arial,sans-serif !important;
 }
 
-/* line 125, ../scss/_shop.scss */
+/* line 150, ../scss/_shop.scss */
 .product-item-description-block {
-  height: 5em;
+  min-height: 5em;
   overflow: hidden;
 }
 
-/* line 130, ../scss/_shop.scss */
+/* line 155, ../scss/_shop.scss */
 .add-to-cart-button.ui-button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1D8225 !important;
-  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1D8225 !important;
-  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1D8225 !important;
-  background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24ff2c), to(#07770b)) #1d8225 !important;
+  background: -moz-linear-gradient(center top, #24ff2c, #07770b) repeat scroll 0% 0% #1d8225 !important;
+  background: -o-linear-gradient(center top, #24ff2c, #07770b) #1d8225 !important;
+  background: linear-gradient(to bottom, #24ff2c, #07770b) #1d8225 !important;
 }
-/* line 133, ../scss/_shop.scss */
+/* line 158, ../scss/_shop.scss */
 .add-to-cart-button.ui-button .ui-button-text {
   padding: 0.3em !important;
   color: #222222 !important;
 }
 
-/* line 139, ../scss/_shop.scss */
+/* line 164, ../scss/_shop.scss */
 .add-to-cart-button.ui-button.ui-state-hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
-  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
-  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
-  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48c05c !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48c05c !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48c05c !important;
 }
 
-/* line 143, ../scss/_shop.scss */
+/* line 168, ../scss/_shop.scss */
 .add-to-cart-button.ui-button.ui-state-focus {
   border: none !important;
+}
+
+/* line 172, ../scss/_shop.scss */
+.category-tree.ui-tree {
+  width: auto !important;
 }

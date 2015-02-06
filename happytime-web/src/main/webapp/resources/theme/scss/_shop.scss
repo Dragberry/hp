@@ -3,15 +3,32 @@
 	background: $font-light-color !important;
 }
 
+.ui-panel.product-item-details {
+	background: scale-color($font-light-color, $lightness: -25%) !important;
+	
+	.ui-panel-titlebar {
+		@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+	}
+	
+	.ui-panel-content {
+		background: $font-light-color !important;
+	}
+	
+}
+
 .ui-datagrid.product-datagrid {
 	.ui-panel {
-		background: $main-header-color !important;
+		background: scale-color($font-light-color, $lightness: -25%) !important;
 		padding: 4px !important;
 		
 		.ui-panel-titlebar {
 			@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
 			padding: 0.6em 0em 0.3em !important;
-			height: 4em !important;
+			min-height: 4em !important;
+			
+			.ui-panel-title {
+				margin: 0.1em !important;
+			}
 		}
 		.ui-panel-titlebar:hover {
 			@include background($bg-active-color, $bg-hover-color, 0.6, $bg-hover-color, 0);
@@ -22,6 +39,15 @@
 	
 	.ui-panel-content {
 		background: $font-light-color !important;
+	}
+	
+	.ui-widget-header {
+		a {
+			color: #222222 !important;
+			&:hover {
+				color: #000000 !important;
+			}
+		}
 	}
 		
 	.ui-widget-header.ui-paginator-top {
@@ -91,7 +117,6 @@
 
 .product-item-image-wrapper {
 	padding: 0.5em;
-	max-width: 14em;
 	height: 10em;
 	display: block;
 }
@@ -123,7 +148,7 @@
 }
 
 .product-item-description-block {
-	height: 5em;
+	min-height: 5em;
 	overflow: hidden;
 }
 
@@ -142,4 +167,8 @@
 
 .add-to-cart-button.ui-button.ui-state-focus {
 	border: none !important
+}
+
+.category-tree.ui-tree {
+	width: auto !important;
 }	
