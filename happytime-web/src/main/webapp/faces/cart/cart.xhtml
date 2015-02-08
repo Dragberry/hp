@@ -6,17 +6,17 @@
     xmlns:p="http://primefaces.org/ui"
     xmlns:shop="http://java.sun.com/jsf/composite/shop">
     <ui:define name="title">
-	    Cart - HappyTime.by
+	    #{translation.translate('HTcart')} - #{translation.translate('HTapplicationTitle')}
 	</ui:define>
 	    
 	<ui:define name="headerParams">
-		<ui:param name="mainHeaderTitle" value="Cart - #{translation.translate('HTapplicationTitle')}"/>
+		<ui:param name="mainHeaderTitle" value="#{translation.translate('HTcart')}"/>
 		<ui:param name="activeLink" value="menuCart"/>
 	</ui:define>
 	
 	<ui:define name="content">
 		<p:outputPanel id="cartMainPanel">
-			<h:outputText value="#{translation.translate(cart.currentStage.key)}"/>
+			<h:outputText value="#{translation.translate('HTcart')}: #{translation.translate(cart.currentStage.key)}"/>
 			<hr />
 			<ui:include src="/WEB-INF/templates/cart/#{cart.currentStage.path}"/>
 		</p:outputPanel>
@@ -28,7 +28,9 @@
 				process="@this"
 				action="#{cart.previous}"
 				update="cartMainPanel, cartNavigationPanel"
-				rendered="#{cart.currentStage.hasPrevious()}" />
+				rendered="#{cart.currentStage.hasPrevious()}" 
+				styleClass="cart-button"
+				style="margin-right: 1em" />
 			<p:commandButton id="cartNavigationNext"
 				value="#{translation.translate('HTnext')}"
 				ajax="true"
@@ -38,12 +40,16 @@
 				update="cartMainPanel, cartNavigationPanel"
 				rendered="#{cart.currentStage.hasNext()}"
 				disabled="#{cart.emptyCart}"
-				oncomplete="cartReset()" />
+				oncomplete="cartReset();"
+				styleClass="cart-button"
+				style="margin-right: 1em"  />
 			<p:button id="cartNavigationSuccess"
 				value="#{translation.translate('HTmainPage')}"
 				ajax="false"
 				outcome="/index"
-				rendered="#{cart.currentStage.successStage}" />
+				rendered="#{cart.currentStage.successStage}"
+				styleClass="cart-button"
+				style="margin-right: 1em"  />
 		</p:outputPanel>
 		
 		<p:remoteCommand name="cartReset" 

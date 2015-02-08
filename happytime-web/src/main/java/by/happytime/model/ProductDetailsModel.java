@@ -3,7 +3,7 @@ package by.happytime.model;
 import java.io.Serializable;
 
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
+import javax.faces.bean.ViewScoped;
 
 import org.primefaces.model.DefaultTreeNode;
 import org.primefaces.model.TreeNode;
@@ -13,7 +13,7 @@ import by.happytime.domain.Product;
 import by.happytime.domain.Subcategory;
 
 @ManagedBean(name = "productDetailsModel")
-@SessionScoped
+@ViewScoped
 public class ProductDetailsModel implements Serializable {
 
     private static final long serialVersionUID = -8268839693564890119L;

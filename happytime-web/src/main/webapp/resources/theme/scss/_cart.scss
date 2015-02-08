@@ -19,21 +19,76 @@
 		padding: 1.5em 0.5em !important;
 	}
 	
-	.ui-button {
+}
+
+.cart-button.ui-button.ui-state-default {
+	@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+	border: none !important;
+	
+	.ui-button-text {
+		font-size: small !important;
+	}
+}
+
+.cart-button.ui-button.ui-state-hover {
+	@include background($bg-active-color, $bg-hover-color, 0.6, $bg-hover-color, 0);
+}
+
+.cart-button.ui-button.ui-state-active {
+	@include background($bg-active-color, $bg-hover-color, 0.6, $bg-hover-color, 0);
+}
+
+.order-information-table {
+
+}
+
+.order-formation-table {
+
+	.total-sum {
+		padding-top: 4px !important;
+	}
+
+	.ui-datatable-footer {
 		@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
-		
-		.ui-button-text {
-			padding: 0.3em !important;
-			color: $font-dark-color !important;
-		}
+		border: none !important;
+	}
+
+	.ui-widget-content {
+		border: none !important;
 	}
 	
-	.ui-state-hover {
-		@include background($bg-active-color, $bg-hover-color, 0.6, $bg-hover-color, 0);
+	.ui-widget-content.ui-datatable-odd {
+		background: $font-light-color !important;
+	}
+	
+	.ui-widget-content.ui-datatable-even {
+		background: scale-color($font-light-color, $lightness: -5%) !important;
+	
+	}
+
+	th {
+		@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
 		
-		.ui-button-text {
-			color: $font-dark-color;
-			box-shadow: $bg-hover-shadow !important; 
+	}
+
+	tr.ui-datatable-empty-message {
+		height: 3em !important;
+	}
+
+	th, tr, td {
+		border: none !important;
+		font-size: small !important;
+	}
+	
+	td.remove-column {
+		padding: 3px !important;
+	}
+	
+	.quantity-spinner {
+		width: 80% !important;
+		
+		input {
+			width: 100% !important;
 		}
 	}
 	

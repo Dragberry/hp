@@ -18,3 +18,24 @@ $panel-border-radius: 15px;
 	background: -o-linear-gradient(center top, rgba($start, $start-opacity), rgba($end, $end-opacity)) $background !important; 
 	background: linear-gradient(to bottom, rgba($start, $start-opacity), rgba($end, $end-opacity)) $background !important;
 }
+
+.custom-button.ui-button.ui-state-default {
+	@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+	border: none !important;
+	
+	.ui-button-text {
+		padding: 0.3em 0.7em !important;
+		color: $font-dark-color !important;
+		font-size: small !important;
+	}
+}
+
+.custom-button.ui-button.ui-state-hover {
+	@include background($bg-active-color, $bg-hover-color, 0.6, $bg-hover-color, 0);
+}
+
+.custom-button.ui-button.ui-state-focus {
+	border: none !important;
+	box-shadow: none !important;
+	@include background($bg-active-color, $bg-hover-color, 0.6, $bg-hover-color, 0);
+}

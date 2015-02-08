@@ -6,96 +6,105 @@
     xmlns:p="http://primefaces.org/ui"
     xmlns:shop="http://java.sun.com/jsf/composite/shop">
     
-    <p:panel id="cartOrderInformationPanel">
-	    <f:facet name="header">
+   	<p:panelGrid id="cartOrderInformationPanel"
+   		columns="#{facesContext.validationFailed ? '3' : '2'}" 
+   		styleClass="ui-datatable order-formation-table">
+   		<f:facet name="header">
 	    	<h:outputText value="#{translation.translate('HTplsEnterInfo')}"/>
 	    </f:facet>
-    	<p:panelGrid columns="#{facesContext.validationFailed ? '3' : '2'}" columnClasses="">
-    		<p:outputLabel value="#{translation.translate('HTfirstName')}:" 
-    			for="firstNameOrderInfo"/>
-    		<p:inputText id="firstNameOrderInfo"
-    			value="#{cart.firstName}" 
-    			required="true"
-    			requiredMessage="#{translation.translateAll('HTmandatoryField', 'HTfirstName')}"/>
-    		<p:message for="firstNameOrderInfo" 
-    			rendered="#{facesContext.validationFailed}"/>
-    		
-    		<p:outputLabel value="#{translation.translate('HTlastName')}:" 
-    			for="lastNameOrderInfo"/>
-    		<p:inputText id="lastNameOrderInfo" 
-    			value="#{cart.lastName}"
-    			required="true"
-    			requiredMessage="#{translation.translateAll('HTmandatoryField', 'HTlastName')}" />
-    		<p:message for="lastNameOrderInfo" 
-    			rendered="#{facesContext.validationFailed}"/>
-    		
-    		<p:outputLabel value="#{translation.translate('HTstreet')}:" 
-    			for="streetOrderInfo"/>
-    		<p:inputText id="streetOrderInfo" 
-    		 	value="#{cart.address.street}"
-    		 	required="true"
-    		 	requiredMessage="#{translation.translateAll('HTmandatoryField', 'HTstreet')}" />
-    		<p:message for="streetOrderInfo" 
-    			rendered="#{facesContext.validationFailed}"/>
-    		
-    		<p:outputLabel value="#{translation.translate('HThouse')}:" 
-    			for="houseOrderInfo"/>
-    		<p:inputMask id="houseOrderInfo" 
-    			mask="?9999"
-    			slotChar=""
-    		 	value="#{cart.address.house}"
-    		 	required="true"
-    		 	requiredMessage="#{translation.translateAll('HTmandatoryField', 'HThouse')}" />
-    		 <p:message for="houseOrderInfo" 
-    			rendered="#{facesContext.validationFailed}"/>
-    		 
-    		<p:outputLabel value="#{translation.translate('HThousing')}:" 
-    			for="housingOrderInfo"/>
-    		<p:inputMask id="housingOrderInfo"
-    			mask="?99"
-    			slotChar=""
-    		 	value="#{cart.address.housing}" />
-    	 	<p:message for="housingOrderInfo" 
-    			rendered="#{facesContext.validationFailed}"/>
-    	 	
-    	 	<p:outputLabel value="#{translation.translate('HTflat')}:" 
-    	 		for="flatOrderInfo"/>
-    	 	<p:inputMask id="flatOrderInfo" 
-    	 		mask="?9999"
-    	 		slotChar=""
-    	 		value="#{cart.address.flat}" />
-    		<p:message for="flatOrderInfo" 
-    			rendered="#{facesContext.validationFailed}"/>
-    		
-    		<p:outputLabel value="#{translation.translate('HTphone')}:" 
-    			for="phoneOrderInfo"/>
-    		<p:inputMask id="phoneOrderInfo"
-    			mask="+375 (99) 999-99-99" 
-    		 	value="#{cart.phone}"
-    		 	required="true"
-    		 	requiredMessage="#{translation.translateAll('HTmandatoryField', 'HTphone')}" />
-    		<p:message for="phoneOrderInfo" 
-    			rendered="#{facesContext.validationFailed}"/>
-    		
-    		<p:outputLabel value="#{translation.translate('HTadditionalInfo')}:" 
-    			for="additionalInfoOrderInfo"/>
-    		<p:inputTextarea id="additionalInfoOrderInfo" 
-    			value="#{cart.additionalInfo}" />
-    		<p:message for="additionalInfoOrderInfo" 
-    			rendered="#{facesContext.validationFailed}"/>
-    		
-    	</p:panelGrid>
+	    <f:facet name="footer">
+	    	<p:outputPanel styleClass="row">
+				<p:outputPanel styleClass="large-8 medium-8 small-8  columns">
+					<p:commandButton id="resetCartInfo"
+			    		ajax="true"
+			    		value="#{translation.translate('HTreset')}"
+			    		process="@this"
+			    		update="cartOrderInformationPanel"
+			    		actionListener="#{cart.resetInfo}"
+			    		styleClass="custom-button">
+			    		<p:resetInput target="cartOrderInformationPanel" />
+			    	</p:commandButton>
+				</p:outputPanel>
+				<p:outputPanel id="totalSum"
+					styleClass="total-sum large-7 medium-7 small-7 right columns">
+					<h:outputText value="#{translation.translate('HTrequiredFieldsMessage')}"/>
+				</p:outputPanel>
+			</p:outputPanel>
+	    </f:facet>
+   		
+   		<p:outputLabel value="#{translation.translate('HTfirstName')}:" 
+   			for="firstNameOrderInfo"/>
+   		<p:inputText id="firstNameOrderInfo"
+   			value="#{cart.firstName}" 
+   			required="true"
+   			requiredMessage="#{translation.translateAll('HTmandatoryField', 'HTfirstName')}"/>
+   		<p:message for="firstNameOrderInfo" 
+   			rendered="#{facesContext.validationFailed}"/>
+   		
+   		<p:outputLabel value="#{translation.translate('HTlastName')}:" 
+   			for="lastNameOrderInfo"/>
+   		<p:inputText id="lastNameOrderInfo" 
+   			value="#{cart.lastName}"
+   			required="true"
+   			requiredMessage="#{translation.translateAll('HTmandatoryField', 'HTlastName')}" />
+   		<p:message for="lastNameOrderInfo" 
+   			rendered="#{facesContext.validationFailed}"/>
+   		
+   		<p:outputLabel value="#{translation.translate('HTstreet')}:" 
+   			for="streetOrderInfo"/>
+   		<p:inputText id="streetOrderInfo" 
+   		 	value="#{cart.address.street}"
+   		 	required="true"
+   		 	requiredMessage="#{translation.translateAll('HTmandatoryField', 'HTstreet')}" />
+   		<p:message for="streetOrderInfo" 
+   			rendered="#{facesContext.validationFailed}"/>
+   		
+   		<p:outputLabel value="#{translation.translate('HThouse')}:" 
+   			for="houseOrderInfo"/>
+   		<p:inputMask id="houseOrderInfo" 
+   			mask="?9999"
+   			slotChar=""
+   		 	value="#{cart.address.house}"
+   		 	required="true"
+   		 	requiredMessage="#{translation.translateAll('HTmandatoryField', 'HThouse')}" />
+   		 <p:message for="houseOrderInfo" 
+   			rendered="#{facesContext.validationFailed}"/>
+   		 
+   		<p:outputLabel value="#{translation.translate('HThousing')}:" 
+   			for="housingOrderInfo"/>
+   		<p:inputMask id="housingOrderInfo"
+   			mask="?99"
+   			slotChar=""
+   		 	value="#{cart.address.housing}" />
+   	 	<p:message for="housingOrderInfo" 
+   			rendered="#{facesContext.validationFailed}"/>
+   	 	
+   	 	<p:outputLabel value="#{translation.translate('HTflat')}:" 
+   	 		for="flatOrderInfo"/>
+   	 	<p:inputMask id="flatOrderInfo" 
+   	 		mask="?9999"
+   	 		slotChar=""
+   	 		value="#{cart.address.flat}" />
+   		<p:message for="flatOrderInfo" 
+   			rendered="#{facesContext.validationFailed}"/>
+   		
+   		<p:outputLabel value="#{translation.translate('HTphone')}:" 
+   			for="phoneOrderInfo"/>
+   		<p:inputMask id="phoneOrderInfo"
+   			mask="+375 (99) 999-99-99" 
+   		 	value="#{cart.phone}"
+   		 	required="true"
+   		 	requiredMessage="#{translation.translateAll('HTmandatoryField', 'HTphone')}" />
+   		<p:message for="phoneOrderInfo" 
+   			rendered="#{facesContext.validationFailed}"/>
+   		
+   		<p:outputLabel value="#{translation.translate('HTadditionalInfo')}:" 
+   			for="additionalInfoOrderInfo"/>
+   		<p:inputTextarea id="additionalInfoOrderInfo" 
+   			value="#{cart.additionalInfo}" />
+   		<p:message for="additionalInfoOrderInfo" 
+   			rendered="#{facesContext.validationFailed}"/>
+   		
+   	</p:panelGrid>
     	
-    	<hr />
-    	
-    	<p:commandButton id="resetCartInfo"
-    		ajax="true"
-    		value="#{translation.translate('HTreset')}"
-    		process="@this"
-    		update="cartOrderInformationPanel"
-    		actionListener="#{cart.resetInfo}">
-    		<p:resetInput target="cartOrderInformationPanel" />
-    	</p:commandButton>
-    </p:panel>
-    
 </ui:composition>

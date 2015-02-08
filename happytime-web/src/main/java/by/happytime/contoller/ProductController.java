@@ -4,7 +4,9 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
@@ -48,9 +50,17 @@ public class ProductController implements Serializable {
     @ManagedProperty("#{translation}")
 	private Translation translation;
     
+    @PostConstruct
     public void doSearch(String category, String subcategory) {
+//        Map<String,String> params = 
+//                FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();
+//        String category = params.get("category");
+//        String subcategory = params.get("subcategory");
+        
+        
         productModel.getDataModel().setCategoryList(null);
         productModel.getDataModel().setSubcategoryList(null);
+        productModel.setPageTitle(null);
         productModel.setTitle(null);
         productModel.setDescription(null);
         if (StringUtils.isNotBlank(category) && StringUtils.isBlank(subcategory)) {
@@ -58,16 +68,28 @@ public class ProductController implements Serializable {
             Category c = categoryRepo.findByCode(category);
             productModel.setTitle(c.getDescriptionTitle());
             productModel.setDescription(c.getDescription());
+            productModel.setPageTitle(buildPageTitle(c.getTitle(), "Минске"));
             categoryList.add(c);
             productModel.getDataModel().setCategoryList(categoryList);
         } else if (StringUtils.isNotBlank(subcategory)) {
             List<Subcategory> subcategoryList = new ArrayList<Subcategory>();
             Subcategory sc = subcategoryRepo.findByCode(subcategory);
             subcategoryList.add(sc);
+            productModel.setPageTitle(buildPageTitle(sc.getTitle(), "Минске"));
             productModel.setTitle(sc.getCategory().getDescriptionTitle());
             productModel.setDescription(sc.getCategory().getDescription());
             productModel.getDataModel().setSubcategoryList(subcategoryList);
         } 
+    }
+    
+    private String buildPageTitle(String title, String city) {
+        return translation.translate("HTbuyInCity", city) 
+                + " " 
+                + StringUtils.lowerCase(title) 
+                + ". " 
+                + translation.translate("HTshop")
+                + " "
+                + translation.translate("HTapplicationTitle");
     }
     
     public void initializeProductPage(String productId) {

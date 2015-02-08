@@ -4,14 +4,14 @@ import java.io.Serializable;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
-import javax.faces.bean.SessionScoped;
+import javax.faces.bean.ViewScoped;
 
 import by.happytime.domain.Subcategory;
 import by.happytime.model.data.ProductLazyDataModel;
 import by.happytime.repository.ProductRepo;
 
 @ManagedBean(name = "productModel")
-@SessionScoped
+@ViewScoped
 public class ProductModel implements Serializable {
 
     private static final long serialVersionUID = 5728778564103883640L;
@@ -20,6 +20,8 @@ public class ProductModel implements Serializable {
     private ProductRepo productRepo;
     
     private String title;
+    
+    private String pageTitle;
     
     private String description;
     
@@ -69,5 +71,13 @@ public class ProductModel implements Serializable {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
+    public String getPageTitle() {
+        return pageTitle;
+    }
+
+    public void setPageTitle(String pageTitle) {
+        this.pageTitle = pageTitle;
+    }
 
 }

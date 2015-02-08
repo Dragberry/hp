@@ -8,6 +8,7 @@ import java.util.Map;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
+import javax.faces.event.ValueChangeEvent;
 
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.Email;
@@ -47,6 +48,14 @@ public class Cart implements Serializable {
     private String lastName;
     
     private String additionalInfo;
+    
+    public void onProductQuantityChange(ValueChangeEvent event) {
+        Integer q = (Integer) event.getNewValue();
+    }
+    
+    public void removeFromOrderList(Product product) {
+        orderedProductList.remove(product);
+    }
     
     public void resetInfo() {
     	phone = null;

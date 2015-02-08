@@ -7,15 +7,20 @@
 	
 	<p:panel id="cartPanel" styleClass="cart-panel text-center" header="#{translation.translate('HTcart')}">
 		<f:facet name="footer">
-			<p:button outcome="/faces/cart/cart"
-				value="#{translation.translate('HTgoToCart')}"/>
+			<p:outputPanel styleClass="text-center">
+				<p:button outcome="/faces/cart/cart"
+					value="#{translation.translate('HTgoToCart')}"
+					styleClass="custom-button"/>
+			</p:outputPanel>
 		</f:facet>
-		<h:outputText value="#{translation.translate('HTcartIsEmpty')}"
-			rendered="#{cart.emptyCart}"
-			style="font-size:medium !important"/>
-		<h:outputText value="#{translation.translate('HTinYourCart', cart.productCount, cart.totalSum)}"
-			rendered="#{!cart.emptyCart}"
-			style="font-size:medium !important"/>
+		<p:outputPanel id="cartPanelText">
+			<h:outputText value="#{translation.translate('HTcartIsEmpty')}"
+				rendered="#{cart.emptyCart}"
+				style="font-size:medium !important"/>
+			<h:outputText value="#{translation.translate('HTinYourCart', cart.productCount, cart.totalSum)}"
+				rendered="#{!cart.emptyCart}"
+				style="font-size:medium !important"/>
+		</p:outputPanel>
 	</p:panel>
 	
 </ui:composition>

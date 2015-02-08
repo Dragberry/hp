@@ -11,7 +11,7 @@
     </ui:define>
     
     <ui:define name="title">
-	    #{productDetailsModel.product.title} - HappyTime.by
+	   #{productDetailsModel.product.title} #{productDetailsModel.product.title} - HappyTime.by
 	</ui:define>
 	    
 	<ui:define name="headerParams">
@@ -24,7 +24,7 @@
 	
 		<p:panel styleClass="product-item-details">
 			<f:facet name="header">
-				<h:outputText value="#{productDetailsModel.product.title}"/>
+				<h2><h:outputText value="#{productDetailsModel.product.title}"/></h2>
 			</f:facet>
 			<p:outputPanel styleClass="row">
 				<p:outputPanel styleClass="large-9 columns">
@@ -43,19 +43,38 @@
 				        	ajax="true"
 				        	process="@this"
 				        	actionListener="#{productController.addToCart(productDetailsModel.product)}"
-				        	update="@([id$=cartMessages]) @([id$=cartPanel])"
-				        	styleClass="add-to-cart-button" />
+				        	update="@([id$=cartMessages]) @([id$=cartPanelText])"
+				        	styleClass="custom-button" />
 				    </p:outputPanel>
 				</p:outputPanel>
 				
 				<p:outputPanel styleClass="large-6 columns">
-					<p:tree value="#{productDetailsModel.categoryTree}" 
-						var="node"
-						styleClass="category-tree">
-				        <p:treeNode>
-				            <h:outputText value="#{node}" />
-				        </p:treeNode>
-				    </p:tree>
+					<p:outputPanel styleClass="category-tree-label">
+						<h:outputText value="#{translation.translate('HTproductCategories')}:" />
+					</p:outputPanel>
+					<p:outputPanel>
+						<p:tree value="#{productDetailsModel.categoryTree}" 
+							var="node"
+							styleClass="category-tree">
+					        <p:treeNode>
+					            <h:outputText value="#{node}" />
+					        </p:treeNode>
+					    </p:tree>
+				    </p:outputPanel>
+				    <hr />
+				    <p:outputPanel styleClass="category-tree-label">
+						<h:outputText value="#{translation.translate('HTmanufacturer')}:" />
+					</p:outputPanel>
+					<p:outputPanel>
+						<h:outputText value="#{productDetailsModel.product.manufacturer}" />
+					</p:outputPanel>
+					<hr />
+				    <p:outputPanel styleClass="category-tree-label">
+						<h:outputText value="#{translation.translate('HTmanufacturerCountry')}:" />
+					</p:outputPanel>
+					<p:outputPanel>
+						<h:outputText value="#{productDetailsModel.product.country}" />
+					</p:outputPanel>
 				</p:outputPanel>
 				
 				<p:outputPanel styleClass="large-15 columns text-center">

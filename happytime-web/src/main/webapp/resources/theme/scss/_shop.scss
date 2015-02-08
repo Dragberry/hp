@@ -8,6 +8,13 @@
 	
 	.ui-panel-titlebar {
 		@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+		.ui-panel-title {
+			margin: 0 !important;
+		}
+		
+		h2 {
+			color: $font-dark-color !important;
+		}
 	}
 	
 	.ui-panel-content {
@@ -152,23 +159,12 @@
 	overflow: hidden;
 }
 
-.add-to-cart-button.ui-button {
-	@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
-	
-	.ui-button-text {
-		padding: 0.3em !important;
-		color: $font-dark-color !important;
-	}
-}
-
-.add-to-cart-button.ui-button.ui-state-hover {
-	@include background($bg-active-color, $bg-hover-color, 0.6, $bg-hover-color, 0);
-}	
-
-.add-to-cart-button.ui-button.ui-state-focus {
-	border: none !important
-}
-
 .category-tree.ui-tree {
 	width: auto !important;
-}	
+}
+
+.category-tree-label {
+	margin-bottom: 0.5em !important;
+	color: $main-header-color !important;
+}
+	

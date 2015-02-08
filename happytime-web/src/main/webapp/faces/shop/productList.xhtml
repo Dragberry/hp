@@ -7,11 +7,11 @@
     xmlns:shop="http://java.sun.com/jsf/composite/shop">
     <ui:define name="title">
     	#{productController.doSearch(param['category'], param['subcategory'])}
-	    Shop - HappyTime.by
+	    <h:outputText value="#{productModel.pageTitle}" />
 	</ui:define>
 	    
 	<ui:define name="headerParams">
-		<ui:param name="mainHeaderTitle" value="Product Shop - #{translation.translate('HTapplicationTitle')}"/>
+		<ui:param name="mainHeaderTitle" value="#{productModel.pageTitle}"/>
 		<ui:param name="activeLink" value="menuShop"/>
 	</ui:define>
 	
