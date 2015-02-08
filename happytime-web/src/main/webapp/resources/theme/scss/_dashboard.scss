@@ -11,7 +11,25 @@
 }
 
 .owner-panel {
+		border-radius: $panel-border-radius !important;
+		background: $font-light-color !important;
+	
 	.ui-panel-content {
 		padding: 0.3em 0 0.3em 0 !important;
+		font-size: small !important;
+		background: $font-light-color !important;
+		border-radius: $panel-border-radius !important;
+	}
+	
+	.owner-panel-main-header {
+		color: $main-header-color !important;
+	}
+	
+	.owner-panel-header {
+		font-weight: bold !important;
+	}
+	
+	.owner-panel-text {
+		
 	}
 }

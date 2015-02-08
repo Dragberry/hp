@@ -14,8 +14,8 @@
 		<ui:insert name="title">
         	"#{messages.HTapplicationTitleAlter}" - "#{messages.HTapplicationTitle}"
       	</ui:insert>
-      	<h:outputStylesheet library="theme" name="stylesheets/app.css" />
 	</title>
+	<h:outputStylesheet library="theme" name="stylesheets/app.css" />
 </h:head>
 
 <h:body>
@@ -33,6 +33,7 @@
 			<div class="large-3 columns menu-left">
 				<ui:insert name="menuLeft">
 					<ui:include src="/WEB-INF/templates/catalogMenu.xhtml"/>
+					<ui:include src="/WEB-INF/templates/general/infoPanel.xhtml"/>
 				</ui:insert>
 				<ui:include src="/WEB-INF/templates/general/ownerPanel.xhtml"/>
 			</div>
@@ -47,8 +48,10 @@
 				<ui:insert name="menu-rigth">
 					<ui:insert name="menuRight">
 						<ui:include src="/WEB-INF/templates/cart/cartPanel.xhtml"/>
-						<ui:include src="/WEB-INF/templates/general/infoPanel.xhtml"/>
 					</ui:insert>
+					<p:outputPanel id="vkGroup" style="margin:1em auto;">
+					
+					</p:outputPanel>
 				</ui:insert>
 			</div>
 		</div>
@@ -59,5 +62,10 @@
     <div class="row page-footer">
 	    <ui:include src="footer.xhtml"/>
 	</div>
+	
+	<script src="http://vk.com/js/api/openapi.js"/>
+	<script>
+		VK.Widgets.Group("vkGroup", {mode: 0, height: "200"}, 79253946); 
+	</script>
 </h:body>
 </html>

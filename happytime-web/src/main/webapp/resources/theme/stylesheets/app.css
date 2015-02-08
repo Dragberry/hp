@@ -4486,10 +4486,22 @@ hr {
   background: linear-gradient(to bottom, #24ff2c, #07770b) #1D8225 !important;
 }
 /* line 122, ../scss/_menu.scss */
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-header.ui-state-default {
+  box-shadow: none !important;
+  border: none !important;
+}
+/* line 126, ../scss/_menu.scss */
+.ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-header.ui-state-default:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
+  background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
+  background: -o-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) #48C05C !important;
+}
+/* line 131, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-menuitem-link {
   width: 100% !important;
 }
-/* line 126, ../scss/_menu.scss */
+/* line 135, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 255, 44, 0.2)), to(rgba(7, 119, 11, 0.6))) #1D8225 !important;
   background: -moz-linear-gradient(center top, rgba(36, 255, 44, 0.2), rgba(7, 119, 11, 0.6)) repeat scroll 0% 0% #1D8225 !important;
@@ -4497,11 +4509,11 @@ hr {
   background: linear-gradient(to bottom, rgba(36, 255, 44, 0.2), rgba(7, 119, 11, 0.6)) #1D8225 !important;
   padding: 0.2em !important;
 }
-/* line 131, ../scss/_menu.scss */
+/* line 140, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-menuitem-link {
   color: cornsilk !important;
 }
-/* line 135, ../scss/_menu.scss */
+/* line 144, ../scss/_menu.scss */
 .ui-panelmenu .ui-panelmenu-panel .ui-panelmenu-content .ui-menuitem .ui-state-hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6)), to(rgba(240, 240, 240, 0))) #48C05C !important;
   background: -moz-linear-gradient(center top, rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0)) repeat scroll 0% 0% #48C05C !important;
@@ -4524,9 +4536,25 @@ hr {
   margin-top: 1em !important;
 }
 
-/* line 14, ../scss/_dashboard.scss */
+/* line 13, ../scss/_dashboard.scss */
+.owner-panel {
+  border-radius: 15px !important;
+  background: cornsilk !important;
+}
+/* line 17, ../scss/_dashboard.scss */
 .owner-panel .ui-panel-content {
   padding: 0.3em 0 0.3em 0 !important;
+  font-size: small !important;
+  background: cornsilk !important;
+  border-radius: 15px !important;
+}
+/* line 24, ../scss/_dashboard.scss */
+.owner-panel .owner-panel-main-header {
+  color: #BA1212 !important;
+}
+/* line 28, ../scss/_dashboard.scss */
+.owner-panel .owner-panel-header {
+  font-weight: bold !important;
 }
 
 /* line 1, ../scss/_cart.scss */

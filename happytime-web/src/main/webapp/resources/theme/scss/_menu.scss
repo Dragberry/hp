@@ -119,6 +119,15 @@ $menu-color: $font-light-color;
 			@include background($menu-main-color, $menu-start-gradient, 1, $menu-end-gradient, 1);
 		}
 		
+		.ui-panelmenu-header.ui-state-default {
+			box-shadow: none !important;
+			border: none !important;
+			
+			&:hover {
+				@include background($menu-active-color, $menu-hover-background, 0.6, $menu-hover-background, 0);
+			}
+		}
+		
 		.ui-menuitem-link {
 			width: 100% !important;
 		}

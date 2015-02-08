@@ -6,46 +6,38 @@
 	xmlns:c="http://java.sun.com/jsp/jstl/core">
 
 	<p:panel styleClass="owner-panel text-center">
-		<p:outputPanel>
-			<h:outputText style="font-size: small;"
-				value="#{translation.translate('HTapplicationTitleAlter')} #{translation.translate('HTapplicationTitle')}" />
+		<p:outputPanel styleClass="owner-panel-header owner-panel-main-header">
+			<h:outputText value="#{translation.translate('HTapplicationTitleAlter')} #{translation.translate('HTapplicationTitle')}" />
+		</p:outputPanel>
+		<br />
+		<p:outputPanel styleClass="owner-panel-header">
+			<h:outputText value="#{translation.translate('HTcontacts')}:" />
 		</p:outputPanel>
 		<p:outputPanel>
-			<h:outputText style="font-size: small;"
-				value="#{translation.translate('HTcontacts')}" />
+			<h:outputText value="#{translation.translate('HTvelcomPhone')}" />
 		</p:outputPanel>
 		<p:outputPanel>
-			<h:outputText style="font-size: small;"
-				value="#{translation.translate('HTvelcomPhone')}" />
+			<h:outputText value="#{translation.translate('HTmtsPhone')}" />
+		</p:outputPanel>
+		<br />
+		<p:outputPanel styleClass="owner-panel-header">
+			<h:outputText value="#{translation.translate('HTschedule')}:" />
 		</p:outputPanel>
 		<p:outputPanel>
-			<h:outputText style="font-size: small;"
-				value="#{translation.translate('HTmtsPhone')}" />
+			<h:outputText value="#{translation.translate('HTscheduleValueSimple')}" />
 		</p:outputPanel>
-		<p:outputPanel>
-			<h:outputText style="font-size: small;"
-				value="#{translation.translate('HTschedule')}:" />
-		</p:outputPanel>
-		<p:outputPanel>
-			<h:outputText style="font-size: small;"
-				value="#{translation.translate('HTscheduleValueSimple')}" />
-		</p:outputPanel>
-		<p:outputPanel>
-			<h:outputText style="font-size: small;"
-				value="#{translation.translate('HTsevenDaysWeek')}" />
+		<p:outputPanel styleClass="owner-panel-header owner-panel-main-header">
+			<h:outputText value="#{translation.translate('HTsevenDaysWeek')}" />
 		</p:outputPanel>
 		<br />
 		<p:outputPanel>
-			<h:outputText style="font-size: small;"
-				value="#{translation.translate('HTowner')}" />
+			<h:outputText value="#{translation.translate('HTowner')}" />
 		</p:outputPanel>
 		<p:outputPanel>
-			<h:outputText style="font-size: small;"
-				value="#{translation.translate('HTownerAddress')}" />
+			<h:outputText value="#{translation.translate('HTownerAddress')}" />
 		</p:outputPanel>
 		<p:outputPanel>
-			<h:outputText style="font-size: small;"
-				value="#{translation.translate('HTownerRegistration')}" />
+			<h:outputText value="#{translation.translate('HTownerRegistration')}" />
 		</p:outputPanel>
 	</p:panel>
 </ui:composition>

@@ -6,14 +6,12 @@
 	xmlns:c="http://java.sun.com/jsp/jstl/core">
 
 	<p:panel styleClass="owner-panel text-center">
-		<p:outputPanel>
-			<h:outputText style="font-size: small;"
-				value="#{translation.translate('HTapplicationTitleAlter')} #{translation.translate('HTapplicationTitle')}" />
+		<p:outputPanel styleClass="owner-panel-header owner-panel-main-header">
+			<h:outputText value="#{translation.translate('HTapplicationTitleAlter')} #{translation.translate('HTapplicationTitle')}" />
 		</p:outputPanel>
 		<br />
-		<p:outputPanel>
-			<h:outputText style="font-size: small;"
-				value="#{translation.translateAll('HTwelcomMessage', 'HTapplicationTitleAlter', 'HTapplicationTitle')}"/>
+		<p:outputPanel  styleClass="owner-panel-text">
+			<h:outputText value="#{translation.translateAll('HTwelcomMessage', 'HTapplicationTitleAlter', 'HTapplicationTitle')}"/>
 		</p:outputPanel>
 	</p:panel>
 </ui:composition>
