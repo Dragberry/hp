@@ -7,8 +7,9 @@
     xmlns:shop="http://java.sun.com/jsf/composite/shop">
     
    	<p:panelGrid id="cartOrderInformationPanel"
-   		columns="#{facesContext.validationFailed ? '3' : '2'}" 
-   		styleClass="ui-datatable order-formation-table">
+   		columns="3" 
+   		styleClass="ui-datatable order-information-table"
+   		columnClasses="large-3, large-3">
    		<f:facet name="header">
 	    	<h:outputText value="#{translation.translate('HTplsEnterInfo')}"/>
 	    </f:facet>
@@ -38,8 +39,7 @@
    			value="#{cart.firstName}" 
    			required="true"
    			requiredMessage="#{translation.translateAll('HTmandatoryField', 'HTfirstName')}"/>
-   		<p:message for="firstNameOrderInfo" 
-   			rendered="#{facesContext.validationFailed}"/>
+   		<p:message for="firstNameOrderInfo" />
    		
    		<p:outputLabel value="#{translation.translate('HTlastName')}:" 
    			for="lastNameOrderInfo"/>
@@ -47,8 +47,7 @@
    			value="#{cart.lastName}"
    			required="true"
    			requiredMessage="#{translation.translateAll('HTmandatoryField', 'HTlastName')}" />
-   		<p:message for="lastNameOrderInfo" 
-   			rendered="#{facesContext.validationFailed}"/>
+   		<p:message for="lastNameOrderInfo" />
    		
    		<p:outputLabel value="#{translation.translate('HTstreet')}:" 
    			for="streetOrderInfo"/>
@@ -56,8 +55,7 @@
    		 	value="#{cart.address.street}"
    		 	required="true"
    		 	requiredMessage="#{translation.translateAll('HTmandatoryField', 'HTstreet')}" />
-   		<p:message for="streetOrderInfo" 
-   			rendered="#{facesContext.validationFailed}"/>
+   		<p:message for="streetOrderInfo" />
    		
    		<p:outputLabel value="#{translation.translate('HThouse')}:" 
    			for="houseOrderInfo"/>
@@ -67,8 +65,7 @@
    		 	value="#{cart.address.house}"
    		 	required="true"
    		 	requiredMessage="#{translation.translateAll('HTmandatoryField', 'HThouse')}" />
-   		 <p:message for="houseOrderInfo" 
-   			rendered="#{facesContext.validationFailed}"/>
+   		 <p:message for="houseOrderInfo" />
    		 
    		<p:outputLabel value="#{translation.translate('HThousing')}:" 
    			for="housingOrderInfo"/>
@@ -76,8 +73,7 @@
    			mask="?99"
    			slotChar=""
    		 	value="#{cart.address.housing}" />
-   	 	<p:message for="housingOrderInfo" 
-   			rendered="#{facesContext.validationFailed}"/>
+   	 	<p:message for="housingOrderInfo" />
    	 	
    	 	<p:outputLabel value="#{translation.translate('HTflat')}:" 
    	 		for="flatOrderInfo"/>
@@ -85,8 +81,7 @@
    	 		mask="?9999"
    	 		slotChar=""
    	 		value="#{cart.address.flat}" />
-   		<p:message for="flatOrderInfo" 
-   			rendered="#{facesContext.validationFailed}"/>
+   		<p:message for="flatOrderInfo" />
    		
    		<p:outputLabel value="#{translation.translate('HTphone')}:" 
    			for="phoneOrderInfo"/>
@@ -95,15 +90,13 @@
    		 	value="#{cart.phone}"
    		 	required="true"
    		 	requiredMessage="#{translation.translateAll('HTmandatoryField', 'HTphone')}" />
-   		<p:message for="phoneOrderInfo" 
-   			rendered="#{facesContext.validationFailed}"/>
+   		<p:message for="phoneOrderInfo" />
    		
    		<p:outputLabel value="#{translation.translate('HTadditionalInfo')}:" 
    			for="additionalInfoOrderInfo"/>
    		<p:inputTextarea id="additionalInfoOrderInfo" 
    			value="#{cart.additionalInfo}" />
-   		<p:message for="additionalInfoOrderInfo" 
-   			rendered="#{facesContext.validationFailed}"/>
+   		<p:message for="additionalInfoOrderInfo" />
    		
    	</p:panelGrid>
     	

@@ -11,7 +11,9 @@
 </composite:interface>
 
 <composite:implementation>
-	<p:growl id="cartMessages" showDetail="true" /> 
+	<p:growl id="cartMessages" 
+		life="1500" 
+		showDetail="true" />  
 
 	<p:dataGrid id="product-data-grid"
 		value="#{cc.attrs.model.dataModel}"

@@ -20,7 +20,9 @@
 	</ui:define>
 	
 	<ui:define name="content">
-		<p:growl id="cartMessages" sticky="true" showDetail="true" /> 
+		<p:growl id="cartMessages" 
+			life="1500" 
+			showDetail="true" /> 
 	
 		<p:panel styleClass="product-item-details">
 			<f:facet name="header">

@@ -49,10 +49,6 @@ public class Cart implements Serializable {
     
     private String additionalInfo;
     
-    public void onProductQuantityChange(ValueChangeEvent event) {
-        Integer q = (Integer) event.getNewValue();
-    }
-    
     public void removeFromOrderList(Product product) {
         orderedProductList.remove(product);
     }

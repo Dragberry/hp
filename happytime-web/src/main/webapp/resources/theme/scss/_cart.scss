@@ -40,6 +40,34 @@
 
 .order-information-table {
 
+	width: 100% !important;
+
+	th, tr, td {
+		border: none !important;
+		font-size: small !important;
+	}
+	
+	td {
+		background: $font-light-color !important;
+	}
+	
+	.ui-panelgrid-footer {
+		.ui-widget-header {
+			td {
+				@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+			}
+		}
+	}
+	
+	.ui-panelgrid-header {
+		tr.ui-widget-header {
+			td {
+				@include background($bg-main-color, $bg-light-color, 1, $bg-dark-color, 1);
+				padding: 4px 10px !important;
+			} 
+		}
+		border: none !important;
+	}
 }
 
 .order-formation-table {
